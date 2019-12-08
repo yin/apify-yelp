@@ -1,0 +1,25 @@
+{
+	"name": "yelp",
+	"version": "0.0.1",
+	"description": "This is a boilerplate of an Apify actor.",
+	"dependencies": {
+		"apify": "^0.17.0",
+		"cheerio": "^1.0.0-rc.3",
+		"parse-domain": "^2.3.4",
+		"request-promise": "^4.2.5",
+		"request-promise-native": "^1.0.8",
+		"url-parse": "^1.4.7"
+	},
+	"devDependencies": {
+		"@apify/eslint-config": "0.0.3",
+		"eslint": "^6.4.0"
+	},
+	"scripts": {
+		"start": "node src/main.js",
+		"lint": "./node_modules/.bin/eslint ./src --ext .js,.jsx",
+		"lint:fix": "./node_modules/.bin/eslint ./src --ext .js,.jsx --fix",
+		"test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
+	},
+	"author": "It's not you it's me",
+	"license": "ISC"
+}

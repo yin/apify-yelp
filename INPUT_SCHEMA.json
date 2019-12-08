@@ -1,0 +1,65 @@
+{
+    "title": "Yelp Scraper",
+    "description": "Crawls Yelp restaurant reviews",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "searchTerm": {
+            "title": "Search term",
+            "type": "string",
+            "description": "Here you can provide a search query for Yelp bussinesses to scrape. <br /><br /><strong>Either of 'Search' or 'Direct URLs' or both fields.</strong>",
+            "editor": "textfield",
+            "prefill": "Pizza"
+        },
+        "location": {
+            "title": "Location",
+            "type": "string",
+            "description": "",
+            "editor": "textfield",
+            "prefill": "NYC"
+        },
+        "searchLimit": {
+            "title": "Search results limit",
+            "type": "integer",
+            "description": "How many search results (eq. Yelp bussinesses) should be processed per serach query",
+            "editor": "number",
+            "default": 10,
+            "minimum": 1,
+            "maximum": 100
+        },
+        "directUrls": {
+            "title": "Direct Yelp page URLs",
+            "type": "array",
+            "description": "If you already have URL(s) of page(s) you wish to scrape, you can set them here. <br /><br /><strong>Either of 'Search' or 'Direct URLs' or both fields.</strong>",
+            "editor": "stringList",
+            "placeholderValue": "URL",
+            "patternValue": "https:\\/\\/www\\.yelp\\.com\\/.+",
+            "uniqueItems": true
+        },
+        "reviewLimit": {
+            "title": "Maximum reviews",
+            "type": "integer",
+            "description": "How many reviews should be scraped per business",
+            "editor": "number",
+            "unit": "per business",
+            "default": 20,
+            "minimum": 10,
+            "maximum": 100
+        },
+        "proxy": {
+            "title": "Proxy configuration",
+            "type": "object",
+            "description": "<strong>Proxy is required to run this actor!</strong> Either use Apify proxy, or provide your own proxy servers.",
+            "prefill": { "useApifyProxy": true, "apifyProxyGroups": [] },
+            "editor": "proxy"
+        },
+        "pageFunction": {
+            "title": "Page function",
+            "type": "string",
+            "description": "Function executed for each request",
+            "prefill": "async () => {\n  return $('title').text();\n\n}",
+            "editor": "javascript"
+        }
+    },
+    "required": [ "proxy" ]
+}
