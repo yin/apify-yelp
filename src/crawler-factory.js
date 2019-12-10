@@ -1,10 +1,11 @@
 const Apify = require('apify');
 
-const createCrawler = (proxy, requestCollection, handlePage, handleFailure = null) => new Apify.CheerioCrawler({
-    requestCollection,
+const createCrawler = (proxy, requestQueue, handlePage, handleFailure = null) => new Apify.CheerioCrawler({
+    requestQueue,
     useApifyProxy: true,
     // TODO gagyi: Remove the default here
     apifyProxyGroups: proxy.apifyProxyGroups || ['BUYPROXIES84958'],
+    additionalMimeTypes: ['application/json'],
     minConcurrency: 10,
     maxConcurrency: 50,
     maxRequestRetries: 1,

@@ -4,14 +4,20 @@ const parseDomain = require('parse-domain');
 const CATEGORIES = {
     SEARCH: 'search',
     BUSINESS: 'business',
+    REVIEW: 'review',
     UNKNOWN: 'unknown',
 };
 
 function categorizeUrl(url) {
     const pUrl = parseUrl(url);
-    const pDomain = parseDomain(pUrl.host);
-    if (pDomain.domain !== 'yelp' || pDomain.subdomain !== undefined || ['http', 'https'].includes(pUrl.protocol)) {
+    if (pUrl.protocol && !['http', 'https'].includes(pUrl.protocol)) {
         return CATEGORIES.UNKNOWN;
+    }
+    if (pUrl.host) {
+        const pDomain = parseDomain(pUrl.host);
+        if (pDomain.domain !== 'yelp' || pDomain.subdomain !== undefined) {
+            return CATEGORIES.UNKNOWN;
+        }
     }
     if (pUrl.pathname.match(/\/biz\/[^/]+$/)) {
         return CATEGORIES.BUSINESS;
@@ -23,15 +29,18 @@ function categorizeUrl(url) {
 
 const categorizeUrls = (urls) => {
     const categories = {};
-    CATEGORIES.forEach((category) => {
-        categories[category] = [];
-    });
+    categories[CATEGORIES.SEARCH] = [];
+    categories[CATEGORIES.BUSINESS] = [];
+    categories[CATEGORIES.REVIEW] = [];
+    categories[CATEGORIES.UNKNOWN] = [];
     for (const url of urls) {
         categories[categorizeUrl(url)].push(url);
     }
+    return categories;
 };
 
 module.exports = {
+    CATEGORIES,
     categorizeUrl,
     categorizeUrls,
 };

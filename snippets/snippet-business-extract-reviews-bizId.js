@@ -14,7 +14,7 @@ async function func() {
             transform: body => cheerio.load(body),
         });
 
-        console.log(extract.yelpBusinessId(url, $));
+        console.log(extract.yelpBusinessInfo(url, $));
     } catch (err) {
         if (err instanceof errors.StatusCodeError) {
             const message = `Search response failed with HTTP code ${err.statusCode}`;
