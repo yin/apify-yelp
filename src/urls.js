@@ -10,19 +10,19 @@ const CATEGORIES = {
 
 function categorizeUrl(url) {
     const pUrl = parseUrl(url);
-    if (pUrl.protocol && !['http', 'https'].includes(pUrl.protocol)) {
+    if (pUrl.protocol && !['http:', 'https:'].includes(pUrl.protocol)) {
         return CATEGORIES.UNKNOWN;
     }
     if (pUrl.host) {
         const pDomain = parseDomain(pUrl.host);
-        if (pDomain.domain !== 'yelp' || pDomain.subdomain !== undefined) {
+        if (pDomain.domain !== 'yelp' && pDomain.subdomain !== 'www') {
             return CATEGORIES.UNKNOWN;
         }
     }
-    if (pUrl.pathname.match(/\/biz\/[^/]+$/)) {
+    if (pUrl.pathname.match(/\/biz\/[^/]+(\?.*)?$/)) {
         return CATEGORIES.BUSINESS;
     }
-    if (pUrl.pathname.match(/\/search\/[^/]+$/)) {
+    if (pUrl.pathname.match(/\/search\/[^/]+(\?.*)?$/)) {
         return CATEGORIES.SEARCH;
     }
 }
