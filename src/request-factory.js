@@ -49,7 +49,7 @@ const yelpBusinessInfo = (url, payload = null) => {
     };
 };
 
-const yelpBusinessReview = (bizId, start = null, payload = null) => {
+const yelpBusinessReview = (bizId, start = undefined, payload = null) => {
     return {
         url: `https://www.yelp.com/biz/${bizId}/review_feed?rl=en&sort_by=relevance_desc${start ? `&start=${start}` : ''}`,
         headers: {
@@ -59,7 +59,8 @@ const yelpBusinessReview = (bizId, start = null, payload = null) => {
             label: CATEGORIES.REVIEW,
             payload: {
                 ...payload,
-                reviews: { bizId, start },
+                reviews: { bizId },
+                reviewsScraped: start
             },
         },
     };

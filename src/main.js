@@ -23,16 +23,18 @@ Apify.main(async () => {
     const urlCategories = categorizeUrls(directUrls);
     const businessPageRequests = urlCategories[CATEGORIES.BUSINESS].map(url => requests.yelpBusinessInfo(url));
     const searchRequests = urlCategories[CATEGORIES.SEARCH].map(url => requests.yelpSearch(url));
-    if (searchTerm !== undefined) {
+    if (searchTerm) {
         searchRequests.push(requests.yelpSearchTermAndLocation(searchTerm, location));
     }
 
     const requestQueue = await Apify.openRequestQueue();
-    const dataset = await Apify.openDataset();
+    const resultsDataset = await Apify.openDataset();
+    const failedSearchDataset = await Apify.openDataset('failed-search');
     const enqueue = async (request) => {
+        console.debug('Enqueuing URL: ', request.url);
         return requestQueue.addRequest(request);
     };
-    const pushData = async (data) => {
+    const pushDataTo = dataset => async (data) => {
         return dataset.pushData(data);
     };
     try {
@@ -41,12 +43,16 @@ Apify.main(async () => {
             console.log('Adding to queue:', request.url);
             await requestQueue.addRequest(request);
         }
-        const scraper = scrapers.createYelpPageHandler({ searchLimit, reviewLimit }, enqueue, pushData);
+        const scraper = scrapers.createYelpPageHandler(
+            { searchLimit, reviewLimit },
+            enqueue,
+            pushDataTo(resultsDataset),
+            pushDataTo(failedSearchDataset),
+        );
         const crawler = createCrawler(proxy, requestQueue, scraper);
         await crawler.run();
     } catch (exception) {
         console.log('Problem occured while crawling', exception);
-        log.exception(exception, 'Problem occured while crawling');
     } finally {
         // This is how Java guys make sure log massages are coherent.
         console.log('Scraping finished');

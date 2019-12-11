@@ -12,7 +12,7 @@ const createCrawler = (proxy, requestQueue, handlePage, handleFailure = null) =>
     handlePageTimeoutSecs: 60,
     handlePageFunction: handlePage,
     handleFailedRequestFunction: handleFailure || (async ({ request }) => {
-        console.log(`Request ${request.url} failed too many times`);
+        console.error(`Request ${request.url} failed too many times`);
         await Apify.pushData({
             '#debug': Apify.utils.createRequestDebugInfo(request),
         });

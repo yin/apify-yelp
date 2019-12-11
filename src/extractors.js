@@ -6,7 +6,7 @@ const parse = require('url-parse');
  * @returns {string[]}
  */
 const yelpSearchResultUrls = (url, $) => {
-    const links = $('ul li h3 a');
+    const links = $('ul li h3 a').length > 0 ? $('ul li h3 a') : $('ul li h4 a');
     const hrefs = links.map((i, a) => a.attribs.href);
     const urlBase = parse(url)
         .set('query', '');
@@ -17,7 +17,7 @@ const yelpSearchResultUrls = (url, $) => {
 };
 
 const yelpBusinessInfo = (url, $) => {
-    const bizId = $('meta[name=\'yelp-biz-id\']');
+    const bizId = $("meta[name='yelp-biz-id']");
     if (bizId.length === 0) {
         throw new Error('Page does not contain an Business Id');
     }
