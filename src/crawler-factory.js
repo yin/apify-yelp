@@ -6,7 +6,7 @@ const createCrawler = (proxy, requestQueue, handlePage, handleFailure = null) =>
     // TODO gagyi: Remove the default here
     apifyProxyGroups: proxy.apifyProxyGroups || ['BUYPROXIES84958'],
     additionalMimeTypes: ['application/json'],
-    minConcurrency: 10,
+    desiredConcurrency: 10,
     maxConcurrency: 50,
     maxRequestRetries: 1,
     handlePageTimeoutSecs: 60,
