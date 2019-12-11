@@ -52,13 +52,6 @@
             "description": "<strong>Proxy is required to run this actor!</strong> Either use Apify proxy, or provide your own proxy servers.",
             "prefill": { "useApifyProxy": true, "apifyProxyGroups": [] },
             "editor": "proxy"
-        },
-        "pageFunction": {
-            "title": "Page function",
-            "type": "string",
-            "description": "Function executed for each request",
-            "prefill": "async () => {\n  return $('title').text();\n\n}",
-            "editor": "javascript"
         }
     },
     "required": [ "proxy" ]

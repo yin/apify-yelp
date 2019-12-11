@@ -1,17 +1,17 @@
 Yelp Scraper
 ============
 
-Yelp scraper is an [Apify actor](https://apify.com/actors) to extract review and ratings from Yelp business pages.
+Yelp scraper is an [Apify actor](https://apify.com/actors) able to extract reviews and ratings from Yelp business pages.
 The scraper is capable of performing Yelp searches, either by querying Yelp with an optional location or by scraping
-direct search URLs. In addition the scraper recognizes Yelp business pages and scrapes reviews from direct business
-URLs.
+direct URLs pointing to searches. In addition the scraper recognizes Yelp business pages and scrapes reviews from
+direct business URLs.
 
 The scraper uses Apify SDK [Apify SDK](https://sdk.apify.com/) and can be run localy or using
 [Apify cloud platform][https://apify.com].
 
 ## Input
 
-There are multiple configurable input variables:
+When using the scraper from Apify webpage of localy, there are multiple configurable input variables available:
 
 | Field | Type | Required | Defualt | Description |
 | ----- | ---- | -------- | ------- | ----------- |
@@ -21,39 +21,40 @@ There are multiple configurable input variables:
 | directUrls | array | | Predefined collection of string URLs to scrape review. Can be search URLs or businsess pages, other URLs are ignored. |
 | reviewLimit | number | 20 | Minimum number of reviews to scrape. |
 | proxy | proxy configuration | N/A | Proxy groups and other proxy related configuration. |
-| pageFunction | javascript |  | Function to be used to extract additional data from each business page. |
 
 One of `searchTerm` or `directUrls` is required. If none are specified, nothing will be scraped.
 
-Configuration `searchLimit` is not used yet, in current version only the result from the first page are crawled.
-
 If there are more reviews available to scrape due to pagination without additional resource usage, more there will be
-more than the given `reviewLimit`.
-
-`pageFunction` is not used yet and might be removed due to security issue in the future.
+more than the given `reviewLimit`. As scraping business pages means additional page requests (and resource usage), the
+scraped follows `searchLimit` precisely and newer scrapes more search result than specified.
 
 ## Output
 
-You'll get your review date in the following schema:
+You'll get your review in the following schema:
 
 ```json
 {
   "business": "<business name>"
-  "address": "<business address",
-  "reviews": [
-    {
-      "date": "<review date>",
-      "rating": "<rating>",
-      "text": "<review text",
-      "photos": [
-        "http://photoURL",
-        ...
-      ]
-    },
-    ...
-  ]
+  "address": {
+    "streetAddress": "",
+    "postalCode": "",
+    "locality": "<city>",
+    "country": "<countryCode>"
+  },
+  "review": {
+    "date": "<review date>",
+    "rating": "<rating>",
+    "text": "<review text>",
+    "photos": [
+      "http://photoURL",
+      ...
+    ]
+  }
 }
 ```
+
+There is one review per record in the review. For a single business, there are multiple records, each having the
+same value for `business` and `address` fields.
 
 ## Usage
 
