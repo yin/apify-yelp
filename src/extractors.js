@@ -39,12 +39,14 @@ const yelpBusinessInfo = (url, $) => {
 };
 
 const yelpBusinessReviews = (url, json) => {
+//    console.log(json.reviews.map(review => review.photos.map((photo => new URL(photo.src, url).toString().replace(/\/[^/].jpg/, '/o.jpg')))));
     return json.reviews.map(review => ({
         date: review.localizedDate,
         rating: review.rating,
         text: review.comment.text,
-        photoUrls: review.photos.map((photo => photo.link.replace(/\/[^./].jpg/, '/o.jpg'))),
+        photoUrls: review.photos.map((photo => new URL(photo.src, url).toString().replace(/\/[^/].jpg/, '/o.jpg'))),
     }));
+
 };
 
 module.exports = {

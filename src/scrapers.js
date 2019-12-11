@@ -3,11 +3,35 @@ const extract = require('./extractors');
 const requests = require('./request-factory');
 
 const createYelpPageHandler = ({ searchLimit, reviewLimit }, enqueue, pushData) => async ({ request, $ = null, json = null }) => {
-    console.log(`Processing ${request.url}...`);
     if (request.userData.label === CATEGORIES.SEARCH) {
         console.log('Handling search page:', request.url);
-        const searchReusltUrls = extract.yelpSearchResultUrls(request.url, $);
-        for (const searchResultUrl of searchReusltUrls) {
+        const searchResultUrls = extract.yelpSearchResultUrls(request.url, $);
+
+        const previoslyScrapedSearchResults = (request.userData && request.userData.payload && request.userData.payload.searchResultsScraped)
+            ? request.userData.payload.searchResultsScraped
+            : 0;
+        const searchResultsFound = previoslyScrapedSearchResults + searchResultUrls.length;
+        const resultCountToKeep = searchResultsFound <= searchLimit
+            ? searchResultUrls.length
+            : searchResultUrls.length - (searchResultsFound - searchLimit);
+
+        console.log('Keeping ', resultCountToKeep, ' results to scrape from ', searchResultUrls.length, ' available');
+        const followupBusinessUrls = searchResultsFound <= searchLimit
+            ? searchResultUrls
+            : searchResultUrls.slice(0, (searchResultsFound) - searchLimit);
+
+        if (resultCountToKeep > 0) {
+            const url = new URL(request.url);
+            const params = url.searchParams;
+            params.delete('start');
+            params.append('start', searchResultsFound);
+            await enqueue(requests.yelpSearch(url.toString(), { ...request.payload, searchResultsScraped: searchResultsFound }));
+        } else {
+            console.log('Scraped ', previoslyScrapedSearchResults.length, followupBusinessUrls.length,
+                ' results in total. No more search results to scrape.');
+        }
+
+        for (const searchResultUrl of followupBusinessUrls) {
             await enqueue(requests.yelpBusinessInfo(searchResultUrl, request.payload));
         }
     } else if (request.userData.label === CATEGORIES.BUSINESS) {
