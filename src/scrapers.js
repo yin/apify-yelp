@@ -74,10 +74,6 @@ const createYelpPageHandler = ({ searchLimit, reviewLimit }, enqueue, pushResult
                         ...request.userData.payload,
                     }));
             }
-            console.debug('\t', {
-                ...request.userData.payload,
-                reviewsScraped: scrapedReviewCount,
-            }, scrapedReviewCount);
         } else {
             console.error('Unknown request label:', request.userData.label);
         }
