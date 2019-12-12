@@ -1,4 +1,5 @@
 const parse = require('url-parse');
+const { CATEGORIES, categorizeUrl } = require('./urls');
 
 /**
  * @param url
@@ -7,7 +8,7 @@ const parse = require('url-parse');
  */
 const yelpSearchResultUrls = (url, $) => {
     const links = $('ul li h3 a').length > 0 ? $('ul li h3 a') : $('ul li h4 a');
-    const hrefs = links.map((i, a) => a.attribs.href);
+    const hrefs = links.map((i, a) => a.attribs.href).filter((i, href) => categorizeUrl(href) === CATEGORIES.BUSINESS);
     const urlBase = parse(url)
         .set('query', '');
     const fullUrls = hrefs
