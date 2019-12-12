@@ -25,7 +25,7 @@ const yelpBusinessInfo = (url, $) => {
     if (bizId.length > 1) {
         throw new Error('Page does not contain a single Business Id');
     }
-    const itemLocalBusiness = $('[itemscope][itemtype="http://schema.org/LocalBusiness"]');
+    const itemLocalBusiness = $('[itemscope][itemtype="http://schema.org/LocalBusiness"], [itemscope][itemtype="http://schema.org/Restaurant"]');
     const business = {
         bizId: $('meta[name="yelp-biz-id"]')[0].attribs.content,
         name: $('meta[itemprop="name"]', itemLocalBusiness)[0].attribs.content,
