@@ -20,6 +20,11 @@ Apify.main(async () => {
         process.exit(1);
     }
 
+    if (!searchTerm && !directUrls) {
+        log.error('A value must be set for either of `searchTerm` or `direcUrls` input parameters. Nothing will be scraped, exiting!');
+        process.exit(1);
+    }
+
     const urlCategories = categorizeUrls(directUrls);
     const businessPageRequests = urlCategories[CATEGORIES.BUSINESS].map(url => requests.yelpBusinessInfo(url));
     const searchRequests = urlCategories[CATEGORIES.SEARCH].map(url => requests.yelpSearch(url));
