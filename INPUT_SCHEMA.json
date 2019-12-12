@@ -34,7 +34,8 @@
             "editor": "stringList",
             "placeholderValue": "URL",
             "patternValue": "https:\\/\\/www\\.yelp\\.com\\/.+",
-            "uniqueItems": true
+            "uniqueItems": true,
+            "default": []
         },
         "reviewLimit": {
             "title": "Maximum reviews",
