@@ -25,6 +25,7 @@ function categorizeUrl(url) {
     if (pUrl.pathname.match(/\/search\/[^/]+(\?.*)?$/)) {
         return CATEGORIES.SEARCH;
     }
+    return CATEGORIES.UNKNOWN;
 }
 
 const categorizeUrls = (urls) => {
