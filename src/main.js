@@ -26,6 +26,7 @@ Apify.main(async () => {
     }
 
     const urlCategories = categorizeUrls(directUrls);
+    console.log(urlCategories)
     const businessPageRequests = urlCategories[CATEGORIES.BUSINESS].map(url => requests.yelpBusinessInfo(url));
     const searchRequests = urlCategories[CATEGORIES.SEARCH].map(url => requests.yelpSearch(url));
     if (searchTerm) {
