@@ -24,10 +24,6 @@ When using the scraper from Apify webpage of locally, there are multiple configu
 
 One of `searchTerm` or `directUrls` is required. If none are specified, nothing will be scrapped.
 
-If there are more reviews available to scrape due to pagination without additional resource usage, more there will be
-more than the given `reviewLimit`. As scraping business pages means additional page requests (and resource usage), the
-scraped follows `searchLimit` precisely and newer scrapes more search results than specified.
-
 ## Output
 
 You'll get your review in the following schema:
@@ -35,7 +31,7 @@ You'll get your review in the following schema:
 ```json
 {
   "business": {
-    "bizId": "<Yelp ID>",
+    "bizId": "<yelp ID>",
     "name": "<business name>",
     "aggregatedRating": "<average raring>",
     "priceRange": "<price range>",
@@ -46,20 +42,20 @@ You'll get your review in the following schema:
       "country": "<countryCode>"
     }
   },
-  "review": {
-    "date": "<review date>",
-    "rating": "<rating>",
-    "text": "<review text>",
-    "photos": [
-      "https://<photoURL>",
-      ...
-    ]
-  }
+  "reviews": [
+    {
+      "date": "<review date>",
+      "rating": "<rating>",
+      "text": "<review text>",
+      "photos": [
+        "https://<photoURL>",
+        ...
+      ]
+    },
+    ...
+  ]
 }
 ```
-
-There is one review per record in the output. For a single business, there are multiple records, each having the
-same value for `business` and `address` fields.
 
 ## Usage
 
