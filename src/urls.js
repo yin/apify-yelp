@@ -22,7 +22,7 @@ function categorizeUrl(url) {
     if (pUrl.pathname.match(/\/biz\/[^/]+(\?.*)?$/)) {
         return CATEGORIES.BUSINESS;
     }
-    if (pUrl.pathname.match(/\/search\/[^/]+(\?.*)?$/)) {
+    if (pUrl.pathname.match(/\/search\/?(\?.*)?$/)) {
         return CATEGORIES.SEARCH;
     }
     return CATEGORIES.UNKNOWN;

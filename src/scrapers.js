@@ -53,26 +53,36 @@ const createYelpPageHandler = ({ searchLimit, reviewLimit }, enqueue, pushResult
             await enqueue(followup);
         } else if (request.userData.label === CATEGORIES.REVIEW) {
             console.log('Handling reviews feed:', request.url);
-            const reviews = await extract.yelpBusinessReviews(request.url, json);
-            for (const review of reviews) {
-                await pushResults({
-                    business: request.userData.payload.business.name,
-                    address: request.userData.payload.business.address,
-                    review,
-                });
-            }
-            const scrapedReviewCount = request.userData.payload.reviewsScraped
-                ? request.userData.payload.reviewsScraped + reviews.length
-                : reviews.length;
-            const knownReviewCount = json.pagination ? json.pagination.totalResults : reviews.length;
-            console.log('\tScraped', scrapedReviewCount, 'reviews so far out of', knownReviewCount, 'reported reviews');
-            console.log('\tWe should scrape', reviewLimit, 'reviews and got', scrapedReviewCount);
-            if (scrapedReviewCount < knownReviewCount && scrapedReviewCount < reviewLimit) {
-                console.log('\tContinuing with next page of reviews');
-                await enqueue(requests.yelpBusinessReview(request.userData.payload.business.bizId, scrapedReviewCount,
+            const payload = (request && request.userData && request.userData.payload) || {};
+            const newReviews = await extract.yelpBusinessReviews(request.url, json);
+            const previousReviews = payload.scrapedReviews
+                ? payload.scrapedReviews
+                : [];
+            const allReviews = [
+                ...previousReviews,
+                ...newReviews,
+            ].slice(0, reviewLimit);
+
+            const reviewPageStart = payload.reviewPageStart
+                ? payload.reviewPageStart
+                : 0;
+            const totalReviewCount = json.pagination ? json.pagination.totalResults : allReviews.length;
+            console.log('\tFound', newReviews.length, 'reviews so far out of', totalReviewCount, 'total reviews');
+            console.log('\tWe should scrape', reviewLimit, 'reviews and got', allReviews.length);
+
+            if (allReviews.length < totalReviewCount && allReviews.length < reviewLimit && newReviews.length > 0) {
+                console.log('\tContinuing with next page of reviews...');
+                await enqueue(requests.yelpBusinessReview(payload.bizId, reviewPageStart + newReviews.length,
                     {
-                        ...request.userData.payload,
+                        ...payload,
+                        scrapedReviews: allReviews,
                     }));
+            } else {
+                console.log('\tNo more reviews to scrape, saving what we got');
+                await pushResults({
+                    business: request.userData.payload.business,
+                    reviews: allReviews,
+                });
             }
         } else {
             console.error('Unknown request label:', request.userData.label);

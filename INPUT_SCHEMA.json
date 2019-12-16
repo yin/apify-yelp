@@ -44,7 +44,7 @@
             "editor": "number",
             "unit": "per business",
             "default": 20,
-            "minimum": 10,
+            "minimum": 0,
             "maximum": 100
         },
         "proxy": {

@@ -1,0 +1,10 @@
+{
+  "searchTerm": "pizza",
+  "location": "NYC",
+  "searchLimit": 4,
+  "reviewLimit": 21,
+  "proxy": {
+    "useApifyProxy": true
+  },
+  "directUrls": []
+}
