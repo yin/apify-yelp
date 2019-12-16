@@ -49,9 +49,9 @@ const yelpBusinessInfo = (url, payload = null) => {
     };
 };
 
-const yelpBusinessReview = (bizId, start = undefined, payload = null) => {
+const yelpBusinessReview = (bizId, reviewPageStart = undefined, payload = null) => {
     return {
-        url: `https://www.yelp.com/biz/${bizId}/review_feed?rl=en&sort_by=relevance_desc${start ? `&start=${start}` : ''}`,
+        url: `https://www.yelp.com/biz/${bizId}/review_feed?rl=en&sort_by=relevance_desc${reviewPageStart ? `&start=${reviewPageStart}` : ''}`,
         headers: {
             'x-requested-by-react': true,
         },
@@ -59,8 +59,8 @@ const yelpBusinessReview = (bizId, start = undefined, payload = null) => {
             label: CATEGORIES.REVIEW,
             payload: {
                 ...payload,
-                reviews: { bizId },
-                reviewsScraped: start
+                bizId,
+                reviewPageStart,
             },
         },
     };
