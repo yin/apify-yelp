@@ -1,0 +1,10 @@
+{
+  "searchTerm": "salon krasy",
+  "location": "pardubice",
+  "searchLimit": 4,
+  "reviewLimit": 10,
+  "proxy": {
+    "useApifyProxy": true
+  },
+  "directUrls": []
+}
