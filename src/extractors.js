@@ -29,7 +29,7 @@ const yelpBusinessInfo = (url, $) => {
     const business = {
         bizId: $('meta[name="yelp-biz-id"]')[0].attribs.content,
         name: $('meta[itemprop="name"]', itemLocalBusiness)[0].attribs.content,
-        description: $('[itemprop="description"]', itemLocalBusiness).text(),
+        description: $('meta[property="og:description"]')[0].attribs.content,
         // TODO yin: Add category to this data extract - HTML structure is complicated
         aggregatedRating: Number($('[itemprop="aggregateRating"]', itemLocalBusiness).text()),
         priceRange: $('meta[itemprop="priceRange"]', itemLocalBusiness)[0].attribs.content,
