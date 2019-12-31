@@ -21,7 +21,7 @@
         "searchLimit": {
             "title": "Search results limit",
             "type": "integer",
-            "description": "How many search results (eq. Yelp bussinesses) should be processed per serach query",
+            "description": "How many search results (eq. Yelp bussinesses) should be processed per search query",
             "editor": "number",
             "default": 10,
             "minimum": 1,

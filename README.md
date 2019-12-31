@@ -6,12 +6,12 @@ The scraper is capable of performing Yelp searches, either by querying Yelp with
 direct URLs pointing to searches. Also, the scraper recognizes Yelp business pages and scrapes reviews from
 direct business URLs.
 
-The scraper uses Apify SDK [Apify SDK](https://sdk.apify.com/) and can be run locally or using
+The scraper uses [Apify SDK](https://sdk.apify.com/) and can be run locally or using
 [Apify cloud platform](https://apify.com).
 
 ## Input
 
-When using the scraper from Apify webpage of locally, there are multiple configurable input variables available:
+When using the scraper on the Apify platform or locally, there are multiple configurable input variables available:
 
 | Field | Type | Required | Default | Description |
 | ----- | ---- | -------- | ------- | ----------- |
@@ -59,7 +59,7 @@ You'll get your review in the following schema:
 
 ## Usage
 
-If you want to run the actor on **Apify platform**, you need to open the
+If you want to run the actor on the **Apify platform**, you need to open the
 [actor's page in the library](https://apify.com/yin/apify-yelp) and then click on `Try for free`. That will
 create a task (actor configuration) on your account. When using public actors, you don't need to build them since
 the author already did everything. You only need to provide input, and then you can run them. But keep in mind that
