@@ -33,7 +33,7 @@
             "description": "If you already have URL(s) of page(s) you wish to scrape, you can set them here. <br /><br /><strong>Either of 'Search' or 'Direct URLs' or both fields.</strong>",
             "editor": "stringList",
             "placeholderValue": "URL",
-            "patternValue": "|(https?:\/\/)?www.yelp.[a-z]+(\/.*)?",
+            "patternValue": "^(|(https?:\\/\\/)?www.yelp.[a-z]+(\\/.*)?)$",
             "uniqueItems": true,
             "default": []
         },
