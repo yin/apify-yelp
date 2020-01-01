@@ -1,3 +1,4 @@
+const Apify = require('apify');
 const { CATEGORIES } = require('./urls');
 const extract = require('./extractors');
 const requests = require('./request-factory');
@@ -36,7 +37,15 @@ const createYelpPageHandler = ({ searchLimit, reviewLimit }, enqueue, pushResult
             } else {
                 console.log('\tScraped ', previoslyScrapedSearchResults.length + resultCountToKeep,
                     ' results in total. No more search results to scrape.');
-                pushFailedSearch({ body });
+                const envs = Apify.getEnvs();
+                pushFailedSearch({
+                    date: Date.now(),
+                    stratedAt: envs.startedAt,
+                    userId: envs.userId,
+                    runId: envs.actorRunId,
+                    taskId: envs.actorTaskId,
+                    body,
+                });
             }
 
             for (const searchResultUrl of followupBusinessUrls) {
