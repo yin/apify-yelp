@@ -1,10 +1,10 @@
 const Apify = require('apify');
 
+// TODO yin: Do not hadnle failures by pushing #debug to default dataset - dedicate a dataset of it, e.g.: reuse failed-searches DS
 const createCrawler = (proxy, requestQueue, handlePage, handleFailure = null) => new Apify.CheerioCrawler({
     requestQueue,
     useApifyProxy: true,
-    // TODO gagyi: Remove the default here
-    apifyProxyGroups: proxy.apifyProxyGroups || ['BUYPROXIES84958'],
+    apifyProxyGroups: proxy.apifyProxyGroups,
     additionalMimeTypes: ['application/json'],
     desiredConcurrency: 10,
     maxConcurrency: 50,
