@@ -1,5 +1,17 @@
-const parseUrl = require('url-parse');
-const parseDomain = require('parse-domain');
+const { utils: { log } } = require('apify');
+const { parseDomain, ParseResultType } = require('parse-domain');
+
+const BASE_URL = 'https://www.yelp.com';
+
+/**
+ * @param {string} url
+ */
+const completeYelpUrl = (url) => {
+    if (!url.includes(BASE_URL)) {
+        url = `${BASE_URL}${url.startsWith('/') ? url : `/${url}`}`;
+    }
+    return url;
+};
 
 const CATEGORIES = {
     SEARCH: 'search',
@@ -9,13 +21,20 @@ const CATEGORIES = {
 };
 
 function categorizeUrl(url) {
-    const pUrl = parseUrl(url);
-    if (pUrl.protocol && !['http:', 'https:'].includes(pUrl.protocol)) {
+    let pUrl;
+    try {
+        pUrl = new URL(completeYelpUrl(url));
+        if (pUrl.protocol && !['http:', 'https:'].includes(pUrl.protocol)) {
+            return CATEGORIES.UNKNOWN;
+        }
+    } catch (e) {
+        log.debug('categorizeUrl error', { message: e.message, url });
         return CATEGORIES.UNKNOWN;
     }
+
     if (pUrl.host) {
         const pDomain = parseDomain(pUrl.host);
-        if (pDomain.domain !== 'yelp' && pDomain.subdomain !== 'www') {
+        if (pDomain.type === ParseResultType.Listed && pDomain.domain !== 'yelp' && !pDomain.subDomains.includes('www')) {
             return CATEGORIES.UNKNOWN;
         }
     }
@@ -34,8 +53,11 @@ const categorizeUrls = (urls) => {
     categories[CATEGORIES.BUSINESS] = [];
     categories[CATEGORIES.REVIEW] = [];
     categories[CATEGORIES.UNKNOWN] = [];
-    for (const url of urls) {
-        categories[categorizeUrl(url)].push(url);
+    if (Array.isArray(urls)) {
+        for (const url of urls) {
+            const fixedUrl = completeYelpUrl(url);
+            categories[categorizeUrl(fixedUrl)].push(fixedUrl);
+        }
     }
     return categories;
 };
@@ -44,4 +66,5 @@ module.exports = {
     CATEGORIES,
     categorizeUrl,
     categorizeUrls,
+    completeYelpUrl,
 };

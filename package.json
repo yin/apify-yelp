@@ -1,18 +1,16 @@
 {
 	"name": "yelp",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "This is a boilerplate of an Apify actor.",
 	"dependencies": {
-		"apify": "^0.17.0",
-		"cheerio": "^1.0.0-rc.3",
-		"parse-domain": "^2.3.4",
-		"request-promise": "^4.2.5",
-		"request-promise-native": "^1.0.8",
-		"url-parse": "^1.4.7"
+		"apify": "^0.21.3",
+		"parse-domain": "^3.0.2",
+		"request-promise": "^4.2.6",
+		"request-promise-native": "^1.0.9"
 	},
 	"devDependencies": {
-		"@apify/eslint-config": "0.0.3",
-		"eslint": "^6.4.0"
+		"@apify/eslint-config": "^0.1.0",
+		"eslint": "^7.5.0"
 	},
 	"scripts": {
 		"start": "node src/main.js",
