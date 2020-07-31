@@ -70,6 +70,8 @@ const yelpBusinessInfo = (url, $) => {
         console.log(e);
     }
 
+    const priceRange = $('div[class*="arrange-unit__"][class*="arrange-unit-fill__"] > span > span').first().text().trim();
+
     const business = {
         bizId: $('meta[name="yelp-biz-id"]').first().attr('content'),
         name: businessInfo.name || $('h1[class*="heading"]').first().text().trim(),
@@ -78,7 +80,7 @@ const yelpBusinessInfo = (url, $) => {
         type: businessInfo.type || null,
         phone: businessInfo.phone || null,
         aggregatedRating: businessInfo.aggregateRating || null,
-        priceRange: businessInfo.priceRange || $('div[class*="arrange-unit__"][class*="arrange-unit-fill__"] > span > span').first().text().trim(),
+        priceRange: businessInfo.priceRange || (priceRange.includes('$') ? priceRange : null),
         address: {
             addressLocality: businessInfo.address.addressLocality || null,
             addressRegion: businessInfo.address.addressRegion || null,
