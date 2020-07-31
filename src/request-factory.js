@@ -53,7 +53,9 @@ const yelpBusinessReview = (bizId, reviewPageStart = undefined, payload = null) 
     return {
         url: `https://www.yelp.com/biz/${bizId}/review_feed?rl=en&sort_by=relevance_desc${reviewPageStart ? `&start=${reviewPageStart}` : ''}`,
         headers: {
-            'x-requested-by-react': true,
+            'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
+            'X-Requested-With': 'XMLHttpRequest',
+            'X-Requested-By-React': true,
         },
         userData: {
             label: CATEGORIES.REVIEW,

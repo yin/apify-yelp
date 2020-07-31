@@ -1,18 +1,23 @@
 const Apify = require('apify');
 
+const { log } = Apify.utils;
+
 // TODO yin: Do not hadnle failures by pushing #debug to default dataset - dedicate a dataset of it, e.g.: reuse failed-searches DS
-const createCrawler = (proxy, requestQueue, handlePage, handleFailure = null) => new Apify.CheerioCrawler({
+/**
+ * @param {Apify.ProxyConfiguration} proxyConfiguration
+ * @param {Apify.RequestQueue} requestQueue
+ */
+const createCrawler = (proxyConfiguration, requestQueue, handlePage, handleFailure = null) => new Apify.CheerioCrawler({
     requestQueue,
-    useApifyProxy: true,
-    apifyProxyGroups: proxy.apifyProxyGroups,
+    proxyConfiguration,
     additionalMimeTypes: ['application/json'],
-    desiredConcurrency: 10,
     maxConcurrency: 50,
-    maxRequestRetries: 1,
+    maxRequestRetries: 2,
     handlePageTimeoutSecs: 60,
     handlePageFunction: handlePage,
     handleFailedRequestFunction: handleFailure || (async ({ request }) => {
-        console.error(`Request ${request.url} failed too many times`);
+        log.error(`Request ${request.url} failed too many times`);
+
         await Apify.pushData({
             '#debug': Apify.utils.createRequestDebugInfo(request),
         });

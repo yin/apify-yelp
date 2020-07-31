@@ -11,24 +11,25 @@ const { log } = Apify.utils;
 
 Apify.main(async () => {
     const input = await Apify.getInput();
-    const { searchTerm, location, searchLimit = 10, directUrls, reviewLimit = 20, proxy } = input;
+    const { searchTerm, location, searchLimit = 10, directUrls = [], reviewLimit = 20, proxy } = input;
 
     if (proxy && proxy.apifyProxyGroups && proxy.apifyProxyGroups.length === 0) delete proxy.apifyProxyGroups;
 
     if (!proxy) {
-        log.error('Proxy is required to run this actor. Please, configure a predefined proxy or provide your own proxy server!');
-        process.exit(1);
+        throw new Error('Proxy is required to run this actor. Please, configure a predefined proxy or provide your own proxy server!');
     }
 
     if (!searchTerm && !directUrls) {
-        log.error('A value must be set for either of `searchTerm` or `direcUrls` input parameters. Nothing will be scraped, exiting!');
-        process.exit(1);
+        throw new Error('A value must be set for either of `searchTerm` or `direcUrls` input parameters. Nothing will be scraped, exiting!');
     }
 
+    const proxyConfiguration = await Apify.createProxyConfiguration({
+        ...proxy,
+    });
     const urlCategories = categorizeUrls(directUrls);
-    console.log(urlCategories)
-    const businessPageRequests = urlCategories[CATEGORIES.BUSINESS].map(url => requests.yelpBusinessInfo(url));
-    const searchRequests = urlCategories[CATEGORIES.SEARCH].map(url => requests.yelpSearch(url));
+    console.log(urlCategories);
+    const businessPageRequests = urlCategories[CATEGORIES.BUSINESS].map((url) => requests.yelpBusinessInfo(url));
+    const searchRequests = urlCategories[CATEGORIES.SEARCH].map((url) => requests.yelpSearch(url));
     if (searchTerm) {
         searchRequests.push(requests.yelpSearchTermAndLocation(searchTerm, location));
     }
@@ -37,16 +38,16 @@ Apify.main(async () => {
     const resultsDataset = await Apify.openDataset();
     const failedSearchDataset = await Apify.openDataset('failed-search');
     const enqueue = async (request) => {
-        console.debug('Enqueuing URL: ', request.url);
+        log.debug('Enqueuing URL: ', { url: request.url });
         return requestQueue.addRequest(request);
     };
-    const pushDataTo = dataset => async (data) => {
+    const pushDataTo = (dataset) => async (data) => {
         return dataset.pushData(data);
     };
     try {
-        console.log('Scraping is starting up');
+        log.info('Scraping is starting up');
         for (const request of [...searchRequests, ...businessPageRequests]) {
-            console.log('Adding to queue:', request.url);
+            log.info('Adding to queue:', { url: request.url });
             await requestQueue.addRequest(request);
         }
         const scraper = scrapers.createYelpPageHandler(
@@ -55,12 +56,12 @@ Apify.main(async () => {
             pushDataTo(resultsDataset),
             pushDataTo(failedSearchDataset),
         );
-        const crawler = createCrawler(proxy, requestQueue, scraper);
+        const crawler = createCrawler(proxyConfiguration, requestQueue, scraper);
         await crawler.run();
     } catch (exception) {
-        console.log('Problem occured while crawling', exception);
+        log.exception(exception, 'Problem occured while crawling', exception);
     } finally {
         // This is how Java guys make sure log massages are coherent.
-        console.log('Scraping finished');
+        log.info('Scraping finished');
     }
 });

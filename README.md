@@ -28,19 +28,23 @@ One of `searchTerm` or `directUrls` is required. If none are specified, nothing 
 
 You'll get your review in the following schema:
 
-```json
+```jsonc
 {
-  "business": {
-    "bizId": "<yelp ID>",
-    "name": "<business name>",
-    "aggregatedRating": "<average raring>",
-    "priceRange": "<price range>",
-    "address": {
-      "streetAddress": "<business address>",
-      "postalCode": "<postal code>",
-      "locality": "<city>",
-      "country": "<countryCode>"
-    }
+  "directUrl": "<business url>",
+  "bizId": "<business id>",
+  "name": "<business id>",
+  "description": "<business description>",
+  "categories": ["<business categories>"],
+  "type": "<business type>",
+  "phone": "<business phone>",
+  "aggregatedRating": "<business rating>",
+  "priceRange": "<business price range>",
+  "address": {
+    "addressLocality": "<business locality>",
+    "addressRegion": "<business city>",
+    "streetAddress": "<business address>",
+    "postalCode": "<business postal>",
+    "addressCountry": "<business country>"
   },
   "reviews": [
     {
@@ -49,10 +53,10 @@ You'll get your review in the following schema:
       "text": "<review text>",
       "photos": [
         "https://<photoURL>",
-        ...
+        //...
       ]
     },
-    ...
+    //...
   ]
 }
 ```
