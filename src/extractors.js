@@ -23,11 +23,11 @@ const yelpSearchResultUrls = (url, $) => {
  * @param {CheerioAPI} $
  */
 const yelpBusinessInfo = (url, $) => {
-    const bizId = $("meta[name='yelp-biz-id']");
-    if (bizId.length === 0) {
+    const bizId = new Set($("meta[name='yelp-biz-id']").map((_, el) => $(el).attr('content')).get());
+    if (bizId.size === 0) {
         throw new Error('Page does not contain an Business Id');
     }
-    if (bizId.length > 1) {
+    if (bizId.size > 1) {
         throw new Error('Page does not contain a single Business Id');
     }
     const businessInfo = {
@@ -73,7 +73,7 @@ const yelpBusinessInfo = (url, $) => {
     const priceRange = $('div[class*="arrange-unit__"][class*="arrange-unit-fill__"] > span > span').first().text().trim();
 
     const business = {
-        bizId: $('meta[name="yelp-biz-id"]').first().attr('content'),
+        bizId: [...bizId.values()][0],
         name: businessInfo.name || $('h1[class*="heading"]').first().text().trim(),
         description: $('meta[property="og:description"]').first().attr('content'),
         categories: [...new Set(businessInfo.categories)].sort(), // keep categories stable
