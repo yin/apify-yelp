@@ -56,6 +56,7 @@ const yelpBusinessInfo = (url, $) => {
                 };
                 businessInfo.type = ld['@type'];
                 businessInfo.phone = ld.telephone;
+                businessInfo.cuisine = ld.servesCuisine;
             }
 
             if (!businessInfo.category && ld.itemListElement && ld.itemListElement.length) {
@@ -79,8 +80,11 @@ const yelpBusinessInfo = (url, $) => {
         categories: [...new Set(businessInfo.categories)].sort(), // keep categories stable
         type: businessInfo.type || null,
         phone: businessInfo.phone || null,
+        website: $('#wrap > div.main-content-wrap.main-content-wrap--full > div > div.lemon--div__373c0__1mboc.margin-t3__373c0__1l90z.margin-b6__373c0__2Azj6.border-color--default__373c0__3-ifU > div > div > div.lemon--div__373c0__1mboc.margin-b6__373c0__2Azj6.border-color--default__373c0__3-ifU > div > div > div:nth-child(1) > div > div.lemon--div__373c0__1mboc.stickySidebar--fullHeight__373c0__1szWY.arrange-unit__373c0__o3tjT.arrange-unit-grid-column--4__373c0__33Wpc.border-color--default__373c0__3-ifU > div > div > section.lemon--section__373c0__fNwDM.margin-b3__373c0__q1DuY.border-color--default__373c0__3-ifU > div > div:nth-child(1) > div > div.lemon--div__373c0__1mboc.arrange-unit__373c0__o3tjT.arrange-unit-fill__373c0__3Sfw1.border-color--default__373c0__3-ifU > p:nth-child(2) > a').text().trim(),
         aggregatedRating: businessInfo.aggregateRating || null,
         priceRange: businessInfo.priceRange || (priceRange.includes('$') ? priceRange : null),
+        cuisine: businessInfo.cuisine || null,
+        images: $('#wrap > div.main-content-wrap.main-content-wrap--full > div > div.lemon--div__373c0__1mboc.photoHeader__373c0__YdvQE.border-color--default__373c0__3-ifU > div.lemon--div__373c0__1mboc.carousel__373c0__ccjCD.border-color--default__373c0__3-ifU > div img').map((i, el) => $(el).attr('src')).get(),
         address: {
             addressLocality: businessInfo.address.addressLocality || null,
             addressRegion: businessInfo.address.addressRegion || null,

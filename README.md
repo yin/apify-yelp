@@ -40,6 +40,9 @@ You'll get your review in the following schema:
   "phone": "<business phone>",
   "aggregatedRating": "<business rating>",
   "priceRange": "<business price range>",
+  "cuisine": "<business cuisine>",
+  "website": "<business website>",
+  "images" : ["<bussiness image URL>"],
   "address": {
     "addressLocality": "<business locality>",
     "addressRegion": "<business city>",

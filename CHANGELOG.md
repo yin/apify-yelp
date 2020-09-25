@@ -1,5 +1,8 @@
 ### 2020-09-25
-- Added `maxRequestRetries` and increased its default from `2` to `10`
+- Added `maxRequestRetries` to input and increased its default from `2` to `10`
+- Added `cuisine` to output
+- Added `website` to output
+- Added `images` to output
 
 ### 1.0.0
 
