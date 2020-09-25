@@ -21,6 +21,7 @@ When using the scraper on the Apify platform or locally, there are multiple conf
 | directUrls | array | see below | `[]` | Predefined collection of string URLs to scrape review. Can be search URLs or business pages, other URLs will be ignored. |
 | reviewLimit | number | No | 20 | Minimum number of reviews to scrape. |
 | proxy | proxy configuration | Yes | `{ useApifyProxy: true }` | Proxy groups and other proxy related configuration. |
+| maxRequestRetries | number | No | 10 | How many times a failed request is retried before thrown away. Requests usually failed when blocked by the target site.
 
 One of `searchTerm` or `directUrls` is required. If none are specified, nothing will be scrapped.
 

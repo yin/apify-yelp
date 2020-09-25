@@ -1,12 +1,10 @@
 {
-	"name": "yelp",
+	"name": "yelp-scraper",
 	"version": "1.0.0",
-	"description": "This is a boilerplate of an Apify actor.",
+	"description": "Yelp Scraper on Apify",
 	"dependencies": {
-		"apify": "^0.21.3",
-		"parse-domain": "^3.0.2",
-		"request-promise": "^4.2.6",
-		"request-promise-native": "^1.0.9"
+		"apify": "^0.21.4",
+		"parse-domain": "^3.0.2"
 	},
 	"devDependencies": {
 		"@apify/eslint-config": "^0.1.0",

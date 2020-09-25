@@ -11,7 +11,7 @@ const { log } = Apify.utils;
 
 Apify.main(async () => {
     const input = await Apify.getInput();
-    const { searchTerm, location, searchLimit = 10, directUrls = [], reviewLimit = 20, proxy } = input;
+    const { searchTerm, location, searchLimit = 10, directUrls = [], reviewLimit = 20, maxRequestRetries = 10, proxy } = input;
 
     if (proxy && proxy.apifyProxyGroups && proxy.apifyProxyGroups.length === 0) delete proxy.apifyProxyGroups;
 
@@ -50,13 +50,13 @@ Apify.main(async () => {
             log.info('Adding to queue:', { url: request.url });
             await requestQueue.addRequest(request);
         }
-        const scraper = scrapers.createYelpPageHandler(
+        const pageHandler = scrapers.createYelpPageHandler(
             { searchLimit, reviewLimit },
             enqueue,
             pushDataTo(resultsDataset),
             pushDataTo(failedSearchDataset),
         );
-        const crawler = createCrawler(proxyConfiguration, requestQueue, scraper);
+        const crawler = createCrawler({ proxyConfiguration, requestQueue, pageHandler, maxRequestRetries });
         await crawler.run();
     } catch (exception) {
         log.exception(exception, 'Problem occured while crawling', exception);

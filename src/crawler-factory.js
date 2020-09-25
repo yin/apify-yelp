@@ -7,21 +7,18 @@ const { log } = Apify.utils;
  * @param {Apify.ProxyConfiguration} proxyConfiguration
  * @param {Apify.RequestQueue} requestQueue
  */
-const createCrawler = (proxyConfiguration, requestQueue, handlePage, handleFailure = null) => new Apify.CheerioCrawler({
+const createCrawler = ({ proxyConfiguration, requestQueue, pageHandler, maxRequestRetries }) => new Apify.CheerioCrawler({
     requestQueue,
     proxyConfiguration,
     additionalMimeTypes: ['application/json'],
     maxConcurrency: 50,
-    maxRequestRetries: 2,
+    maxRequestRetries,
     handlePageTimeoutSecs: 60,
-    handlePageFunction: handlePage,
-    handleFailedRequestFunction: handleFailure || (async ({ request }) => {
-        log.error(`Request ${request.url} failed too many times`);
-
-        await Apify.pushData({
-            '#debug': Apify.utils.createRequestDebugInfo(request),
-        });
-    }),
+    requestTimeoutSecs: 120,
+    handlePageFunction: pageHandler,
+    handleFailedRequestFunction: async ({ request }) => {
+        log.error(`Request ${request.url} failed ${request.retryCount + 1} times, it won't be retried anymore! If some data depended on this request, they are lost!`);
+    },
 });
 
 module.exports = {
