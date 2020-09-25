@@ -47,6 +47,14 @@
             "minimum": 0,
             "maximum": 999999
         },
+        "maxRequestRetries": {
+            "title": "Max page retries",
+            "type": "integer",
+            "description": "How many times a failed request is retried before thrown away. Requests usually failed when blocked by the target site.",
+            "default": 10,
+            "minimum": 0,
+            "maximum": 100
+        },
         "proxy": {
             "title": "Proxy configuration",
             "type": "object",

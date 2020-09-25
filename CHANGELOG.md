@@ -1,4 +1,7 @@
-## 1.0.0
+### 2020-09-25
+- Added `maxRequestRetries` and increased its default from `2` to `10`
+
+### 1.0.0
 
 * Data format changed (refer to README.md)
 * Fixed scraping information of business
