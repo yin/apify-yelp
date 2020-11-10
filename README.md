@@ -71,7 +71,7 @@ If you want to run the actor on the **Apify platform**, you need to open the
 [actor's page in the library](https://apify.com/yin/apify-yelp) and then click on `Try for free`. That will
 create a task (actor configuration) on your account. When using public actors, you don't need to build them since
 the author already did everything. You only need to provide input, and then you can run them. But keep in mind that
-resource usage will always be charged towards the account which runs the actor. You can also use [webhooks](#webhooks)
+resource usage will always be charged towards the account which runs the actor. You can also use [webhooks](https://docs.apify.com/webhooks)
 to let it run automatically after any actor or task.
 
 If you want to run the actor **locally**, you need to open the actor's [github page](https://github.com/yin/apify-yelp)
