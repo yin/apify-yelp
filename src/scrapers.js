@@ -5,7 +5,18 @@ const requests = require('./request-factory');
 
 const { log } = Apify.utils;
 
-const createYelpPageHandler = ({ searchLimit, reviewLimit }, enqueue, pushResults, pushFailedSearch) => (
+/**
+ * @param {{
+ *   searchLimit: number,
+ *   reviewLimit: number,
+ *   maxImages: number,
+ * }} params
+ * @param {(req: Apify.RequestOptions) => Promise<void>} enqueue
+ * @param {(data: any) => Promise<void>} pushResults
+ * @param {(data: any) => Promise<void>} pushFailedSearch
+ * @returns {Apify.CheerioHandlePage}
+ */
+const createYelpPageHandler = ({ searchLimit, reviewLimit, maxImages }, enqueue, pushResults, pushFailedSearch) => (
     async ({ request, body, $ = null, json = null }) => {
         if (request.userData.label === CATEGORIES.SEARCH) {
             log.info(`Handling search page: ${request.url}`);
@@ -33,7 +44,7 @@ const createYelpPageHandler = ({ searchLimit, reviewLimit }, enqueue, pushResult
                 params.delete('start');
                 params.append('start', searchResultsFound.toString());
                 await enqueue(requests.yelpSearch(url.toString(), {
-                    ...request.payload,
+                    ...request.userData.payload,
                     searchResultsScraped: previoslyScrapedSearchResults + followupBusinessUrls.length,
                 }));
             } else {
@@ -51,20 +62,48 @@ const createYelpPageHandler = ({ searchLimit, reviewLimit }, enqueue, pushResult
 
             for (const searchResultUrl of followupBusinessUrls) {
                 log.info(`Enqueuing business page url ${searchResultUrl}`);
-                await enqueue(requests.yelpBusinessInfo(searchResultUrl, request.payload));
+                await enqueue(requests.yelpBusinessInfo(searchResultUrl, request.userData.payload));
             }
         } else if (request.userData.label === CATEGORIES.BUSINESS) {
             log.info(`Handling business page: ${request.url}`);
-            const businessInfo = extract.yelpBusinessInfo(request.url, $);
-            const followup = requests.yelpBusinessReview(businessInfo.bizId, null, {
-                ...request.payload,
+            const businessInfo = extract.yelpBusinessPartial($);
+
+            await enqueue(requests[maxImages > 0 ? 'yelpBizPhotos' : 'yelpGraphQl'](request.url, {
+                ...request.userData.payload,
                 business: { ...request.userData.payload.business, ...businessInfo },
+            }));
+        } else if (request.userData.label === CATEGORIES.PHOTOS) {
+            const { nextUrl, images } = extract.yelpBizPhotos($);
+            const currentImages = (request.userData.payload.business.images || []);
+            const shouldContinue = nextUrl && maxImages && currentImages.length + images.length < maxImages;
+
+            await enqueue(requests[shouldContinue ? 'yelpBizPhotos' : 'yelpGraphQl'](
+                shouldContinue
+                    ? nextUrl
+                    : request.userData.payload.business.directUrl, {
+                    ...request.userData.payload,
+                    business: {
+                        ...request.userData.payload.business,
+                        images: [
+                            ...currentImages,
+                            ...images,
+                        ].slice(0, maxImages > 0 ? maxImages : undefined),
+                    },
+                },
+            ));
+        } else if (request.userData.label === CATEGORIES.GRAPHQL) {
+            const { payload } = request.userData;
+            const enrichedBusinessInfo = extract.yelpBusinessInfo(json);
+
+            const followup = requests.yelpBusinessReview(payload.business.bizId, null, {
+                ...request.userData.payload,
+                business: { ...request.userData.payload.business, ...enrichedBusinessInfo },
             });
             await enqueue(followup);
         } else if (request.userData.label === CATEGORIES.REVIEW) {
             log.info(`Handling reviews feed: ${request.url}`);
             const payload = (request && request.userData && request.userData.payload) || {};
-            const newReviews = await extract.yelpBusinessReviews(request.url, json);
+            const newReviews = extract.yelpBusinessReviews(request.url, json);
             const previousReviews = payload.scrapedReviews
                 ? payload.scrapedReviews
                 : [];
@@ -82,7 +121,7 @@ const createYelpPageHandler = ({ searchLimit, reviewLimit }, enqueue, pushResult
 
             if (allReviews.length < totalReviewCount && allReviews.length < reviewLimit && newReviews.length > 0) {
                 log.info('\tContinuing with next page of reviews...');
-                await enqueue(requests.yelpBusinessReview(payload.bizId, reviewPageStart + newReviews.length,
+                await enqueue(requests.yelpBusinessReview(payload.business.bizId, reviewPageStart + newReviews.length,
                     {
                         ...payload,
                         scrapedReviews: allReviews,

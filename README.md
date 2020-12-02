@@ -38,6 +38,7 @@ You'll get your review in the following schema:
   "categories": ["<business categories>"],
   "type": "<business type>",
   "phone": "<business phone>",
+  "reviewCount": "<business reviewCount>",
   "aggregatedRating": "<business rating>",
   "priceRange": "<business price range>",
   "cuisine": "<business cuisine>",

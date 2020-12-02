@@ -3,12 +3,14 @@
 	"version": "1.0.0",
 	"description": "Yelp Scraper on Apify",
 	"dependencies": {
-		"apify": "^0.21.4",
-		"parse-domain": "^3.0.2"
+		"apify": "^0.21.9",
+		"parse-domain": "^3.0.3",
+		"lodash": "^4.17.20"
 	},
 	"devDependencies": {
-		"@apify/eslint-config": "^0.1.0",
-		"eslint": "^7.5.0"
+		"@types/lodash": "^4.14.165",
+		"@apify/eslint-config": "^0.1.3",
+		"eslint": "^7.14.0"
 	},
 	"scripts": {
 		"start": "node src/main.js",

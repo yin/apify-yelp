@@ -55,6 +55,16 @@
             "minimum": 0,
             "maximum": 100
         },
+        "maxImages": {
+            "title": "Max images",
+            "description": "Maximum number of images per business",
+            "type": "integer",
+            "minimum": 0,
+            "unit": "per business",
+            "prefill": 10,
+            "default": 10,
+            "editor": "number"
+        },
         "proxy": {
             "title": "Proxy configuration",
             "type": "object",
@@ -63,5 +73,5 @@
             "editor": "proxy"
         }
     },
-    "required": [ "proxy" ]
+    "required": ["proxy"]
 }
