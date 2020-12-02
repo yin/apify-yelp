@@ -13,8 +13,10 @@ const createCrawler = ({ proxyConfiguration, requestQueue, pageHandler, maxReque
     additionalMimeTypes: ['application/json'],
     maxConcurrency: 50,
     maxRequestRetries,
-    handlePageTimeoutSecs: 60,
-    requestTimeoutSecs: 120,
+    useSessionPool: true,
+    handlePageTimeoutSecs: 180,
+    requestTimeoutSecs: 60,
+    ignoreSslErrors: true,
     handlePageFunction: pageHandler,
     handleFailedRequestFunction: async ({ request }) => {
         log.error(`Request ${request.url} failed ${request.retryCount + 1} times, it won't be retried anymore! If some data depended on this request, they are lost!`);

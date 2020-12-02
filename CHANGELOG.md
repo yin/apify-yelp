@@ -1,3 +1,7 @@
+### 2020-12-01
+
+- Fixed for new layout
+
 ### 2020-09-25
 - Added `maxRequestRetries` to input and increased its default from `2` to `10`
 - Added `cuisine` to output

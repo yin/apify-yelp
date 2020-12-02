@@ -11,7 +11,16 @@ const { log } = Apify.utils;
 
 Apify.main(async () => {
     const input = await Apify.getInput();
-    const { searchTerm, location, searchLimit = 10, directUrls = [], reviewLimit = 20, maxRequestRetries = 10, proxy } = input;
+    const {
+        maxImages = 10,
+        searchTerm,
+        location,
+        searchLimit = 10,
+        directUrls = [],
+        reviewLimit = 20,
+        maxRequestRetries = 10,
+        proxy,
+    } = input;
 
     if (proxy && proxy.apifyProxyGroups && proxy.apifyProxyGroups.length === 0) delete proxy.apifyProxyGroups;
 
@@ -36,7 +45,7 @@ Apify.main(async () => {
 
     const requestQueue = await Apify.openRequestQueue();
     const resultsDataset = await Apify.openDataset();
-    const failedSearchDataset = await Apify.openDataset('failed-search');
+    const failedSearchDataset = await Apify.openDataset('yelp-failed-search');
     const enqueue = async (request) => {
         log.debug('Enqueuing URL: ', { url: request.url });
         return requestQueue.addRequest(request);
@@ -51,7 +60,7 @@ Apify.main(async () => {
             await requestQueue.addRequest(request);
         }
         const pageHandler = scrapers.createYelpPageHandler(
-            { searchLimit, reviewLimit },
+            { searchLimit, reviewLimit, maxImages },
             enqueue,
             pushDataTo(resultsDataset),
             pushDataTo(failedSearchDataset),
