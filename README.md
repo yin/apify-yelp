@@ -69,7 +69,7 @@ You'll get your review in the following schema:
 ## Usage
 
 If you want to run the actor on the **Apify platform**, you need to open the
-[actor's page in the library](https://apify.com/yin/apify-yelp) and then click on `Try for free`. That will
+[actor's page in the Store](https://apify.com/yin/yelp-scraper) and then click on `Try for free`. That will
 create a task (actor configuration) on your account. When using public actors, you don't need to build them since
 the author already did everything. You only need to provide input, and then you can run them. But keep in mind that
 resource usage will always be charged towards the account which runs the actor. You can also use [webhooks](https://docs.apify.com/webhooks)
