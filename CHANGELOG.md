@@ -1,5 +1,8 @@
-### 2020-12-01
+### 2020-02-20
+- `searchTerm` and `location` deprecated in favor of `searchTerms` and `locations`. You can scrape any number of those in a single run now.
+- Refactored to SDK 1
 
+### 2020-12-01
 - Fixed for new layout
 
 ### 2020-09-25

@@ -1,22 +1,22 @@
 {
     "title": "Yelp Scraper",
-    "description": "Crawls Yelp restaurant reviews",
+    "description": "Provide either search terms or direct URLs.",
     "type": "object",
     "schemaVersion": 1,
     "properties": {
-        "searchTerm": {
-            "title": "Search term",
-            "type": "string",
-            "description": "Here you can provide a search query for Yelp bussinesses to scrape. <br /><br /><strong>Either of 'Search' or 'Direct URLs' or both fields.</strong>",
-            "editor": "textfield",
-            "prefill": "Pizza"
+        "searchTerms": {
+            "title": "Search terms",
+            "type": "array",
+            "description": "Here you can provide a search queries for Yelp bussinesses to scrape. <br /><br /><strong>Choose either of 'Search Terms' or 'Direct URLs'.</strong>",
+            "editor": "stringlist",
+            "prefill": ["Pizza"]
         },
-        "location": {
-            "title": "Location",
-            "type": "string",
-            "description": "",
-            "editor": "textfield",
-            "prefill": "NYC"
+        "locations": {
+            "title": "Locations",
+            "type": "array",
+            "description": "Locations that will be searched for each search term.",
+            "editor": "stringlist",
+            "prefill": ["NYC"]
         },
         "searchLimit": {
             "title": "Search results limit",

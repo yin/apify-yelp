@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "Yelp Scraper on Apify",
 	"dependencies": {
-		"apify": "^0.21.9",
+		"apify": "^1.0.1",
 		"parse-domain": "^3.0.3",
 		"lodash": "^4.17.20"
 	},
