@@ -8,14 +8,14 @@
             "title": "Search terms",
             "type": "array",
             "description": "Here you can provide a search queries for Yelp bussinesses to scrape. <br /><br /><strong>Choose either of 'Search Terms' or 'Direct URLs'.</strong>",
-            "editor": "stringlist",
+            "editor": "stringList",
             "prefill": ["Pizza"]
         },
         "locations": {
             "title": "Locations",
             "type": "array",
             "description": "Locations that will be searched for each search term.",
-            "editor": "stringlist",
+            "editor": "stringList",
             "prefill": ["NYC"]
         },
         "searchLimit": {
