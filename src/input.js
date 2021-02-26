@@ -53,7 +53,8 @@ module.exports.validateInput = (input) => {
         throw new Error('A value must be set for either of `searchTerm` or `direcUrls` input parameters. Nothing will be scraped, exiting!');
     }
 
-    if (Array.isArray(input.searchTerms) && Array.isArray(input.directUrls)) {
+    if (Array.isArray(input.searchTerms) && input.searchTerms.length > 0
+         && Array.isArray(input.directUrls) && input.directUrls.length > 0) {
         log.warning('Skipping searchTerms because directUrls were provided');
     }
 };

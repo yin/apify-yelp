@@ -69,6 +69,7 @@ const createYelpPageHandler = ({ searchLimit, reviewLimit, maxImages, requestQue
             await requestQueue.addRequest(requests[maxImages > 0 ? 'yelpBizPhotos' : 'yelpGraphQl'](request.url, {
                 ...request.userData.payload,
                 business: { ...request.userData.payload.business, ...businessInfo },
+                scrapeStartedAt: new Date().toISOString(),
             }));
         } else if (request.userData.label === CATEGORIES.PHOTOS) {
             const { nextUrl, images } = extract.yelpBizPhotos($);
@@ -126,6 +127,7 @@ const createYelpPageHandler = ({ searchLimit, reviewLimit, maxImages, requestQue
                 // log.info('\tNo more reviews to scrape, saving what we got');
                 await Apify.pushData({
                     ...request.userData.payload.business,
+                    scrapeFinishedAt: new Date().toISOString(),
                     reviews: allReviews,
                 });
             }
