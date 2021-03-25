@@ -71,6 +71,20 @@
             "description": "<strong>Proxy is required to run this actor!</strong> Either use Apify proxy, or provide your own proxy servers.",
             "prefill": { "useApifyProxy": true, "apifyProxyGroups": [] },
             "editor": "proxy"
+        },
+        "scrapeReviewerName": {
+            "title": "Reviewer name",
+            "type": "boolean",
+            "description": "Extract Reviewer name",
+            "default": false,
+            "sectionCaption": "Personal data (reviews only)",
+            "sectionDescription": "All of these fields contain personal data. Personal data is protected by GDPR in the European Union and by other regulations around the world. You should not scrape personal data unless you have a legitimate reason to do so. If you're unsure whether your reason is legitimate, consult your lawyers."
+        },
+        "scrapeReviewerUrl": {
+            "title": "Reviewer URL",
+            "type": "boolean",
+            "description": "Extract Reviewer URL",
+            "default": false
         }
     },
     "required": ["proxy"]

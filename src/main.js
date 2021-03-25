@@ -20,6 +20,8 @@ Apify.main(async () => {
         reviewLimit = 20,
         maxRequestRetries = 10,
         proxy,
+        scrapeReviewerName = false,
+        scrapeReviewerUrl = false,
     } = input;
 
     const proxyConfiguration = await proxyConfigurationValidated({ proxyConfig: proxy });
@@ -49,7 +51,15 @@ Apify.main(async () => {
         log.info('Adding to queue:', { url: request.url, label: request.userData.label });
         await requestQueue.addRequest(request);
     }
-    const handlePageFunction = scrapers.createYelpPageHandler({ searchLimit, reviewLimit, maxImages, requestQueue, failedDataset });
+    const handlePageFunction = scrapers.createYelpPageHandler({
+        searchLimit,
+        reviewLimit,
+        maxImages,
+        requestQueue,
+        failedDataset,
+        scrapeReviewerName,
+        scrapeReviewerUrl,
+    });
     const crawler = new Apify.CheerioCrawler({
         requestQueue,
         proxyConfiguration,

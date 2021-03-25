@@ -17,7 +17,15 @@ const { log } = Apify.utils;
  * @param {(data: any) => Promise<void>} pushFailedSearch
  * @returns {Apify.CheerioHandlePage}
  */
-const createYelpPageHandler = ({ searchLimit, reviewLimit, maxImages, requestQueue, failedDataset }) => (
+const createYelpPageHandler = ({
+    searchLimit,
+    reviewLimit,
+    maxImages,
+    requestQueue,
+    failedDataset,
+    scrapeReviewerName,
+    scrapeReviewerUrl,
+}) => (
     async ({ request, body, $ = null, json = null }) => {
         if (request.userData.label === CATEGORIES.SEARCH) {
             const searchResultUrls = extract.yelpSearchResultUrls(request.url, $);
@@ -101,7 +109,12 @@ const createYelpPageHandler = ({ searchLimit, reviewLimit, maxImages, requestQue
             await requestQueue.addRequest(followup);
         } else if (request.userData.label === CATEGORIES.REVIEW) {
             const payload = (request && request.userData && request.userData.payload) || {};
-            const newReviews = extract.yelpBusinessReviews(request.url, json);
+            const newReviews = extract.yelpBusinessReviews({
+                url: request.url,
+                json,
+                scrapeReviewerName,
+                scrapeReviewerUrl,
+            });
             const previousReviews = payload.scrapedReviews
                 ? payload.scrapedReviews
                 : [];
