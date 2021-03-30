@@ -1,5 +1,7 @@
-### 2020-12-01
+### 2021-03-30
+- Added support to different languages domains such as yelp.fr to input url.
 
+### 2020-12-01
 - Fixed for new layout
 
 ### 2020-09-25
