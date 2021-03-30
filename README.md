@@ -59,7 +59,15 @@ You'll get your review in the following schema:
       "photos": [
         "https://<photoURL>",
         //...
-      ]
+      ],
+      "isFunnyCount": 0,
+      "isUsefulCount": 1,
+      "isCoolCount": 1,
+      // Not a real name and URL
+      "reviewerName": "John Doe",
+      "reviewerUrl": "https://www.yelp.com//user_details?userid=12311231231231",
+      "reviewerReviewCount": 43,
+      "reviewerLocation": "Rowland Heights, CA"
     },
     //...
   ]
@@ -91,6 +99,8 @@ the `unwind` GET parameter:
 This functionality is documented in the [Apify API](https://docs.apify.com/api/v2#/reference/datasets/item-collection/get-items)
 documentation under Datasets -> Item collection -> Get items.
 
-## Contributions
+## Personal data
+Reviews can contain personal data like person name or profile link that can be used to track down the reviewer. Personal data is protected by GDPR in the European Union and by other regulations around the world. You should not scrape personal data unless you have a legitimate reason to do so. If you're unsure whether your reason is legitimate, consult your lawyers. This scraper allows you to granularly select which personal data fields you want to extract from reviews and which not. By default the scraper does not extract those fields.
 
-Feel free to fork me, and don't forget to submit your Pull Request!
+## Changelog
+This scraper is under active development. We are always implementing new features and fixing bugs. If you would like to see a new feature, please submit an issue on GitHub. Check [CHANGELOG.md](https://github.com//yin/apify-yelp/blob/master/CHANGELOG.md) for a list of recent updates

@@ -2,8 +2,6 @@
 	"name": "yelp",
 	"version": "1.0",
 	"buildTag": "latest",
-	"env": {
-        "APIFY_LOG_LEVEL": "DEBUG"
-    },
+	"env": {},
 	"template": "apify_project"
 }

@@ -1,5 +1,16 @@
+
 ### 2021-03-30
 - Added support to different languages domains such as yelp.fr to input url.
+
+### 2020-03-25
+*Features*
+- Enhanced reviews with more fields: `language`, `isFunnyCount`, `isUsefulCount`, `isCoolCount`,`reviewerName`, `reviewerUrl`, `reviewerReviewCount`, `reviewerLocation`
+- Scraping `reviewerName`, `reviewerUrl` requires enabling personal data input fields: `scrapeReviewerName`, `scrapeReviewerUrl`
+- Added section about GDPR and personal data protection to README
+
+### 2020-02-20
+- `searchTerm` and `location` deprecated in favor of `searchTerms` and `locations`. You can scrape any number of those in a single run now.
+- Refactored to SDK 1
 
 ### 2020-12-01
 - Fixed for new layout

@@ -1,76 +1,74 @@
-/**
- * Yelp restaurant and review scraper.
- */
 const Apify = require('apify');
 const { CATEGORIES, categorizeUrls } = require('./urls');
-const { createCrawler } = require('./crawler-factory');
 const requests = require('./request-factory');
 const scrapers = require('./scrapers');
+const { validateInput, makeBackwardsCompatibleInput, proxyConfigurationValidated } = require('./input');
 
 const { log } = Apify.utils;
 
 Apify.main(async () => {
     const input = await Apify.getInput();
+    makeBackwardsCompatibleInput(input);
+    validateInput(input);
+
     const {
         maxImages = 10,
-        searchTerm,
-        location,
+        searchTerms,
+        locations,
         searchLimit = 10,
         directUrls = [],
         reviewLimit = 20,
         maxRequestRetries = 10,
         proxy,
+        scrapeReviewerName = false,
+        scrapeReviewerUrl = false,
     } = input;
 
-    if (proxy && proxy.apifyProxyGroups && proxy.apifyProxyGroups.length === 0) delete proxy.apifyProxyGroups;
+    const proxyConfiguration = await proxyConfigurationValidated({ proxyConfig: proxy });
 
-    if (!proxy) {
-        throw new Error('Proxy is required to run this actor. Please, configure a predefined proxy or provide your own proxy server!');
-    }
+    let startRequests = [];
 
-    if (!searchTerm && !directUrls) {
-        throw new Error('A value must be set for either of `searchTerm` or `direcUrls` input parameters. Nothing will be scraped, exiting!');
-    }
-
-    const proxyConfiguration = await Apify.createProxyConfiguration({
-        ...proxy,
-    });
-    const urlCategories = categorizeUrls(directUrls);
-    console.log(urlCategories);
-    const businessPageRequests = urlCategories[CATEGORIES.BUSINESS].map((url) => requests.yelpBusinessInfo(url));
-    const searchRequests = urlCategories[CATEGORIES.SEARCH].map((url) => requests.yelpSearch(url));
-    if (searchTerm) {
-        searchRequests.push(requests.yelpSearchTermAndLocation(searchTerm, location));
+    // URLs trump search terms
+    if (Array.isArray(directUrls) && directUrls.length > 0) {
+        const urlCategories = categorizeUrls(directUrls);
+        console.log(urlCategories);
+        const businessPageRequests = urlCategories[CATEGORIES.BUSINESS].map((url) => requests.yelpBusinessInfo(url));
+        const searchRequests = urlCategories[CATEGORIES.SEARCH].map((url) => requests.yelpSearch(url));
+        startRequests = startRequests.concat(businessPageRequests).concat(searchRequests);
+    } else if (Array.isArray(searchTerms)) {
+        for (const searchTerm of searchTerms) {
+            for (const location of locations) {
+                startRequests.push(requests.yelpSearchTermAndLocation(searchTerm, location));
+            }
+        }
     }
 
     const requestQueue = await Apify.openRequestQueue();
-    const resultsDataset = await Apify.openDataset();
-    const failedSearchDataset = await Apify.openDataset('yelp-failed-search');
-    const enqueue = async (request) => {
-        log.debug('Enqueuing URL: ', { url: request.url });
-        return requestQueue.addRequest(request);
-    };
-    const pushDataTo = (dataset) => async (data) => {
-        return dataset.pushData(data);
-    };
-    try {
-        log.info('Scraping is starting up');
-        for (const request of [...searchRequests, ...businessPageRequests]) {
-            log.info('Adding to queue:', { url: request.url });
-            await requestQueue.addRequest(request);
-        }
-        const pageHandler = scrapers.createYelpPageHandler(
-            { searchLimit, reviewLimit, maxImages },
-            enqueue,
-            pushDataTo(resultsDataset),
-            pushDataTo(failedSearchDataset),
-        );
-        const crawler = createCrawler({ proxyConfiguration, requestQueue, pageHandler, maxRequestRetries });
-        await crawler.run();
-    } catch (exception) {
-        log.exception(exception, 'Problem occured while crawling', exception);
-    } finally {
-        // This is how Java guys make sure log massages are coherent.
-        log.info('Scraping finished');
+    const failedDataset = await Apify.openDataset('yelp-failed-search');
+    
+    log.info('Scraping is starting up');
+    for (const request of startRequests) {
+        log.info('Adding to queue:', { url: request.url, label: request.userData.label });
+        await requestQueue.addRequest(request);
     }
+    const handlePageFunction = scrapers.createYelpPageHandler({
+        searchLimit,
+        reviewLimit,
+        maxImages,
+        requestQueue,
+        failedDataset,
+        scrapeReviewerName,
+        scrapeReviewerUrl,
+    });
+    const crawler = new Apify.CheerioCrawler({
+        requestQueue,
+        proxyConfiguration,
+        additionalMimeTypes: ['application/json'],
+        maxConcurrency: 50,
+        maxRequestRetries,
+        handlePageTimeoutSecs: 180,
+        requestTimeoutSecs: 60,
+        handlePageFunction,
+    });
+    await crawler.run();
 });
