@@ -1,0 +1,3260 @@
+{
+    "bizDetailsPageProps": {
+        "actionBarControllerProps": {
+            "businessId": "yK4Vz-HVL4BtZTauid0etw",
+            "currentUserDidSave": false,
+            "isLoggedIn": false,
+            "saveTooltipText": null,
+            "shareBusinessModalProps": {
+                "facebookUrl": "http://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.yelp.cz%2Fbiz%2Fmeat-a-greet-praha%3Futm_campaign%3Dwww_business_share_popup%26utm_medium%3Dsocial%26utm_source%3Dfacebook.com",
+                "twitterUrl": "https://twitter.com/share?text=Pod%C3%ADvej+se+na+Meat+%26+Greet+na+%40yelp&amp;url=https%3A%2F%2Fwww.yelp.cz%2Fbiz%2Fmeat-a-greet-praha%3Futm_campaign%3Dwww_business_share_popup%26utm_medium%3Dsocial%26utm_source%3Dtwitter.com",
+                "shareUrl": "https://www.yelp.cz/biz/meat-a-greet-praha?utm_campaign=www_business_share_popup&amp;utm_medium=copy_link&amp;utm_source=(direct)",
+                "contentType": "business",
+                "sendToFriendProps": {
+                    "loggedIn": false,
+                    "submitUrl": "/send_to_friend/business/yK4Vz-HVL4BtZTauid0etw",
+                    "submitCsrfToken": "b'9ff8d978be8566f3e799aec1230baa05c7a29c73c8da52c42879cfcb38f40156'",
+                    "findFriendsUrl": "/find_friends/",
+                    "searchForFriendsUrl": "/send_to_friend/friend_type_ahead_v2",
+                    "searchForFriendsCsrfToken": "b'7606bb6011c7dd800da5fc9133d7a3c26e9d4c8fce507c0f47ab4b5c73eee6d7'"
+                }
+            },
+            "postingBlockedModalProps": null,
+            "collectionSaveModalProps": {
+                "collectionListUrl": "/collection/user/list_save_collections?item_id=yK4Vz-HVL4BtZTauid0etw",
+                "createCollectionCsrfToken": "db73342ddf96e4f38894a31378c327fe584809aee8c012c46e0a1ff15273fbb7",
+                "createCollectionUrl": "/collection/user/new",
+                "itemId": "yK4Vz-HVL4BtZTauid0etw",
+                "removeItemCsrfToken": "8da22f855851f361d10d24cd3532ab7048f7439a6d154f12b78f8d97b68539cb",
+                "removeItemUrl": "/collection/user/item/remove",
+                "saveItemCsrfToken": "5e9fb918da9f4f8da9d77ab6857becf829c52a5798fc9b605410c2ba562cf39a",
+                "saveItemUrl": "/collection/user/item/add"
+            }
+        },
+        "adBizComparisonProps": null,
+        "adCarouselAboveReviewProps": null,
+        "adCarouselBelowReviewProps": null,
+        "adUnitsAboveReviewProps": null,
+        "adUnitsBelowReviewProps": null,
+        "adUnitsSidebarProps": null,
+        "autoOpeningMessagingModalProps": null,
+        "bizContactInfoProps": {
+            "businessId": "yK4Vz-HVL4BtZTauid0etw",
+            "businessMenuProps": null,
+            "businessWebsite": {
+                "linkText": "magburgerhouse.cz",
+                "href": "/biz_redir?url=http%3A%2F%2Fmagburgerhouse.cz%2F&amp;cachebuster=1618815981&amp;website_link_type=website&amp;src_bizid=yK4Vz-HVL4BtZTauid0etw&amp;s=8a53f64b3dac937e66a60109641ff37002cc631940b6a08ed57d934f4ca6f0d0",
+                "rel": "noopener nofollow",
+                "target": "_blank"
+            },
+            "sendToPhoneProps": null,
+            "messageBusinessComposerProps": null
+        },
+        "bizDiscoveryTopPitchProps": null,
+        "bizPortfolioProps": null,
+        "bizQuestionsProps": null,
+        "businessAlertProps": null,
+        "businessId": "yK4Vz-HVL4BtZTauid0etw",
+        "businessIsAdvertiser": false,
+        "businessName": "Meat &amp; Greet",
+        "businessPostsCarouselProps": null,
+        "callToActionProps": null,
+        "checkInOfferProps": null,
+        "cityPageAlias": null,
+        "claimTeaserReviewSectionProps": null,
+        "claimTeaserSidebarProps": null,
+        "claimReminderProps": null,
+        "claimStatusGQLProps": null,
+        "collectionCardCarouselProps": null,
+        "consumerAlertProps": null,
+        "dealProps": null,
+        "facebookCustomAudienceProps": null,
+        "followButtonProps": null,
+        "featurePlacements": {
+            "adUnitsAboveReview": 2,
+            "fromTheBusiness": 2,
+            "mediaShowcase": 1,
+            "surveyQuestions": 2
+        },
+        "forceGermanLegalText": false,
+        "forceSsr": true,
+        "fromTheBusinessProps": null,
+        "fullscreenPitchProps": null,
+        "giftCertificateProps": null,
+        "healthDataProps": null,
+        "interfaceLanguageCode": "cs",
+        "interfaceLocaleCode": "cs_CZ",
+        "isContentfulLayout": true,
+        "isStickySidebarEnabled": false,
+        "liverampTrackingProps": null,
+        "mapBoxProps": {
+            "mapsUrl": "/map/meat-a-greet-praha",
+            "staticMapProps": {
+                "src": "https://maps.googleapis.com/maps/api/staticmap?size=315x150&amp;sensor=false&amp;client=gme-yelp&amp;language=cs&amp;scale=1&amp;zoom=15&amp;center=50.085942%2C14.429833&amp;markers=scale%3A1%7Cicon%3Ahttps%3A%2F%2Fyelp-images.s3.amazonaws.com%2Fassets%2Fmap-markers%2Fannotation_32x43.png%7C50.085942%2C14.429833&amp;signature=bckymnjE7QxNx9NNPwdPS90bKz4=",
+                "srcSet": "https://maps.googleapis.com/maps/api/staticmap?size=315x150&amp;sensor=false&amp;client=gme-yelp&amp;language=cs&amp;scale=1&amp;zoom=15&amp;center=50.085942%2C14.429833&amp;markers=scale%3A1%7Cicon%3Ahttps%3A%2F%2Fyelp-images.s3.amazonaws.com%2Fassets%2Fmap-markers%2Fannotation_32x43.png%7C50.085942%2C14.429833&amp;signature=bckymnjE7QxNx9NNPwdPS90bKz4= 1x, https://maps.googleapis.com/maps/api/staticmap?size=315x150&amp;sensor=false&amp;client=gme-yelp&amp;language=cs&amp;scale=2&amp;zoom=15&amp;center=50.085942%2C14.429833&amp;markers=scale%3A2%7Cicon%3Ahttps%3A%2F%2Fyelp-images.s3.amazonaws.com%2Fassets%2Fmap-markers%2Fannotation_64x86.png%7C50.085942%2C14.429833&amp;signature=2_iM4SW3pe0DWFf-C7nc9Thk86Q= 2x",
+                "width": 315,
+                "height": 150,
+                "altText": null,
+                "marker": null
+            },
+            "addressProps": {
+                "addressLines": [
+                    "Senovážné náměstí 994/2",
+                    "110 00 Praha"
+                ],
+                "containerBusiness": null,
+                "formattedCrossStreets": null,
+                "formattedNeighborhoods": "Nové Město, Praha 1"
+            },
+            "serviceAreaText": null,
+            "showDirectionsCta": true
+        },
+        "maternityDataProps": null,
+        "notRecommendedReviewsProps": null,
+        "offerCampaignCarouselProps": null,
+        "popularDishesCarouselProps": null,
+        "possibleBusinessOwnerModalProps": null,
+        "realtorDataProps": null,
+        "relatedBusinessesCarouselProps": null,
+        "requestAQuoteBillboardProps": null,
+        "requestAQuoteStickyBarProps": null,
+        "reviewFeedQueryProps": null,
+        "reviewHighlightsProps": null,
+        "seoLinksProps": null,
+        "serviceOfferingsProps": null,
+        "showGoogleOneTap": false,
+        "showPartnerAttribution": false,
+        "sidebarWidgetsProps": null,
+        "signupNudgeProps": null,
+        "specialHoursAlertProps": null,
+        "sponsoredBusinessHighlightsProps": null,
+        "staticReviewFeedProps": null,
+        "surveyQuestionsInlineProps": null,
+        "surveyQuestionsModalProps": null,
+        "yelpGuaranteedProps": null
+    },
+    "adrollTrackingProps": null,
+    "locale": "cs_CZ",
+    "messages": {
+        " and ": " a ",
+        " and let us know if you think the content you’ve reported may violate these guidelines.": " a dej nám vědět, proč si myslíš, že obsah, který jsi označil(a) může porušovat tyto pravidla.",
+        "%{businessName} also recommends": "%{businessName} také doporučuje",
+        "%{businessName} is a Yelp advertiser.": "%{businessName} is a Yelp advertiser.",
+        "%{businessOwnerRole} of %{businessName}": "%{businessOwnerRole} z podniku %{businessName}",
+        "%{confirmedDay} at %{confirmedTime}": "%{confirmedDay} v %{confirmedTime}",
+        "%{coverCount} person||||%{coverCount} people": "%{coverCount} osoba||||%{coverCount} osoby||||%{coverCount} osob",
+        "%{currentNumberLicense} of %{totalNumberLicense}": "%{currentNumberLicense} z %{totalNumberLicense}",
+        "%{current_page} of %{total_pages}": "%{current_page} z %{total_pages}",
+        "%{minWait} - %{maxWait} mins": "%{minWait} - %{maxWait} min",
+        "%{number} of %{total}": "%{number} z %{total}",
+        "%{rating} star rating": "%{rating} hvězdičkové hodnocení",
+        "%{smart_count} More Attribute||||%{smart_count} More Attributes": "%{smart_count} další atribut||||%{smart_count} další atributy||||%{smart_count} další atributů",
+        "%{smart_count} Photo||||%{smart_count} Photos": "%{smart_count} fotka||||%{smart_count} fotky||||%{smart_count} fotek",
+        "%{smart_count} Place||||%{smart_count} Places": "%{smart_count} místo||||%{smart_count} místa||||%{smart_count} míst",
+        "%{smart_count} Review||||%{smart_count} Reviews": "%{smart_count} recenze||||%{smart_count} recenze||||%{smart_count} recenzí",
+        "%{smart_count} Update||||%{smart_count} Updates": "%{smart_count} aktualizace||||%{smart_count} aktualizace||||%{smart_count} aktualizací",
+        "%{smart_count} other review that is not currently recommended||||%{smart_count} other reviews that are not currently recommended": "%{smart_count} další recenze, která momentálně není doporučena||||%{smart_count} další recenze, které momentálně nejsou doporučeny||||%{smart_count} dalších recenzí, které momentálně nejsou doporučeny",
+        "%{smart_count} person found this helpful||||%{smart_count} people found this helpful": "%{smart_count} člověk si myslí, že je to užitečné||||%{smart_count} lidé si myslí, že je to užitečné||||%{smart_count} lidí si myslí, že je to užitečné",
+        "%{smart_count} recommended review||||%{smart_count} recommended reviews": "%{smart_count} doporučená recenze||||%{smart_count} doporučené recenze||||%{smart_count} doporučených recenzí",
+        "%{smart_count} review mentioning “%{query}”||||%{smart_count} reviews mentioning “%{query}”": "%{smart_count} recenze zmiňuje výraz “%{query}”||||%{smart_count} recenze zmiňují výraz “%{query}”||||%{smart_count} recenzí zmiňuje výraz “%{query}”",
+        "%{smart_count} review that is not currently recommended||||%{smart_count} reviews that are not currently recommended": "%{smart_count} recenze, která momentálně není doporučena||||%{smart_count} recenze, která momentálně nejsou doporučeny||||%{smart_count} recenzí, která momentálně nejsou doporučeny",
+        "%{smart_count} review||||%{smart_count} reviews": "%{smart_count} recenze||||%{smart_count} recenze||||%{smart_count} recenzí",
+        "%{smart_count} violation: %{description}||||%{smart_count} violations: %{description}": "%{smart_count} porušení: %{description}||||%{smart_count} porušení: %{description}||||%{smart_count} porušení: %{description}",
+        "%{username} said": "%{username} píše",
+        "%{waitlistClosedTimeText}": "%{waitlistClosedTimeText}",
+        "(111) 111-1111": "(111) 111-1111",
+        "(Optional)": "(nepovinné)",
+        "(Optional) Any more details you'd like to share ?": "Chceš sdílet ještě nějaké informace? (nepovinné)",
+        "(no rating)": "(bez hodnocení)",
+        "*": "*",
+        "+%{smart_count} Popular Dish||||+%{smart_count} Popular Dishes": "+%{smart_count} populární jídlo||||+%{smart_count} populární jídla||||+%{smart_count} populárních jídel",
+        ", ": ", ",
+        "0 mins": "0 min",
+        "<0&gt;We need to confirm it’s really you.</0&gt; We’ve sent an email with a login link to <1&gt;%{emailAddress}</1&gt;. <2&gt;Send another one</2&gt;?": "<0&gt;Musíme potvrdit, že jsi to opravdu ty. </0&gt;Odeslali jsme ti email s přihlašovacím odkazem na <1&gt;%{emailAddress}</1&gt;. <2&gt;Odeslat znovu</2&gt;?",
+        "<0&gt;We will send your information to the business to help get you a response.</0&gt;": "<0&gt;We will send your information to the business to help get you a response.</0&gt;",
+        "<a %{attrs}&gt;Add more friends</a&gt; to see them here!": "<a %{attrs}&gt;Přidej více přátel</a&gt; a uvidíš je zde!",
+        "<a %{linkAttrs}&gt;Claim this business</a&gt; to view business statistics, receive messages from prospective customers, and respond to reviews.": "<a %{linkAttrs}&gt;Zaregistruj si stránku tvého podniku,</a&gt; ať můžeš mít přístup k obchodní analytice, dostávat zprávy od potenciálních zákazníků a odpovídat na recenze.",
+        "<b&gt;%{businessOwnerDisplayName} sent you thanks for this review.</b&gt; %{businessOwnerRole} of %{businessName}": "<b&gt;%{businessOwnerDisplayName} sent you thanks for this review.</b&gt; %{businessOwnerRole} of %{businessName}",
+        "<b&gt;%{businessOwnerDisplayName}</b&gt; sent you thanks for this review": "<b&gt;%{businessOwnerDisplayName}</b&gt; ti poslal(a) poděkování za tvoji recenzi",
+        "<b&gt;%{smart_count}</b&gt; friend||||<b&gt;%{smart_count}</b&gt; friends": "<b&gt;%{smart_count}</b&gt; friend||||<b&gt;%{smart_count}</b&gt; friends",
+        "<b&gt;%{smart_count}</b&gt; photo||||<b&gt;%{smart_count}</b&gt; photos": "<b&gt;%{smart_count}</b&gt; fotka||||<b&gt;%{smart_count}</b&gt; fotky||||<b&gt;%{smart_count}</b&gt; fotek",
+        "<b&gt;%{smart_count}</b&gt; review||||<b&gt;%{smart_count}</b&gt; reviews": "<b&gt;%{smart_count}</b&gt; recenze||||<b&gt;%{smart_count}</b&gt; recenze||||<b&gt;%{smart_count}</b&gt; recenzí",
+        "<b&gt;Date of experience:</b&gt; %{date_of_experience}": "<b&gt;Datum zkušenosti:</b&gt; %{date_of_experience}",
+        "<b&gt;Get your order in.</b&gt; This restaurant will stop accepting delivery orders in <b&gt;%{smart_count}</b&gt; minute||||<b&gt;Get your order in.</b&gt; This restaurant will stop accepting delivery orders in <b&gt;%{smart_count}</b&gt; minutes": "<b&gt;Objednej si včas.</b&gt; Tato restaurace přestane přijímat objednávky na rozvoz za <b&gt;%{smart_count}</b&gt; minutu||||<b&gt;Objednej si včas.</b&gt; Tato restaurace přestane přijímat objednávky na rozvoz za <b&gt;%{smart_count}</b&gt; minuty||||<b&gt;Objednej si včas.</b&gt; Tato restaurace přestane přijímat objednávky na rozvoz za <b&gt;%{smart_count}</b&gt; minut",
+        "<b&gt;Get your order in.</b&gt; This restaurant will stop accepting pickup orders in <b&gt;%{smart_count}</b&gt; minute||||<b&gt;Get your order in.</b&gt; This restaurant will stop accepting pickup orders in <b&gt;%{smart_count}</b&gt; minutes": "<b&gt;Objednej si včas.</b&gt; Tato restaurace přestane přijímat objednávky na vyzvednutí za <b&gt;%{smart_count}</b&gt; minutu||||<b&gt;Objednej si včas.</b&gt; Tato restaurace přestane přijímat objednávky na vyzvednutí za <b&gt;%{smart_count}</b&gt; minuty||||<b&gt;Objednej si včas.</b&gt; Tato restaurace přestane přijímat objednávky na vyzvednutí za <b&gt;%{smart_count}</b&gt; minut",
+        "<b&gt;Your trust is our top concern,</b&gt; so businesses can't pay to alter or remove their reviews. <a href=\"%{reviewFeedMythsUrl}\"&gt;Learn more.</a&gt;": "<b&gt;Tvoje důvěra je pro nás nejdůležitější</b&gt;, proto podniky nemohou zaplatit za změnu nebo odstranění recenzí. <a href=\"%{reviewFeedMythsUrl}\"&gt;Dozvědět se více.</a&gt;",
+        "<b&gt;Your trust is our top concern,</b&gt; so businesses can’t pay to alter or remove their reviews. <a href=\"%{reviewSupportUrl}\"&gt;Learn more about reviews.</a&gt;": "<b&gt;Tvoje důvěra je pro nás to nejdůležitější</b&gt;, proto podniky nemohou zaplatit za změnu nebo odstranění recenzí na jejich stránkách. <a href=\"%{reviewSupportUrl}\"&gt;Přečti si více o recenzích.</a&gt;",
+        "<ol&gt;\n            <li&gt;At the top of your Chrome window, near the web address, click <b&gt;the gray lock icon</b&gt;.</li&gt;\n            <li&gt;In the window that pops up, make sure <b&gt;Location</b&gt; is set to <b&gt;Ask (default)</b&gt; or <b&gt;Allow</b&gt;.</li&gt;\n            <li&gt;You're good to go! Reload this Yelp page and try your search again.</li&gt;\n        </ol&gt;\n        <p&gt;\n            If you're still having trouble, check out <a href=\"https://support.google.com/chrome/answer/142065?co=GENIE.Platform%3DDesktop&amp;hl=en&amp;oco=0\" target=\"_blank\"&gt;Google's support page</a&gt;.\n            You can also search near a city, place, or address instead.\n        </p&gt;": "<ol&gt;\n<li&gt;Nahoře ve tvém okně Chromu, v blízkosti webové adresy klikni na <b&gt;šedivou ikonku zámku</b&gt;.</li&gt;<li&gt;\nUjisti se, že v okně, které vyskočí je<b&gt;Lokace</b&gt; nastavená jako <b&gt;Zeptat se (default)</b&gt; nebo <b&gt;Bezpečná</b&gt;.</li&gt;\n<li&gt;Hotovo! Znovu načti tuto Yelpovou stránku a zkus tvoje hledání znovu.</li&gt;\n</ol&gt;\n<p&gt;\nPokud máš potíže, přečti si <a href=\"https://support.google.com/chrome/answer/142065?co=GENIE.Platform%3DDesktop&amp;hl=en&amp;oco=0\" target=\"_blank\"&gt;Stránku podpory Googlu</a&gt;.\nTaké místo toho můžeš vyhledávat v okolí města, místa nebo adresy.\n</p&gt;",
+        "<ol&gt;\n            <li&gt;At the top of your Firefox window, to the left of the web address, you should see a <b&gt;green lock</b&gt;. Click it.</li&gt;\n            <li&gt;In the window that pops up, you should see <b&gt;Blocked</b&gt; or <b&gt;Blocked Temporarily</b&gt; next to <b&gt;Access Your Location</b&gt;. Click the <b&gt;x</b&gt; next to this line.</li&gt;\n            <li&gt;You're good to go! Refresh this Yelp page and try your search again.</li&gt;\n        </ol&gt;\n        <p&gt;\n            If you're still having trouble, check out <a href=\"https://www.mozilla.org/en-US/firefox/geolocation/\" target=\"_blank\"&gt;Firefox's support page</a&gt;.\n            You can also search near a city, place, or address instead.\n        </p&gt;": "<ol&gt;\n<li&gt;Nahoře ve tvém okně Firefoxu, na levé straně od webové adresy bys měl(a) vidět <b&gt;zelený zámek</b&gt;. Klikni na něj.</li&gt;\n<li&gt;V okně, které vyskočí uvidíš <b&gt;Blokováno</b&gt; nebo <b&gt;Dočasně blokováno</b&gt; vedle <b&gt;Zpřístupnit tvoji lokaci</b&gt;.Klikni vedle <b&gt;x</b&gt; této věty.</li&gt;\n<li&gt;Hotovo! Znovu načti tuto Yelpovou stránku a zkus hledat znovu.</li&gt;\n</ol&gt;\n<p&gt;\nPokud máš stále potíže, navštiv <a href=\"https://www.mozilla.org/en-US/firefox/geolocation/\" target=\"_blank\"&gt;Stránku podpory Firefoxu</a&gt;.\nTaké můžeš místo toho zkusit vyhledávat v okolí města, místa nebo adresy.\n</p&gt;",
+        "<ol&gt;\n            <li&gt;At the top of your Opera window, near the web address, you should see a <b&gt;gray location pin</b&gt;. Click it.</li&gt;\n            <li&gt;In the window that pops up, click <b&gt;Clear This Setting</b&gt;</li&gt;\n            <li&gt;You're good to go! Reload this Yelp page and try your search again.</li&gt;\n        </ol&gt;\n        <p&gt;\n            If you're still having trouble, check out <a href=\"https://help.opera.com/en/presto/control-pages/#geolocation\" target=\"_blank\"&gt;Opera's support page</a&gt;.\n            You can also search near a city, place, or address instead.\n        </p&gt;": "<ol&gt;\n<li&gt;V horní části tvého okna vyhledávače, v blízkosti webové adresy bys měl(a) vidět <b&gt;šedý pin</b&gt;. Klikni na něj.</li&gt;\n<li&gt;V okně, které vyskočí klikni na <b&gt;Smazat toto nastavení</b&gt;</li&gt;\n<li&gt;Hotovo! Znovu načti tuto Yelpovou stránku a zkus tvoje hledání znovu.</li&gt;\n</ol&gt;\n<p&gt;\nPokud máš stále potíže, podívej se na <a href=\"https://help.opera.com/en/presto/control-pages/#geolocation\" target=\"_blank\"&gt;Stránku podpory Opery</a&gt;.\nTaké můžeš místo toho zkusit vyhledávat v okolí města, místa nebo adresy.\n</p&gt;",
+        "<ol&gt;\n            <li&gt;At the top-right hand corner of the window, click the <b&gt;button with three dots on it</b&gt;, then <b&gt;Settings</b&gt;.</li&gt;\n            <li&gt;Click <b&gt;Choose what to clear</b&gt; underneath <b&gt;Clear browsing data</b&gt;.</li&gt;\n            <li&gt;Click <b&gt;Show more</b&gt;, then make sure only the box labeled <b&gt;Location permissions</b&gt; is checked.</li&gt;\n            <li&gt;Click <b&gt;Clear</b&gt;.</li&gt;\n            <li&gt;You're good to go! Refresh this Yelp page and try your search again.</li&gt;\n        </ol&gt;\n        <p&gt;\n            You can also search near a city, place, or address instead.\n        </p&gt;": "<ol&gt;\n<li&gt; V pravém horním rohu okna klikni na <b&gt;tlačítko se třemi tečkami</b&gt;, poté na <b&gt;Nastavení</b&gt;.</li&gt;\n<li&gt;Klikni <b&gt;Vyber si, co chceš odstranit</b&gt; pod tím <b&gt;smaž vyhledávaná data</b&gt;.</li&gt;\n<li&gt;Klikni <b&gt;Zobrazit více</b&gt;, poté se ujisti, že je označen pouze čtvereček <b&gt;Povolení umístění</b&gt; je označeno.</li&gt;\n<li&gt;Klikni <b&gt;Odstranit</b&gt;.</li&gt;\n<li&gt;Hotovo! Znovu načti Yelpovou stránku a zkus tvoje vyhledávání znova.</li&gt;\n</ol&gt;\n<p&gt;\nTaké místo toho můžeš vyhledávat v okolí města, místa nebo adresy.\n</p&gt;",
+        "<ol&gt;\n            <li&gt;Click <b&gt;Safari</b&gt; in the Menu Bar at the top of the screen, then <b&gt;Preferences</b&gt;.</li&gt;\n            <li&gt;Click the <b&gt;Websites</b&gt; tab, then click <b&gt;Location</b&gt; on the left-hand panel.</li&gt;\n            <li&gt;Next to <b&gt;yelp.com</b&gt; in the right-hand panel, change the dropdown to <b&gt;Ask</b&gt; or <b&gt;Allow</b&gt;.</li&gt;\n            <li&gt;MacOS may now prompt you to enable Location Services. If it does, follow its instructions to enable Location Services for Safari.</li&gt;\n            <li&gt;Close the Settings dialog and refresh the page. Try using Current Location search again.</li&gt;\n        </ol&gt;\n        <p&gt;\n            If you're still having trouble, check out <a href=\"https://support.apple.com/en-us/HT204690\" target=\"_blank\"&gt;Safari's support page</a&gt;.\n            You can also search near a city, place, or address instead.\n        </p&gt;": "<ol&gt;\n<li&gt;Klikni na <b&gt;Safari</b&gt; v menu v horní části obrazovky a poté na <b&gt;Nastavení</b&gt;.</li&gt;\n<li&gt;klikni na záložku <b&gt;webové stránky</b&gt; poté klikni <b&gt;Location</b&gt; na levý panel.</li&gt;\n<li&gt;Poté na <b&gt;yelp.cz</b&gt; v levém panelu a změň nabídku na <b&gt;Zeptat se</b&gt; nebo <b&gt;Povolit</b&gt;.</li&gt;\n<li&gt;MacOS tě nyní může upozorňovat na povolení polohových služeb. Pokud se tak stane, následuj instrukce pro povolení polohových služeb pro Safari.</li&gt;\n<li&gt;Zavři dialog nastavení a obnov stránku. Zkus znovu použít vyhledávání akutální polohy.</li&gt;\n</ol&gt;\n<p&gt;\nPokud narazíš opět na problém zkus navštívit <a href=\"https://support.apple.com/en-us/HT204690\" target=\"_blank\"&gt;Stránku podpory Safari</a&gt;.\nRovněž můžeš hledat v okolí města, místa nebo adresy.\n</p&gt;",
+        "<ol&gt;\n            <li&gt;Click the <b&gt;gear</b&gt; in the upper-right hand corner of the window, then <b&gt;Internet options</b&gt;.</li&gt;\n            <li&gt;Click the <b&gt;Privacy</b&gt; tab in the new window that just appeared.</li&gt;\n            <li&gt;Uncheck the box labeled <b&gt;Never allow websites to request your physical location</b&gt; if it's already checked.</li&gt;\n            <li&gt;Click the button labeled <b&gt;Clear Sites</b&gt;.</li&gt;\n            <li&gt;You're good to go! Click <b&gt;OK</b&gt;, then refresh this Yelp page and try your search again.</li&gt;\n        </ol&gt;\n        <p&gt;\n            You can also search near a city, place, or address instead.\n        </p&gt;": "<ol&gt;\n<li&gt;Klikni na <b&gt;nástroje</b&gt; v pravém horním rohu okna, poté na <b&gt;Možnosti internetu</b&gt;.</li&gt;\n<li&gt;Klikni na záložku <b&gt;Soukromí</b&gt; v novém okně, které právě vyskočilo.</li&gt;\n<li&gt;Odfajfkuj označený čtvereček <b&gt;Nikdy nepovolovat webovým stránkám, aby požadovaly moje fyzické umístění</b&gt; pokud tak bylo označeno.</li&gt;\n<li&gt;Klikni na tlačítko <b&gt;Smazat stránky</b&gt;.</li&gt;\n<li&gt;Hotovo! Klikni <b&gt;OK</b&gt;, poté znovu načti Yelpovou stránku a zkus tvoje vyhledávání znovu.</li&gt;\n</ol&gt;\n<p&gt;\nTaké místo toho můžeš vyhledávat v okolí města, místa nebo adresy.\n</p&gt;",
+        "<p&gt;\n            Oops! We don't recognize the web browser you're currently using. Try checking the browser's help menu, or searching the Web for instructions to turn on HTML5 Geolocation for your browser.\n            You can also search near a city, place, or address instead.\n        </p&gt;": "<p&gt;\nKruciš! Nemůžeme rozpoznat webový vyhledavač, který momentálně používáš. Zkus se podívat do nápovědy vyhledavače nebo vyhledat na webu instrukce pro zapnutí HTML5 geolokace pro tvůj vyhledavač.\nTaké můžeš vyhledávat v okolí města, místa nebo adresy.\n</p&gt;",
+        "<p&gt;First, try refreshing the page and clicking Current Location again. Make sure you click <b&gt;Allow</b&gt; or <b&gt;Grant Permissions</b&gt; if your browser asks for your location. Also, try <a href=\"https://support.apple.com/en-us/HT204690\"&gt;enabling Location Services for your browser</a&gt;. If your browser still doesn't ask you, try these steps:</p&gt;": "<p&gt;Zaprvé, zkus obnovit stránku a kliknout znovu na Aktuální polohu. Ujisti se, že jsi klikl(a) na <b&gt;Povolit</b&gt; nebo na <b&gt;Poskytnout svolení</b&gt;, v případě, že tvůj vyhledavač požádá o tvoji lokaci. Můžeš také zkusit  <a href=\"https://support.apple.com/en-us/HT204690\"&gt; povolit polohové služby pro tvůj vyhledavač</a&gt;. Pokud tě tvůj vyhledavač nevyzve, zkus následující kroky:</p&gt;",
+        "<p&gt;First, try refreshing the page and clicking Current Location again. Make sure you click <b&gt;Allow</b&gt; or <b&gt;Grant Permissions</b&gt; if your browser asks for your location. If your browser doesn't ask you, try these steps:</p&gt;": "<p&gt;Zaprvé, zkus obnovit stránku a kliknout znovu na Aktuální polohu. Ujisti se, že jsi klikl(a) na <b&gt;Povolit</b&gt; nebo na <b&gt;Poskytnout svolení</b&gt;, pokud tvůj vyhledavač požádá o tvoji lokaci. Pokud tě tvůj vyhledavač nevyzve, zkus následující kroky:</p&gt;",
+        "<p&gt;This business appears to be affiliated with a group of businesses that have engaged in efforts to manipulate their reputation on Yelp. As a result, we’ve decided not to recommend any of the reviews for this business.</p&gt;<p&gt;Some of the customers of this group have reported being pressured to write positive reviews in exchange for discounts, to re-post positive reviews for affiliated businesses in other states, and to accept refunds in exchange for removing critical reviews.</p&gt;<p&gt;Alerts like these are part of Yelp’s Consumer Protection Initiative, which is designed to empower and protect consumers.</p&gt;": "<p&gt;Tento podnik se zdá být součástí skupiny podniků, které se pokoušely manipulovat s reputací na Yelpu. Proto jsme se rozhodli nedoporučovat žádné z recenzí pro tento podnik</p&gt;<p&gt;Někteří ze zákazníků této skupiny nahlásili, že na ně bylo naléháno, aby napsali kladné recenze výměnou za slevy, nebo aby přepublikovali pozitivní recenze spřízněným podnikům, či jim bylo nabídnuto vrácení peněz za smazání kritických recenzí.</p&gt;<p&gt;Upozornění jako je toto jsou součástí iniciativy pro ochranu zákazníků Yelpu, která je vytvořena pro posílení a ochranu zákazníků.</p&gt;",
+        "<p&gt;This business recently participated in a film that makes false statements about Yelp and our reviewers.</p&gt;<p&gt; While some say this is the era of fake news, we still think facts matter. Businesses can certainly say what they wish, but you should learn the truth about this business’ interaction with Yelp.</p&gt;": "<p&gt;Tento podnik se nedávno objevil ve filmu, který uváděl nepravdivé informace o Yelpu a o našich recenzentech.</p&gt;<p&gt; Byť někteří lidé říkají, že žijeme v éře fake news, myslíme si, že na faktech záleží. Podniky samozřejmě mohou říkat, co chtějí, ale ty bys měl(a) znát pravdu o interakci tohoto podniku s Yelpem.</p&gt;",
+        "<span itemprop=\"reviewCount\"&gt;%{smart_count}</span&gt; recommended review||||<span itemprop=\"reviewCount\"&gt;%{smart_count}</span&gt; recommended reviews": "<span itemprop=\"reviewCount\"&gt;%{smart_count}</span&gt; doporučená recenze||||<span itemprop=\"reviewCount\"&gt;%{smart_count}</span&gt; doporučené recenze||||<span itemprop=\"reviewCount\"&gt;%{smart_count}</span&gt; doporučených recenzí",
+        "<span itemprop=\"reviewCount\"&gt;%{smart_count}</span&gt; review||||<span itemprop=\"reviewCount\"&gt;%{smart_count}</span&gt; reviews": "<span itemprop=\"reviewCount\"&gt;%{smart_count}</span&gt; recenze||||<span itemprop=\"reviewCount\"&gt;%{smart_count}</span&gt; recenze||||<span itemprop=\"reviewCount\"&gt;%{smart_count}</span&gt; recenzí",
+        "<strong&gt;%{businessOrOwnerName} says,</strong&gt; &amp;ldquo;%{recommendationText}&amp;rdquo;": "<strong&gt;%{businessOrOwnerName} říká,</strong&gt; &amp;ldquo;%{recommendationText}&amp;rdquo;",
+        "<strong&gt;%{distance}</strong&gt; away from %{businessName}": "<strong&gt;%{distance}</strong&gt; od podniku %{businessName}",
+        "<strong&gt;%{distance}</strong&gt; away from this business": "<strong&gt;%{distance}</strong&gt; od tohoto podniku",
+        "<strong&gt;Go mobile </strong&gt; with the <a href=%{mobileAppLinkHref}&gt; %{mobileAppLinkText} </a&gt; for iOS and Android": "<strong&gt;Buď mobilní</strong&gt; s naší<a href=%{mobileAppLinkHref}&gt; %{mobileAppLinkText} </a&gt; pro iOS a Android.",
+        "A business owner paid for this ad. For more information visit <a href=\"%{bizSiteUrl}\"&gt;Yelp for Business</a&gt;.": "A business owner paid for this ad. For more information visit <a href=\"%{bizSiteUrl}\"&gt;Yelp for Business</a&gt;.",
+        "A link to the business owner’s business": "Odkaz na majitelův podnik",
+        "A public Collection can be openly featured on Yelp and alerts followers when you make updates. A non-public Collection can still be visible to others if you share a link to it.": "Veřejná sbírka je veřejně dostupná a viditelná na Yelpu a její sledující budou upozorněni, jakmile provedeš aktualizaci. Neveřejná sbírka může být viditelná pro uživatele, s kterými budeš sdílet odkaz.",
+        "A-OK.": "OK.",
+        "About": "Informace",
+        "About Me": "Můj profil",
+        "About This Agent": "O tomto agentovi",
+        "About This Provider": "O tomto poskytovateli",
+        "About Yelp": "O Yelpu",
+        "About the Business": "Informace o podniku",
+        "Account Settings": "Nastavení účtu",
+        "Ad": "Reklama",
+        "Ad Choices": "Ad Choices",
+        "Add More": "Přidat více",
+        "Add Photo": "Přidat fotku",
+        "Add a free services offered section to your Yelp page to get better leads.": "Pro lepší leady přidej sekci bezplatných služeb na tvoji Yelpovou stránku.",
+        "Add a free services offered section to your Yelp page to get better leads. Edit and confirm your services.": "Add a free services offered section to your Yelp page to get better leads. Edit and confirm your services.",
+        "Add a note": "Přidej poznámku",
+        "Add a note (optional)": "Add a note (optional)",
+        "Add owner reply": "Přidat odpověď majitele",
+        "Add photo": "Přidat fotku",
+        "Add photo or video": "Přidat fotku či video",
+        "Add service offerings": "Přidat nabídku služeb",
+        "Add this review to your website by copying the code below.": "Přidej tuto recenzi na svůj web zkopírováním kódu níže.",
+        "Ads": "Reklamy",
+        "Advertise on Yelp": "Inzeruj na Yelpu",
+        "Allow notifications": "Allow notifications",
+        "Almost done! Set the crop for your profile photo.": "Almost done! Set the crop for your profile photo.",
+        "Already on Yelp? <0&gt;Log in</0&gt;": "Už na Yelpu jsi? <0&gt;Přihlas se</0&gt;",
+        "Amenities and More": "Amenities and More",
+        "Answer this question": "Odpověď na tuto otázku",
+        "Appointment": "Schůzka",
+        "Are you a human? Please complete the bot challenge below.": "Jsi člověk? Prosím potvrď, že nejsi robot.",
+        "Are you sure you would like to remove this unfinished review?": "Určitě chceš odstranit tuto rozepsanou recenzi?",
+        "Ask the Community": "Zeptej se komunity",
+        "BEFORE": "PŘED",
+        "Back": "Zpět",
+        "Back to Login": "Zpět na přihlášení",
+        "Based on data from <a %{linkAttrs}&gt;%{providerName}</a&gt;": "Na základě dat poskytnutých od <a %{linkAttrs}&gt;%{providerName}</a&gt;",
+        "Before Photo": "Fotka před",
+        "Before you go, do you want updates about this business?": "Before you go, do you want updates about this business?",
+        "Best Sushi Bars, Favorite Cafes...": "Nejlepší sushi restaurace, oblíbené kavárny...",
+        "Birthday": "Narozeniny",
+        "Blog": "Blog",
+        "Browse Files": "Prohledej soubory",
+        "Business Listings provided by Yellow Pages®": "Záznamy o podnicích poskytnuté Yellow Pages®",
+        "Business Logo": "Firemní logo",
+        "Business Owner": "Majitel podniku",
+        "Business Success Stories": "Příběhy úspěšných podniků",
+        "Business Support": "Podpora pro podniky",
+        "Business hours may be different today.": "Otevírací doba může být dnes odlišná.",
+        "Business listing provided by": "Záznam podniku získán od",
+        "Business owner information": "Informace o majiteli podniku",
+        "Business owners and employees can reply to reviews or thank users": "Business owners and employees can reply to reviews or thank users",
+        "Business owners paid for these ads. For more information visit <a href=\"%{bizSiteUrl}\"&gt;Yelp for Business</a&gt;.": "Business owners paid for these ads. For more information visit <a href=\"%{bizSiteUrl}\"&gt;Yelp for Business</a&gt;.",
+        "Business website": "Webové stránky",
+        "Buy Gift Certificate": "Kup dárkový certifikát",
+        "Buy Now": "Koupit ihned",
+        "Buy now": "Koupit ihned",
+        "By %{userName}": "Od %{userName}",
+        "By appointment only": "Pouze na objednání",
+        "By continuing, I agree to Yelp’s <0&gt;Terms of Service</0&gt; and acknowledge Yelp’s <1&gt;Privacy Policy</1&gt;, including Yelp’s cookie policy.": "Pokračováním souhlasím s: <0&gt;Všeobecnými obchodními podmínkami</0&gt;Yepu a potvrzuji, že jsem si přečetl(a) <1&gt;Zásady ochrany soukromí a osobních údajů</1&gt;, včetně Zásad používání cookies.",
+        "By proceeding, you agree to Yelp’s <0&gt;Terms of Service</0&gt; and acknowledge Yelp’s <1&gt;Privacy Policy</1&gt;.": "Pokračováním souhlasím s: <0&gt;Všeobecnými obchodními podmínkami</0&gt;Yepu a potvrzuji, že jsem si přečetl(a) <1&gt;Zásady ochrany soukromí a osobních údajů</1&gt;.",
+        "Can you provide additional information about your situation?": "Můžeš nám prosím poskytnout podrobnější informace k této situaci?",
+        "Can you tell me more about your services?": "Můžete mi říct více o vašich službách?",
+        "Cancel": "Zrušit",
+        "Cancel Reminder": "Zrušit připomínku",
+        "Caption": "Popisek",
+        "Captions help others identify what's in the photo.": "Popisky pomůžou ostatním identifikovat, co je na fotce.",
+        "Careers": "Kariéra",
+        "Carrier rates may apply": "Může být zpoplatněno tvým mobilním operátorem",
+        "Categories": "Kategorie",
+        "Change Photo": "Změnit fotku",
+        "Check back later for more updates from this business.": "Check back later for more updates from this business.",
+        "Check back later for new updates": "Check back later for new updates",
+        "Check out %{reviewUser}’s review of %{businessName} on @yelp": "Podívej se na @yelp na recenzi uživatele %{reviewUser} na podnik %{businessName}",
+        "Check out the evidence <a href=\"%{evidenceUrl}\" target=\"_blank\"&gt;here</a&gt;.": "Prohlédni si evidenci <a href=\"%{evidenceUrl}\" target=\"_blank\"&gt;zde</a&gt;.",
+        "Check your phone to view the link now!": "Podívej se na svůj mobil a prohlédni si odkaz!",
+        "Check your place in line from the text we've sent to %{phoneNumber}.": "Monitoruj tvoje místo ve frontě přes textovku, kterou jsme ti poslali na %{phoneNumber}.",
+        "Chinese": "Čínská kuchyně",
+        "Choose Your Compliment:": "Vyber si tvůj kompliment:",
+        "Choose how you want to post your review on Yelp": "Vyber si, jak chceš zveřejnit svoji recenzi na Yelpu",
+        "City": "Město",
+        "Claim This Business": "Zaregistrovat tento podnik",
+        "Claim This Free Business Page": "Zaregistrovat tuto bezplatnou stránku podniku",
+        "Claim this business. It’s free.": "Zaregistruj si tento podnik. Je to zdarma.",
+        "Claim your Business Page": "Zaregistruj si stránku tvého podniku",
+        "Claim your business to immediately update business information, respond to reviews, and more!": "Zaregistruj si svůj podnik a obratem aktualizuj informace o podniku, odpovídej na recenze a ještě mnohem více!",
+        "Claim your business to immediately update business information, track page views, and more!": "Zaregistruj si svůj podnik a obratem aktualizuj informace o podniku, monitoruj zobrazení stránky a ještě mnohem více!",
+        "Claimed": "Zaregistrováno",
+        "Clear results": "Smazané výsledky",
+        "Close": "Zavřít",
+        "Closed": "Uzavřena",
+        "Closed now": "Nyní zavřeno",
+        "Closed today.": "Dnes je zavřeno.",
+        "Closed, special hours": "Zavřeno, speciální otevírací doba",
+        "Collapse hours": "Rozbalit hodiny",
+        "Collection Name": "Název sbírky",
+        "Collections": "Sbírky",
+        "Collections Including %{businessName}": "Sbírky, které obsahují podnik %{businessName}",
+        "Comment from %{businessOwnerDisplayName} of %{businessName}": "Komentář od %{businessOwnerDisplayName} z podniku %{businessName}",
+        "Complete this step to create your account.": "Dokonči tento krok pro vytvoření tvého účtu.",
+        "Compliment": "Kompliment",
+        "Confirm remove review": "Confirm remove review",
+        "Confirmation": "Potvrzení",
+        "Consumer Alert": "Upozornění pro spotřebitele",
+        "Consumer Alert: Get the Facts": "Upozornění pro spotřebitele: Přečtěte si fakta",
+        "Consumer Alert: Poor Food Safety Score!": "Varování pro spotřebitele: Špatná hygiena podniku!",
+        "Consumer Alert: Questionable Legal Threats": "Varování pro spotřebitele: Sporné právní hrozby",
+        "Content Guidelines": "Pravidla obsahu",
+        "Continue with Facebook": "Pokračovat s Facebookem",
+        "Continue with Google": "Pokračovat s Googlem",
+        "Continue with email": "Pokračovat s emailem",
+        "Cool": "Super",
+        "Copy Code": "Zkopíruj kód",
+        "Copyright © 2004–%{currentYear} Yelp": "Copyright © 2004–%{currentYear} Yelp",
+        "Countries": "Státy",
+        "Create Reminder": "Vytvořit připomínku",
+        "Current Location": "Aktuální poloha",
+        "Current wait:": " Aktuální čekací doba: ",
+        "Cute Pic": "Hezká fotka",
+        "Czech": "Česká kuchyně",
+        "Danish": "Dánská kuchyně",
+        "Deliver to": "Dovézt na",
+        "Deliveries available for %{smart_count} minute||||Deliveries available for %{smart_count} minutes": "Rozvozy jsou dostupné po dobu %{smart_count} minuty||||Rozvozy jsou dostupné po dobu %{smart_count} minut||||Rozvozy jsou dostupné po dobu %{smart_count} minut",
+        "Delivery Address": "Doručovací adresa",
+        "Delivery address": "Doručovací adresa",
+        "Developers": "Vývojáři",
+        "DexYP logo": "DexYP logo",
+        "Did you mean: ": "Máš na mysli:",
+        "Did you mean?": "Máš na mysli?",
+        "Didn't mean to?": "Didn't mean to?",
+        "Discover": "Objevuj",
+        "Don't work here?": "Don't work here?",
+        "Done": "Hotovo",
+        "Drag and drop a photo here||||Drag and drop photos here": "Drag and drop a photo here||||Drag and drop photos here",
+        "Dutch": "Dutch",
+        "Edit": "Upravit",
+        "Edit and confirm": "Upravit a potvrdit",
+        "Edit business info": "Upravit informace o podniku",
+        "Edit review": "Upravit recenzi",
+        "Eek! Methinks not.": "Ach jo! Sem už raději ne.",
+        "Elite '%{year}": "Elita '%{year}",
+        "Elites": "Elity",
+        "Email": "Email",
+        "Email addresses": "Emailové adresy",
+        "Embed This Review": "Vložit tuto recenzi",
+        "Embed review": "Vložit recenzi",
+        "Embedding Code": "Kód pro vložení",
+        "English": "Anglicky",
+        "Enter address again": "Zadej znovu adresu",
+        "Enter delivery address": "Zadej doručovací adresu",
+        "Enter your address to find businesses that deliver to you": "Zadej svou adresu pro nalezení podniku, který k tobě rozváží",
+        "Enter your delivery address": "Zadej adresu pro rozvoz",
+        "Enter your gender": "Uveď svoje pohlaví",
+        "Enter your home address": "Zadej svoji domácí adresu",
+        "Error": "Chyba",
+        "Established in %{yearEstablished}.": "Založeno v roce %{yearEstablished}.",
+        "Events": "Události",
+        "Explore Delivery Restaurants": "Prozkoumej restaurace, které rozvážejí",
+        "Explore delivery restaurants": "Prozkoumej restaurace, které rozvážejí",
+        "Female": "Žena",
+        "Filipino": "Filipínská kuchyně",
+        "Find": "Hledej",
+        "Find Delivery": "Najít rozvoz",
+        "Find Friends": "Hledej přátele",
+        "Find a Table": "Najít stůl",
+        "Find delivery": "Najít rozvoz",
+        "Finding your location...": "Hledáme tvé umístění...",
+        "Finish My Review": "Dokončit recenzi",
+        "Finnish": "Finnish",
+        "First Name": "Křestní jméno",
+        "Follow": "Sledovat",
+        "Follow %{displayName}": "Sledovat %{displayName}",
+        "Following": "Sleduji",
+        "For Businesses": "Pro podniky",
+        "For more information <a href=%{url}&gt;visit Yelp for Business Owners</a&gt;.": "Pro více informací navštiv <a href=%{url}&gt;Yelp pro majitele podniků</a&gt;.",
+        "For more information visit Yelp for Business Owners.": "Pro více informací navštiv Yelp pro majitele podniků.",
+        "Forgot Password": "Zapomenuté heslo",
+        "Forgot password?": "Zapomenuté heslo?",
+        "French": "Francouzská kuchyně",
+        "Friends": "Přátelé",
+        "From This Business": "Z podniku",
+        "From the business": "O podniku",
+        "From the business owner": "Od majitele podniku",
+        "Funny": "Vtipné",
+        "Gender": "Pohlaví",
+        "German": "Německá kuchyně",
+        "Get Directions": "Vyhledat trasu",
+        "Get a text if it becomes available?": "Chceš poslat textovku v případě dostupnosti?",
+        "Get access to Yelp’s free tools": "Získej bezplatný přístup k nástrojům Yelpu",
+        "Get directions": "Vyhledat trasu",
+        "Get notifications about %{businessName}?": "Get notifications about %{businessName}?",
+        "Get offer": "Získej slevovou nabídku",
+        "Get waitlist updates and suggestions for other places we think you'll love.": "Get waitlist updates and suggestions for other places we think you'll love.",
+        "Get your order in": "Nech si zavézt tvojí objednávku",
+        "Go to Yelp for Business": "Přejít na Yelp pro majitele podniků",
+        "Good Writer": "Hezky píšeš!",
+        "Got a question about <strong&gt;%{businessName}</strong&gt;? Ask the Yelp community!": "Máš dotaz ohledně <strong&gt;%{businessName}</strong&gt;? Zeptej se Yelp komunity!",
+        "Got it": "Chápu",
+        "Got it, thanks!": "Chápu, díky!",
+        "Great Lists": "Skvělé seznamy!",
+        "Great Photos": "Hezké fotky",
+        "Have the business call you": "Have the business call you",
+        "Health Score": "Zdravotní a hygienické hodnocení",
+        "Help Improve Yelp": "Pomoz nám Yelp vylepšit",
+        "Helpful": "Užitečné",
+        "Here are some other posts from the same business.": "Here are some other posts from the same business.",
+        "Highest Rated": "Nejlépe hodnocených",
+        "Highlights from the Business": "Přednosti podniku",
+        "History": "Historie",
+        "Home Address": "Domácí adresa",
+        "Home address": "Domácí adresa",
+        "Hot Stuff": "Super!",
+        "How would you like to be referred to?": "Jak tě máme oslovovat?",
+        "I don’t work here": "Nepracuji tady",
+        "If you’re here to leave a review based on a first-hand experience with the business, please check back at a later date.": "Pokud tu chceš zanechat recenzi založenou na vlastní zkušenosti s tímto podnikem, zkus to znovu za pár dní.",
+        "Important information is missing from your page": "Na tvojí stránce chybí důležité informace",
+        "Include your information": "Uveď svoje údaje",
+        "Inexpensive": "Levné",
+        "Info": "Info",
+        "Investor Relations": "Vztahy s investory",
+        "Is this data helpful?": "Jsou tato data užitečná?",
+        "Is this your business?": "Je toto tvůj podnik?",
+        "Issued by": "Vydáno",
+        "Italian": "Italská kuchyně",
+        "Japanese": "Japonská kuchyně",
+        "Join Now": "Připoj se",
+        "Join now": "Přidej se teď",
+        "Join the Waitlist": "Zapiš se na pořadník",
+        "Join the waitlist": "Zapiš se na pořadník",
+        "Join the waitlist here when there's a wait.": "Přidej se na pořadník v případě, že se čeká na volné stoly",
+        "Just a Note": "Malá poznámka",
+        "Keep Review": "Zachovat recenzi",
+        "Language": "Jazyk",
+        "Languages": "Jazyky",
+        "Last Name": "Příjmení",
+        "Last updated %{relativeTime}": "Last updated %{relativeTime}",
+        "Learn more": "Dozvědět se více",
+        "Learn more about Yelp ads": "Přečti si více o Yelp reklamách",
+        "Leave Waitlist": "Opustit pořadník",
+        "Leave waitlist": "Opustit pořadník",
+        "Less Projects": "Less Projects",
+        "License #": "Licencence #",
+        "License type": "Druh licence",
+        "Licensee": "Nabyvatel licence",
+        "Like Your Profile": "Hezký profil!",
+        "Limited time offer": "Časově omezená nabídka",
+        "Live": "Živý",
+        "Live wait time:": "Live čekací doba:",
+        "Located in:": "Nachází se v:",
+        "Location": "Lokace",
+        "Location &amp; Hours": "Adresa a otevírací doba",
+        "Log In": "Přihlas se",
+        "Log Out": "Odhlásit se",
+        "Log in": "Přihlásit se",
+        "Login with Facebook": "Login with Facebook",
+        "Login with Google": "Login with Google",
+        "Looks like you already have an account with this email. Log in below": "Looks like you already have an account with this email. Log in below",
+        "Low Health Score Alert: <0&gt;%{formattedScore}</0&gt;": "Upozornění na nízké zdravotní hodnocení: <0&gt;1:formattedScore</0&gt;",
+        "Lowest Rated": "Nejhůře hodnocených",
+        "Make a Reservation": "Udělat rezervaci",
+        "Make reservation": "Udělej si rezervaci",
+        "Malay": "Malay",
+        "Male": "Muž",
+        "Map": "Mapa",
+        "Maternity Care Data": "Údaje o péči o matky",
+        "Maximum characters reached": "Maximum characters reached",
+        "Meet the %{businessOwnerRole}": "%{businessOwnerRole}",
+        "Meh. I've experienced better.": "Nic zvláštního. Znám lepší.",
+        "Menu": "Menu",
+        "Message": "Zpráva",
+        "Message the Business": "Pošli zprávu podniku",
+        "Messages": "Zprávy",
+        "Moderate": "Mírné",
+        "Modify": "Upravit",
+        "More": "Více",
+        "More Projects": "More Projects",
+        "More information about the action that led to this Consumer Alert is available <a href=\"%{evidenceUrl}\" target=\"_blank\"&gt;here</a&gt;.": "Více informací o opatření, které vedlo k tomuto upozornění pro spotřebitele je k dispozici <a href=\"%{evidenceUrl}\" target=\"_blank\"&gt;zde</a&gt;.",
+        "NEW": "NOVÉ",
+        "Near": "V okolí",
+        "Need help?": "Potřebuješ pomoci?",
+        "Neutral": "Neutrální",
+        "New Collection": "Nová sbírka",
+        "New product": "Nový produkt",
+        "New to Yelp? <0&gt;Sign up</0&gt;": "Začínáš s Yelpem? <0&gt;Zaregistruj se</0&gt;",
+        "Newest First": "Od nejnovějších",
+        "Next": "Další",
+        "Next Project": "Další projekt",
+        "No": "Ne",
+        "No answers yet.": "Zatím žádné odpovědi.",
+        "No matching friends found": "Nenalezeni žádní odpovídající přátelé",
+        "No one is on the list. When it gets busy, join the waitlist here or on the Yelp app.": "Pořadník je prázdný. Zapiš se prostřednictvím Yelp appky v momentě, kdy se místa začnou zaplňovat.",
+        "No online availability within %{slotsSearchRange} hour of %{formattedTime}.||||No online availability within %{slotsSearchRange} hours of %{formattedTime}.": "Žádná online dostupnost v rozmezí %{slotsSearchRange} hodiny od %{formattedTime}.||||Žádná online dostupnost v rozmezí %{slotsSearchRange} hodin od %{formattedTime}.||||Žádná online dostupnost v rozmezí %{slotsSearchRange} hodin od %{formattedTime}.",
+        "No thanks": "Ne, děkuji",
+        "No, continue to website": "No, continue to website",
+        "Non-Public": "Neveřejná",
+        "None of these look right? Enter your address again.": "Nezdá se ti to? Zadej znovu svoji adresu.",
+        "Normally": "Běžně",
+        "Norwegian": "Norwegian",
+        "Not Helpful": "Není to užitečné",
+        "Notifications": "Upozornění",
+        "Notify Me": "Upozornit mě",
+        "OK": "OK",
+        "OR": "NEBO",
+        "Okay": "OK",
+        "Oldest First": "Od nejstarších",
+        "Only visible to you": "Viditelné pouze tobě",
+        "Oops! Something went wrong. Please try again.": "Problém! Nastala chyba. Zkus to znovu.",
+        "Oops! You need to have verified your email to log in with Apple. Please log in using your email and password.": "Oops! You need to have verified your email to log in with Apple. Please log in using your email and password.",
+        "Oops! You need to have verified your email to log in with Facebook. Please log in using your email and password.": "Promiň, ale potřebuješ si nechat ověřit tvůj email pro přihlášení přes Facebook. Prosím přihlas se zadáním tvého emailu a hesla.",
+        "Oops! You need to have verified your email to log in with Google. Please log in using your email and password.": "Promiň, ale potřebuješ si nechat ověřit tvůj email pro přihlášení přes Google. Prosím přihlas se zadáním tvého emailu a hesla.",
+        "Oops, looks like something’s wrong. Try again!": "Ups! Něco se nepovedlo. Zkus to znovu.",
+        "Oops, something went wrong.": "Jajks! Něco se pokazilo.",
+        "Oops, something went wrong. Please try again later.": "Ups, stala se chyba! Zkus to prosím znovu později.",
+        "Oops, something went wrong. Please try again.": "Sakryš, něco se nepovedlo. Prosím zkus to znovu.",
+        "Oops, the photo “%{fileName}” is too large to upload. The file size must be under %{fileSizeFormattedBytes}.": "Ups, fotka “%{fileName}” je příliš velká. Velikost musí být pod %{fileSizeFormattedBytes}.",
+        "Oops, there was a problem flagging this content. Please try again later.": "Nastal problém během označení daného obsahu. Zkus to prosím znovu později.",
+        "Oops, we can't find your location": "Sakryš, nemůžeme najít tvoji lokaci",
+        "Open": "Otevřít",
+        "Open now": "Otevřeno teď",
+        "Open today.": "Dnes otevřeno.",
+        "Open, special hours": "Otevřeno, speciální otevírací doba",
+        "Optional": "Nepovinné",
+        "Order Delivery": "Objednat rozvoz",
+        "Order delivery": "Objednej si rozvoz",
+        "Other Options": "Jiné možnosti",
+        "Owner": "Majitel",
+        "Page %{current_page} of %{total_pages}": "Stránka %{current_page} z %{total_pages}",
+        "Page: %{page}": "Stránka: %{page}",
+        "Pagination navigation": "Navigace stránkování",
+        "Party of %{confirmedPartySize}": "Stůl pro %{confirmedPartySize}",
+        "Password": "Heslo",
+        "Password must be at least %{smart_count} character in length||||Password must be at least %{smart_count} characters in length": "Password must be at least %{smart_count} character in length||||Password must be at least %{smart_count} characters in length",
+        "Password strength: fair": "Password strength: fair",
+        "Password strength: good": "Password strength: good",
+        "Password strength: great": "Password strength: great",
+        "Password strength: weak": "Password strength: weak",
+        "People Also Viewed": "Uživatelé si také prohlédli",
+        "Personalize your account details below": "Personalize your account details below",
+        "Phone Number": "Telefonní číslo",
+        "Phone number": "Telefonní číslo",
+        "Photo added on %{date}": "Fotky přidány %{date}",
+        "Photo by <strong&gt;%{displayName}</strong&gt;": "Fotka od <strong&gt;%{displayName}</strong&gt;",
+        "Photo by <strong&gt;%{userDisplayName}</strong&gt;": "Fotka od <strong&gt;%{userDisplayName}</strong&gt;",
+        "Photo by <strong&gt;<a %{linkAttrs}&gt;%{displayName}</a&gt;</strong&gt;": "Fotka od <strong&gt;<a %{linkAttrs}&gt;%{displayName}</a&gt;</strong&gt;",
+        "Photo from %{contributor}": "Photo from %{contributor}",
+        "Photo of %{user}": "Fotka %{user}",
+        "Photos": "Fotky",
+        "Photos &amp; videos": "Fotky &amp; videa",
+        "Photos (%{photoCount})": "Photos (%{photoCount})",
+        "Photos for %{businessName}": "Fotky z podniku %{businessName}",
+        "Photos for %{business}": "Fotky podniku %{business}",
+        "Please arrive by %{arriveBy}": "Prosím buď na místě do %{arriveBy}",
+        "Please confirm your account to post your review": "Prosím potvrď svůj účet, ať můžeš zveřejnit svoji recenzi",
+        "Please enter a valid phone number": "Zadej prosím platné telefonní číslo",
+        "Please enter an address to start your order.": "Pro zadání tvojí objednávky prosím zadej adresu.",
+        "Please enter your email address and we will send you an email about how to reset your password.": "Zadej prosím svou emailovou adresu a my ti zašleme email s pokyny k resetování tvého hesla.",
+        "Please provide specific details below:": "Uveď prosím konkrétní podrobnosti níže:",
+        "Please refer to our ": "Podívejte se prosím na naše ",
+        "Please refer to our <a %{contentGuidelinesLinkAttrs}&gt;Content Guidelines</a&gt; and <a %{termsOfServiceLinkAttrs}&gt;Terms of Service</a&gt; and let us know why you think the content you’ve reported may violate these guidelines.": "Prosím přečti si naše <a %{contentGuidelinesLinkAttrs}&gt;Pravidla pro tvorbu obsahu,</a&gt; <a %{termsOfServiceLinkAttrs}&gt;Všeobecné obchodní podmínky</a&gt; a dej nám prosím vědět, proč si myslíš, že obsah, který nahlašuješ tato pravidla porušuje.",
+        "Please select at least one reason.": "Prosím vyber alespoň jeden důvod.",
+        "Please verify your delivery address.": "Prosím ověř svoji doručovací adresu.",
+        "Please, close the window and try again": "Prosím zavři okno a zkus to znovu",
+        "Polish": "Polská kuchyně",
+        "Portfolio from the Business": "Portfolio podniku",
+        "Portuguese": "Portugalská kuchyně",
+        "Post a response": "Post a response",
+        "Posted on %{formattedTimestamp}": "Posted on %{formattedTimestamp}",
+        "Posting Temporarily Blocked": "Zvěřejnění příspěvku momentálně blokováno",
+        "Powered by": "Powered by",
+        "Powered by %{providerName}": "Powered by %{providerName}",
+        "Powered by %{provider}": "Powered by %{provider}",
+        "Powered by Google": "Powered by Google",
+        "Press": "Média",
+        "Preview": "Náhled",
+        "Previous": "Předchozí",
+        "Previous Project": "Předchozí projekt",
+        "Previous order (optional)": "Předchozí objednávka (nepovinné)",
+        "Previous review": "Předchozí recenze",
+        "Pricey": "Drahé",
+        "Privacy Policy": "Zásady ochrany soukromí a osobních údajů",
+        "Private": "Soukromé",
+        "Project Duration": "Doba trvání projektu",
+        "Project failed to load.": "Projekt se nepodařilo nahrát.",
+        "Promotion": "Akce",
+        "Public": "Veřejné",
+        "RSS": "RSS",
+        "Rating": "Hodnocení",
+        "Read Less": "Zobrazit méně",
+        "Read More": "Přečti si více",
+        "Read less": "Číst méně",
+        "Read more": "Přečti si více",
+        "Recommended Reviews": "Doporučené recenze",
+        "Recommended reviews in %{language}": "Doporučené recenze v jazyce:%{language}",
+        "Remind Me to Join Later": "Připomeňte mi se přidat později",
+        "Remind me to join later": "Připomeňte mi, abych se připojil(a) později",
+        "Reminder set!": "Připomínka je nastavena!",
+        "Remove": "Odstranit",
+        "Remove Review": "Odstranit recenzi",
+        "Remove draft": "Odstranit koncept",
+        "Remove review": "Odstranit recenzi",
+        "Report": "Nahlásit",
+        "Report Comment": "Nahlásit komentář",
+        "Report Photo": "Nahlásit fotku",
+        "Report Review": "Nahlásit recenzi",
+        "Report Video": "Nahlásit video",
+        "Report comment": "Nahlásit komentář",
+        "Report photo": "Nahlásit fotku",
+        "Report response": "Report response",
+        "Report review": "Nahlásit recenzi",
+        "Report this post": "Nahlásit tento příspěvek",
+        "Report video": "Nahlásit video",
+        "Request a Call": "Vyžádej si telefonní hovor",
+        "Request a quote": "Požádat o cenovou kalkulaci",
+        "Required": "Povinné",
+        "Reset Password": "Resetovat heslo",
+        "Respond as business": "Respond as business",
+        "Response Rate": "Úroveň účasti",
+        "Response Time": "Reakční doba",
+        "Response rate": "Úroveň účasti",
+        "Response time": "Reakční doba",
+        "Review Highlights": "Úryvky z recenzí",
+        "Reviews": "Recenze",
+        "Reviews (%{reviewsCount})": "Recenze (%{reviewsCount})",
+        "Reviews translated from %{language}": "Recenze přeložené z jazyka: %{language}",
+        "Sale": "Výprodej",
+        "Save": "Uložit",
+        "Save &amp; continue": "Save &amp; continue",
+        "Save to Collection": "Uložit do sbírky",
+        "Save to a New Collection": "Uložit do nové sbírky",
+        "Saved": "Uloženo",
+        "Saving...": "Ukládáme...",
+        "Say thanks": "Say thanks",
+        "Schedule now": "Objednej se nyní",
+        "Scheduled appointment": "Naplánovat schůzku",
+        "Search": "Vyhledávání",
+        "Search within reviews": "Vyhledávej v recenzích",
+        "See %{smart_count} More": "See %{smart_count} More",
+        "See %{smart_count} photo||||See %{smart_count} photos": "See %{smart_count} photo||||See %{smart_count} photos",
+        "See %{smart_count} question||||See all %{smart_count} questions": "Zobrazit %{smart_count} otázku||||Zobrazit %{smart_count} otázky||||Zobrazit %{smart_count} otázek",
+        "See All Photos": "Zobrazit všechny fotky",
+        "See Details": "Zobrazit podrobnosti",
+        "See all %{mediaCount} photos": "Zobrazit všech %{mediaCount} fotek",
+        "See all hours": "Zobrazit všechny otevírací hodiny",
+        "See all photos": "Zobrazit všechny fotky",
+        "See all photos from %{userName} for %{businessName}": "Prohlédnout všechny fotky od %{userName} pro podnik %{businessName}",
+        "See license information": "Přečti si informace o licenci",
+        "See more availability": "Zobrazit více možností dostupnosti",
+        "Select Country Code": "Vyber kód země",
+        "Select a Previous Order (Optional)": "Vybrat některou z předešlých objednávek (nepovinné)",
+        "Select a date": "Vyber datum",
+        "Select a photo to upload||||Select photos to upload": "Select a photo to upload||||Select photos to upload",
+        "Select an option...": "Vyber možnost ...",
+        "Select your rating": "Zvol tvé hodnocení",
+        "Send": "Odeslat",
+        "Send a Message": "Pošli zprávu",
+        "Send message": "Odeslat zprávu",
+        "Send to your Phone": "Poslat na tvůj mobil",
+        "Sent!": "Odesláno!",
+        "Services": "Služby",
+        "Services Offered": "Nabízené služby",
+        "Share": "Sdílet",
+        "Share *": "Sdílet *",
+        "Share Your Experience": "Sdílej tvoje zkušenosti",
+        "Share a few details so we can get you in touch with the business": "Sdílej s námi pár detailů, ať se můžeme spojit s podnikem",
+        "Share ad feedback": "Sdílej zpětnou vazbu k reklamám",
+        "Share business": "Sdílet podnik",
+        "Share on Facebook": "Sdílet na Facebooku",
+        "Share on Twitter": "Sdílet na Twitteru",
+        "Share photo": "Sdílet fotku",
+        "Share review": "Sdílet recenzi",
+        "Share video": "Sdílet video",
+        "Show Less": "Zobrazit méně",
+        "Show More Availability": "Zobrazit více možností",
+        "Show Original": "Zobrazit původní",
+        "Show fewer review highlights": "Zobrazit méně zvýrazněných recenzí",
+        "Show less": "Zobrazit méně",
+        "Show more": "Zobrazit více",
+        "Show more review highlights": "Zobrazit další úryvky z recenzí",
+        "Sign Up": "Zaregistruj se",
+        "Sign up": "Zaregistrovat se",
+        "Sign up for Yelp": "Zaregistruj se na Yelpu",
+        "Skip": "Přeskočit",
+        "Skip the back and forth and talk when it's convenient": "Skip the back and forth and talk when it's convenient",
+        "Slideshow": "Prezentace",
+        "Some Data By Acxiom": "Některá data pocházejí od společnosti Acxiom",
+        "Some business data by <a target=\"_blank\" rel=\"nofollow\" href=\"http://www.yellow.com.tr\" class=\"%{classes}\"&gt;Yellow.com.tr</a&gt;": "Některá data pocházejí od <a target=\"_blank\" rel=\"nofollow\" href=\"http://www.yellow.com.tr\" class=\"%{classes}\"&gt;Yellow.com.tr</a&gt;",
+        "Something broke and we're not sure what. Try again later, or search near a city, place, or address instead.": "Něco se pokazilo a nejsme si jisti, co to bylo. Zkus to prosím později nebo hledej v blízkosti města, místa nebo adresy.",
+        "Something went wrong, our bad": "Něco se pokazilo, naše chyba",
+        "Something went wrong. Please try again later.": "Něco se pokazilo. Zkus to prosím znovu později.",
+        "Sorry, but we don’t take sides in factual disputes. If a review appears to reflect a user’s personal experience and opinions, it is our policy to let the user stand behind their review.": "Je nám to líto, ale při věcných sporech nikomu nestraníme. Pokud recenze vypadá, že skutečně odráží osobní zážitek uživatele, je v našem zájmu jej nechat, aby svou recenzi ponechal nezměněnou.",
+        "Sorry, that photo is too large to upload.": "Sorry, that photo is too large to upload.",
+        "Sorry, we couldn’t recognize your address.": "Promiň, ale tvou adresu se nám nepovedlo najít.",
+        "Sort by": "Seřadit podle",
+        "Spanish": "Španělská kuchyně",
+        "Special hours": "Speciální otevírací doba",
+        "Special hours today.": "Dnešní speciální otevírací doba.",
+        "Special hours today:": "Dnešní speciální otevírací doba:",
+        "Special offer": "Speciální nabídka",
+        "Specialties": "Speciality",
+        "Sponsored": "Sponzorováno",
+        "Start Order": "Začít objednávku",
+        "Started on %{date}": "Rozepsáno %{date}",
+        "Stop following %{displayName}": "Přestat sledovat %{displayName}",
+        "Submit": "Odeslat",
+        "Submitting...": "Posíláme...",
+        "Success": "Podařilo se",
+        "Successfully removed": "Successfully removed",
+        "Support": "Podpora",
+        "Suspicious Review Activity": "Podezřelá recenzní aktivita",
+        "Swedish": "Švédská kuchyně",
+        "Table Management": "Správa stolu",
+        "Takeouts available for %{smart_count} minute||||Takeouts available for %{smart_count} minutes": "Jídlo s sebou je dostupné po dobu %{smart_count} minuty||||Jídlo s sebou je dostupné po dobu %{smart_count} minut||||Jídlo s sebou je dostupné po dobu %{smart_count} minut",
+        "Talk": "Fórum",
+        "Tell ProPublica": "Říct to ProPublica",
+        "Terms": "Podmínky",
+        "Terms of Service": "Všeobecné obchodní podmínky",
+        "Text me a link for the Yelp app": "Pošlete mi odkaz na Yelp appku",
+        "Thank You": "Děkujeme",
+        "Thank you": "Děkujeme!",
+        "Thank you for your feedback!": "Děkujeme ti za zpětnou vazbu!",
+        "Thanked": "Poděkováno",
+        "Thanks for your feedback!": "Děkujeme za tvoji zpětnou vazbu!",
+        "Thanks! We'll take a look to see if we agree that this is outside of our guidelines. This process may take several days and our Support team will contact you if we need more information.": "Díky! Podíváme se, zda si také myslíme, že tento příspěvek porušuje naše pravidla. Tento proces může trvat i několik dní. Náš tým podpory tě bude kontaktovat v případě, že budeme potřebovat doplňující informace.",
+        "The Local Yelp": "Místní Yelp",
+        "The email address or password you entered is incorrect. <0&gt;Click here</0&gt; to have a password reset email sent to <1&gt;%{emailAddress}</1&gt;.": "E-mailová adresa nebo heslo, které byly zadány jsou nesprávné.  <0&gt;Klikni sem</0&gt; pro resetování hesla a zaslání emailu na <1&gt;%{emailAddress}</1&gt;.",
+        "The email address you entered has already been registered.": "Zadaná e-mailová adresa už je zaregistrovaná.",
+        "The password you entered is blocked and may have been involved in a breach from another website. <0&gt;Click here</0&gt; to have a password reset email sent to <1&gt;%{emailAddress}</1&gt;.": "Heslo, které jsi zadal(a) bylo zablokováno. Existuje podezření, že mohlo být zneužito jinými webovými stránkami. <0&gt;Klikni zde<0&gt; pro zaslání resetovacího emailu na <1&gt;%{emailAddress}</1&gt;.",
+        "The restaurant is not taking waitlist parties right now.": "Tato restaurace aktuálně nepříjímá hosty na základě pořadníku",
+        "The restaurant only takes walk-ins during this time.": "Restaurace v tuto dobu přijímá hosty pouze bez rezervace",
+        "There are more restaurants on Yelp that deliver to your address": "Na Yelpu je více restaurací, které doručují na tvoji adresu",
+        "There are no reviews in %{language} yet!": "Momentálně nemáme žádné recenze v jazyce: %{language}",
+        "There was a problem retrieving your Facebook profile photo.": "There was a problem retrieving your Facebook profile photo.",
+        "There was a problem retrieving your Facebook profile. Please try again.": "There was a problem retrieving your Facebook profile. Please try again.",
+        "There was a problem retrieving your Google profile. Please try again.": "There was a problem retrieving your Google profile. Please try again.",
+        "There’s always more than one side to a story, and business owners can address misunderstandings via their Business Account by posting a public comment or sending a direct message to the reviewer.": "Vždycky existuje více úhlů pohledu na věc. Majitelé podniků mohou řešit nedorozumění prostřednictvím jejich podnikatelského účtu, publikováním veřejného komentáře, nebo zasláním přímé zprávy recenzentovi.",
+        "These Highlights are provided by and paid for by the business. For more information visit <a href=\"%{bizSiteUrl}\" target=\"_blank\" rel=\"noopener\"&gt;Yelp for Business Owners</a&gt;.": "Tyto přednosti jsou poskytovány a placeny podnikem. Pro více informací navštiv <a href=\"%{bizSiteUrl}\" target=\"_blank\" rel=\"noopener\"&gt; Yelp pro majitele podniků</a&gt;.",
+        "These Projects are paid for and provided by the business. Yelp has not verified these Projects.": "Tyto Projekty byly poskytnuty a uhrazeny tímto podnikem. Yelp tyto projekty neověřoval.",
+        "These businesses bought these ads to meet new customers on Yelp. For more information visit <a href=\"%{bizSiteUrl}\"&gt;Yelp for Business</a&gt;.": "These businesses bought these ads to meet new customers on Yelp. For more information visit <a href=\"%{bizSiteUrl}\"&gt;Yelp for Business</a&gt;.",
+        "This business has been claimed by the owner or a representative. ": "Tento podnik byl již zaregistrován buď majitelem nebo jiným zástupcem podniku. ",
+        "This business has been in the news in connection with a recent tragedy, which often means people come to this page to post their views on the news rather than a first-hand consumer experience. As a result, we’ve temporarily disabled the ability to post content about this business. Read more on <a href=\"%{yelpSupportLink}\"&gt;Yelp Support</a&gt;.": "O tomto podniku se nedávno psalo v souvislosti s nedávnou tragédií, což stimuluje veřejnost, aby na této stránce sdílela svoje názory týkající se daných zpráv, spíše než vlastní spotřebitelskou zkušenost. Z tohoto důvodu jsme dočasně deaktivovali funkci zvěřejňování obsahu o tomto podniku. Přečti si více na <a href=\"%{yelpSupportLink}\"&gt;Stránce Yelp podpory</a&gt;.",
+        "This business has not yet been claimed by the owner or a representative.": "Tento podnik zatím nebyl zaregistrován majitelem nebo jiným zástupcem podniku.",
+        "This business is closed on %{date}, %{holidayName}.": "Tento podnik je uzavřen %{date}, %{holidayName}.",
+        "This business is eligible to be claimed by a local representative in addition to corporate.": "Tento podnik může být zaregistrován kromě příslušné korporace i místním zástupcem.",
+        "This business is open %{hours} on %{date}, %{holidayName}.": "Tento podnik je otevřen %{hours} on %{date}, %{holidayName}.",
+        "This business is open as usual on %{date}, %{holidayName}.": "Tento podnik je otevřen jako obvykle %{date}, %{holidayName}.",
+        "This business may have tried to abuse the legal system in an effort to stifle free speech, for example through legal threats or contractual gag clauses. As a reminder, reviewers who share their experiences have a First Amendment right to express their opinions on Yelp.": "Tento podnik pravděpodobně zneužil právního systému za účelem potlačení svobody slova, například tím, že zasílal právní hrozby recenzentům nebo jim zasílal smluvní roubíkové doložky. Připomínáme, že recenzenti, kteří sdílí svoje zkušenosti mají podle Prvního dodatku k Ústavě Spojených států právo sdílet svoje názory na Yelpu.",
+        "This business recently made waves in the news, which often means people come to this page to post their views on the news rather than a first-hand consumer experience. As a result, we’ve temporarily disabled the ability to post content about this business. Read more on <a href=\"%{yelpSupportLink}\"&gt;Yelp Support</a&gt;.": "O tomto podniku se nedávno hodně diskutovalo v médiích, což stimuluje veřejnost, aby na této stránce sdílela svoje názory týkající se daných zpráv, spíše než vlastní spotřebitelskou zkušenost. Z tohoto důvodu jsme dočasně deaktivovali funkci zvěřejňování obsahu o tomto podniku. Přečti si více na <a href=\"%{yelpSupportLink}\"&gt;stránkách Yelp podpory</a&gt;.",
+        "This business recently received increased public attention in the news, which often means people come to this page to post their views on the news rather than a first-hand consumer experience. As a result, we’ve temporarily disabled the ability to post content about this business. Read more on <0&gt;Yelp Support</0&gt;.": "This business recently received increased public attention in the news, which often means people come to this page to post their views on the news rather than a first-hand consumer experience. As a result, we’ve temporarily disabled the ability to post content about this business. Read more on <0&gt;Yelp Support</0&gt;.",
+        "This business recently received increased public attention resulting in an influx of people posting their views to this page, so we have temporarily disabled the ability to post here as we work to investigate the content. While racism has no place on Yelp and we unequivocally reject racism in any form, all reviews on Yelp must reflect an actual first-hand consumer experience. Learn more on <0&gt;Yelp Support</0&gt;.": "This business recently received increased public attention resulting in an influx of people posting their views to this page, so we have temporarily disabled the ability to post here as we work to investigate the content. While racism has no place on Yelp and we unequivocally reject racism in any form, all reviews on Yelp must reflect an actual first-hand consumer experience. Learn more on <0&gt;Yelp Support</0&gt;.",
+        "This facility may have received a health score that is lower than others in its area.": "Toto zařízení mohlo obdržet zdravotní hodnocení, které je nižší než u ostatních zařízeních v této oblasti.",
+        "This field is required.": "Toto pole je povinné.",
+        "To": "Komu",
+        "To join Yelp, first agree to our Terms of Service and confirm that you’ve read our Privacy Policy by checking the box below.": "Pro registraci na Yelpu prosím nejprve odsouhlas označením čtverečku naše Všeobecné obchodní podmínky a potvrď, že sis přečetl(a) naše Zásady pro ochranu soukromí.",
+        "To log in to Yelp with Facebook, first agree to our Terms of Service and confirm that you’ve read our Privacy Policy by checking the box below.": "To log in to Yelp with Facebook, first agree to our Terms of Service and confirm that you’ve read our Privacy Policy by checking the box below.",
+        "To log in to Yelp with Google, first agree to our Terms of Service and confirm that you’ve read our Privacy Policy by checking the box below.": "To log in to Yelp with Google, first agree to our Terms of Service and confirm that you’ve read our Privacy Policy by checking the box below.",
+        "To:": "Komu:",
+        "Today is a holiday!": "Dnes je svátek!",
+        "Toggle Menu": "Přepnout menu",
+        "Translate %{fromLanguage} to %{toLanguage}": "Přeložit z: %{fromLanguage} do: %{toLanguage}",
+        "Turkish": "Turecká kuchyně",
+        "Ultra High-End": "Ultradrahé",
+        "Unclaimed": "Nezaregistrováno",
+        "Undo": "Zrušit",
+        "Unusual Activity Alert": "Varování před neobvyklou aktivitou",
+        "Upcoming Reservations": "Nadcházející rezervace",
+        "Upcoming Special Hours": "Nadcházející speciální otevírací doba",
+        "Update Reminder": "Aktualizovat připomínku",
+        "Updated review": "Aktualizovaná recenze",
+        "Updates From This Business": "Aktualizace od tohoto podniku",
+        "Upload": "Nahrát",
+        "Upload Photo": "Přidat fotku",
+        "Uploaded %{numOfPhotosUploadedSucceed} out of %{totalPhotos}": "Nahráno %{numOfPhotosUploadedSucceed} z %{totalPhotos}",
+        "Uploading %{numOfPhotosTriedUploadPlusOne} of %{totalPhotos}...": "Nahráváme %{numOfPhotosTriedUploadPlusOne} z %{totalPhotos}...",
+        "Use Facebook Photo": "Použit fotku z Facebooku",
+        "Use this address": "Použít tuto adresu",
+        "Useful": "Užitečné",
+        "Username": "Jméno uživatele",
+        "Verified License": "Ověřená licence",
+        "Verified by Business": "Ověřeno podnikem",
+        "Verified by Yelp on": "Ověřeno Yelpem",
+        "View Menu": "Zobrazit menu",
+        "View Menu on Website": "Zobrazit menu na webových stránkách",
+        "View More": "Zobrazit další",
+        "View Service Area": "Zobrazit obsluhovanou oblast",
+        "View Website": "Zobrazit webové stránky",
+        "View more photos": "Zobrazit více fotek",
+        "View phone number": "Zobrazit telefonní číslo",
+        "View question details": "Zobrazit podrobnosti ",
+        "View reservation history": "Zobrazit historii rezervací",
+        "Visit Website": "Navštiv webovou stránku",
+        "Visit Yelp for Business Owners": "Navštiv Yelp pro majitele podniků",
+        "Waitlist Closed": "Pořadník je uzavřen",
+        "Waitlist closed": "Pořadník je uzavřen",
+        "Waitlist temporarily closed": "Pořadník je dočasně uzavřen",
+        "Want to stay updated about %{businessName}?": "Want to stay updated about %{businessName}?",
+        "Want to stay updated?": "Want to stay updated?",
+        "Warning": "Varování",
+        "Warning: Users Report Deceptive Behavior": "Varování: Uživatelé hlásí nekalé chování",
+        "Watch video": "Přehrát video",
+        "We couldn't find an accurate position. If you're using a laptop or tablet, try moving it somewhere else and give it another go. Or, search near a city, place, or address instead.": "Nemohli jsme najít přesnou polohu. Pokud používáš notebook nebo tablet, pokus se ho přesunout jinam a zkus to ještě jednou. Nebo vyhledávej v okolí města, místa nebo adresy.",
+        "We couldn't find you quickly enough! Try again later, or search near a city, place, or address instead.": "Nemohli jsme tě najít dostatečně rychle. Zkus to prosím později nebo hledej v blízkosti města, místa nebo adresy.",
+        "We have noticed suspicious review activity for this business. This sort of activity can take many forms, including when a number of positive reviews originate from the same IP address or when we've identified reviews resulting from a possible <a href='%{consumerAlertsFAQUrl}'&gt;deceptive review ring</a&gt;. Our <a href='%{recommendedReviewFAQUrl}'&gt;automated recommendation software</a&gt; has taken this suspicious activity into account in choosing which reviews to display, but we wanted to call this to your attention because someone may be trying to artificially inflate the rating for this business.": "We have noticed suspicious review activity for this business. This sort of activity can take many forms, including when a number of positive reviews originate from the same IP address or when we've identified reviews resulting from a possible <a href='%{consumerAlertsFAQUrl}'&gt;deceptive review ring</a&gt;. Our <a href='%{recommendedReviewFAQUrl}'&gt;automated recommendation software</a&gt; has taken this suspicious activity into account in choosing which reviews to display, but we wanted to call this to your attention because someone may be trying to artificially inflate the rating for this business.",
+        "We need your address to show you restaurants that deliver.": "Potřebujeme znát tvoji adresu, abychom ti mohli ukázat restaurace, které doručují.",
+        "We really appreciate your help in making Yelp a better place.": "Opravdu si vážíme toho, že nám pomáháš dělat Yelp lepším místem.",
+        "We'll remind you when to join based on live wait times.": "Připomeneme ti přidání se ve správný čas na základě živé čekací doby.",
+        "We'll text you to join waitlist at %{bizName} at the right time based on live wait times.": "Připomeneme ti přidání se na pořadník podniku %{bizName} ve správný čas na základě živé čekací doby.",
+        "Webinars": "Webináře",
+        "Website menu": "Website menu",
+        "Welcome back!": "Welcome back!",
+        "Welcome to Yelp!": "Vítej na Yelpu!",
+        "Welcome to Yelp, %{0}!": "Welcome to Yelp, %{0}!",
+        "Welcome to Yelp, %{firstName}!": "Welcome to Yelp, %{firstName}!",
+        "We’ve sent a login link to <0&gt;%{emailAddress}</0&gt;.": "Odeslali jsme ti přihlašovací odkaz na <0&gt;%{emailAddress}</0&gt;.",
+        "When would you like to eat at %{bizName}?": "V kolik hodin se chceš usadit v podniku %{bizName}?",
+        "Whoa there, your Compliment is missing a message. Personalize it with some text.": "Momentík! Tvůj kompliment neobsahuje žádnou zprávu. Napiš něco hezkého a osobního.",
+        "Why do you want to remove this review?": "Proč chceš tuto recenzi odstranit?",
+        "Why do you want to report this content?": "Proč chceš tento obsah nahlásit?",
+        "Why do you want to report this photo?": "Proč chceš tuto fotku nahlásit?",
+        "Why do you want to report this review?": "Proč chceš tuto recenzi nahlásit?",
+        "Woohoo! As good as it gets!": "Super! Lepší to být nemůže.",
+        "Write More": "Napiš ještě něco",
+        "Write a Review": "Napiš recenzi",
+        "Write an update": "Napiš aktualizaci",
+        "Yay! I'm a fan.": "Jo! Tady je to fajn.",
+        "Yelp Blog": "Náš blog",
+        "Yelp Blog for Business": "Yelp blog pro majitele podniků",
+        "Yelp Guaranteed": "Garantováno Yelpem",
+        "Yelp Header": "Záhlaví Yelpu",
+        "Yelp Mobile": "Mobilní Yelp",
+        "Yelp Project Cost Guides": "Yelp manuály na projektové rozpočty",
+        "Yelp Sort": "Yelpu",
+        "Yelp confirmed a business or employee license.": "Yelp potvrdil obchodní nebo zaměstnaneckou licenci.",
+        "Yelp for Business": "Yelp pro majitele podniků",
+        "Yelp for Business app": "Appka Yelp pro majitele podniků",
+        "Yelp for Restaurant Owners": "Yelp for Restaurant Owners",
+        "Yelp has confirmed the above license or certificate for at least 1 person associated with this business, as of the verification date above. Yelp cannot verify if a license covers your specific needs or that everyone at this business has a required license. Businesses pay Yelp for license verification services.": "Yelp potvrdil, že alespoň jedna osoba spojená s tímto podnikem je držitelem výše uvedené licence nebo certifikátu k datumu uvedenému výše. Yelp nemůže ověřit, zda licence nebo certifikát pokrývá tvoje specifické potřeby, a nebo zda všichni v tomto podniku mají požadovanou licenci. Podniky platí Yelpu za služby spojené s ověřením licence.",
+        "Yelp users haven’t asked any questions yet about <strong&gt;%{businessName}</strong&gt;.": "Uživatelé Yelpu se zatím nezeptali na nic ohledně podniku <strong&gt;%{businessName}</strong&gt;.",
+        "Yelper names or email addresses": "Jména nebo e-maily Yelperů",
+        "Yes": "Ano",
+        "Yes, I want Yelp to send me marketing emails about Yelp’s products, services, and local events. I can unsubscribe at any time.": "Ano, souhlasím s tím, že mi Yelp smí posílat marketingové emaily týkající se Yelp produktů, služeb a místních událostí. Kdykoliv se můžu z těchto odběrů odhlásit.",
+        "Yes, allow notifications": "Yes, allow notifications",
+        "Yes, remove review": "Yes, remove review",
+        "You will receive a message at <0&gt;%{emailAddress}</0&gt; if you’ve registered your account with that email address. Please check for an email from Yelp and click on the included link to reset your password.": "Obdržíš zprávu na <0&gt;%{emailAddress}<0&gt;, pokud sis zaregistroval(a) tvůj účet s touto emailovou adresou. Jakmile ti email dorazí, klikni na přiložený odkaz pro resetování tvého hesla.",
+        "You'll get notifications about places we think you'll love.": "You'll get notifications about places we think you'll love.",
+        "You'll get notifications about this business and other places we think you'll love.": "You'll get notifications about this business and other places we think you'll love.",
+        "You'll receive texts reminding you when to join the waitlist. By continuing, you agree to Yelp's <0&gt;Terms of Service</0&gt; and <1&gt;Privacy Policy</1&gt;.": "Obdržíš textovku, která ti připomene, kdy se připojit na pořadník. Pokračováním souhlasíš s <0&gt;Všeobecnými obchodními podmínkami</0&gt; a <1&gt;Zásadami ochrany soukromí a osobních údajů Yelpu</1&gt;.",
+        "You're on the waitlist": "Jsi na pořadníku",
+        "Your Conversation": "Tvoje konverzace",
+        "Your Email": "Tvůj e-mail",
+        "Your Facebook account doesn’t have a profile photo.": "Your Facebook account doesn’t have a profile photo.",
+        "Your Name": "Tvé jméno",
+        "Your answers help people make good choices when they’re thinking about places to go and things to do.": "Tvoje odpovědi pomáhají lidem dělat správná rozhodnutí, když přemýšlí o tom kam zajít a co dělat.",
+        "Your caption is a bit on the short side. Try adding a few more details.": "Tento popisek je příliš krátký. Zkus přidat pár detailů.",
+        "Your highlight": "Your highlight",
+        "Your message has been sent.": "Tvoje zpráva byla odeslána.",
+        "You’ll get notifications about them and others we think you’ll love.": "You’ll get notifications about them and others we think you’ll love.",
+        "You’re Cool": "Jsi jednička",
+        "You’re Funny": "Jsi vtipný(á)",
+        "You’re almost done!": "Téměř hotovo!",
+        "You’re covered by Yelp Guaranteed with this business": "You’re covered by Yelp Guaranteed with this business",
+        "ZIP Code": "PSČ",
+        "address, neighborhood, city, state or zip": "adresa, čtvrť, město, stát nebo směrovací číslo",
+        "by <a %{link_attrs}&gt;%{userName}</a&gt; on %{date}": "by <a %{link_attrs}&gt;%{userName}</a&gt; on %{date}",
+        "d": "d",
+        "e.g. Taylor is awesome, <0&gt;he</0&gt; writes the best reviews": "e.g. Taylor is awesome, <0&gt;he</0&gt; writes the best reviews",
+        "e.g. Taylor is awesome, <0&gt;she</0&gt; writes the best reviews": "e.g. Taylor is awesome, <0&gt;she</0&gt; writes the best reviews",
+        "e.g. Taylor is awesome, <0&gt;they</0&gt; write the best reviews": "e.g. Taylor is awesome, <0&gt;they</0&gt; write the best reviews",
+        "eeep! something went wrong.": "Ups! Stala se chyba.",
+        "from <a %{link_attrs}&gt;%{bizName}</a&gt; on %{date}": "from <a %{link_attrs}&gt;%{bizName}</a&gt; on %{date}",
+        "h": "h",
+        "in %{smart_count} review||||in %{smart_count} reviews": "v %{smart_count} recenzi||||v %{smart_count} recenzích||||v %{smart_count} recenzích",
+        "m": "m",
+        "mo": "mo",
+        "more": "více",
+        "or": "nebo",
+        "read more": "dozvědět se více",
+        "response rate": "úroveň účasti",
+        "response time": "reakční doba",
+        "s": "s",
+        "tacos, cheap dinner, Max’s": "pizza, levný oběd, U Zajíce",
+        "under 5 mins": "méně než 5 minut",
+        "y": "y"
+    },
+    "bunsenAssignments": {
+        "yelp.www.biz_details.PLAH.bottom_ad_carousel_with_sponsored_ads.enabled": {
+            "param_name": "yelp.www.biz_details.PLAH.bottom_ad_carousel_with_sponsored_ads.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.PLAH.template": {
+            "param_name": "yelp.www.biz_details.PLAH.template",
+            "param_value": "classic",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.PLAH.top_ad_carousel_with_sponsored_ads.enabled": {
+            "param_name": "yelp.www.biz_details.PLAH.top_ad_carousel_with_sponsored_ads.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.RFN.template": {
+            "param_name": "yelp.www.biz_details.RFN.template",
+            "param_value": "classic",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.action_bar.war_button.text": {
+            "param_name": "yelp.www.biz_details.action_bar.war_button.text",
+            "param_value": "Write a Review",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.action_bar_follow_button": {
+            "param_name": "yelp.www.biz_details.action_bar_follow_button",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.ad_call_tracking.events_to_cassandra": {
+            "param_name": "yelp.www.biz_details.ad_call_tracking.events_to_cassandra",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.ad_creative.photo_id.enabled": {
+            "param_name": "yelp.www.biz_details.ad_creative.photo_id.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.ad_driven_call_tracking.cassandra_dark_launch": {
+            "param_name": "yelp.www.biz_details.ad_driven_call_tracking.cassandra_dark_launch",
+            "param_value": "true",
+            "experiment_run_id": 1632,
+            "experiment_id": 639,
+            "cohort_id": 3854,
+            "exclusion_reason": null,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.ad_feedback.enabled": {
+            "param_name": "yelp.www.biz_details.ad_feedback.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.align_sponsored_label": {
+            "param_name": "yelp.www.biz_details.align_sponsored_label",
+            "param_value": "left",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.biz_discovery.ads_pitch_banner_react_component.enabled": {
+            "param_name": "yelp.www.biz_details.biz_discovery.ads_pitch_banner_react_component.enabled",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.biz_discovery.fullstory.enabled": {
+            "param_name": "yelp.www.biz_details.biz_discovery.fullstory.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.bizpage_potfolios.enabled": {
+            "param_name": "yelp.www.biz_details.bizpage_potfolios.enabled",
+            "param_value": "true",
+            "experiment_run_id": 850,
+            "experiment_id": 267,
+            "cohort_id": 2099,
+            "exclusion_reason": null,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.bottom.ad_carousel.enabled": {
+            "param_name": "yelp.www.biz_details.bottom.ad_carousel.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.bottom.sponsored_ads.enabled": {
+            "param_name": "yelp.www.biz_details.bottom.sponsored_ads.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.browser_push_notifications.permission_prompt.cohort": {
+            "param_name": "yelp.www.biz_details.browser_push_notifications.permission_prompt.cohort",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.collapsed_view.enabled": {
+            "param_name": "yelp.www.biz_details.collapsed_view.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.consumer_prompts.service_areas.is_enabled": {
+            "param_name": "yelp.www.biz_details.consumer_prompts.service_areas.is_enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.consumer_prompts.service_offerings.is_enabled": {
+            "param_name": "yelp.www.biz_details.consumer_prompts.service_offerings.is_enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.cookieconsent.onetrust.is_enabled": {
+            "param_name": "yelp.www.biz_details.cookieconsent.onetrust.is_enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.daisychaining.cohort": {
+            "param_name": "yelp.www.biz_details.daisychaining.cohort",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.daisychaining.enabled": {
+            "param_name": "yelp.www.biz_details.daisychaining.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.daisychaining.seo": {
+            "param_name": "yelp.www.biz_details.daisychaining.seo",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.deprecated_test_ignore": {
+            "param_name": "yelp.www.biz_details.deprecated_test_ignore",
+            "param_value": "Rohan thank you",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.dynamic_client_side_rendering.enabled": {
+            "param_name": "yelp.www.biz_details.dynamic_client_side_rendering.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.enable_showcase_ads": {
+            "param_name": "yelp.www.biz_details.enable_showcase_ads",
+            "param_value": "true",
+            "experiment_run_id": 3353,
+            "experiment_id": 1495,
+            "cohort_id": 7856,
+            "exclusion_reason": null,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.enabled_show_more_for_competitor_showcase_ads": {
+            "param_name": "yelp.www.biz_details.enabled_show_more_for_competitor_showcase_ads",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.external_website_frame.cta_text": {
+            "param_name": "yelp.www.biz_details.external_website_frame.cta_text",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.external_website_frame.dismissal_text": {
+            "param_name": "yelp.www.biz_details.external_website_frame.dismissal_text",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.external_website_frame.external_link_text": {
+            "param_name": "yelp.www.biz_details.external_website_frame.external_link_text",
+            "param_value": "show_url",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.external_website_frame.header_text": {
+            "param_name": "yelp.www.biz_details.external_website_frame.header_text",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.external_website_frame.is_enabled": {
+            "param_name": "yelp.www.biz_details.external_website_frame.is_enabled",
+            "param_value": "True",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.for_restaurants.react.enabled": {
+            "param_name": "yelp.www.biz_details.for_restaurants.react.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.for_services.react.enabled": {
+            "param_name": "yelp.www.biz_details.for_services.react.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.google_one_tap.backend_enabled": {
+            "param_name": "yelp.www.biz_details.google_one_tap.backend_enabled",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.google_one_tap.enabled": {
+            "param_name": "yelp.www.biz_details.google_one_tap.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 4,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.google_yolo.enabled": {
+            "param_name": "yelp.www.biz_details.google_yolo.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.is_ssr_enabled": {
+            "param_name": "yelp.www.biz_details.is_ssr_enabled",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.job_pricing.pricing_widget.is_enabled": {
+            "param_name": "yelp.www.biz_details.job_pricing.pricing_widget.is_enabled",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.job_pricing.pricing_widget.should_show": {
+            "param_name": "yelp.www.biz_details.job_pricing.pricing_widget.should_show",
+            "param_value": "false",
+            "experiment_run_id": 5173,
+            "experiment_id": 2387,
+            "cohort_id": 12236,
+            "exclusion_reason": null,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.lazy_loading.enabled": {
+            "param_name": "yelp.www.biz_details.lazy_loading.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.lazy_loading.enabled_categories": {
+            "param_name": "yelp.www.biz_details.lazy_loading.enabled_categories",
+            "param_value": "all",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.lazy_loading.enabled_plah_override": {
+            "param_name": "yelp.www.biz_details.lazy_loading.enabled_plah_override",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.lazy_loading_enabled_categories": {
+            "param_name": "yelp.www.biz_details.lazy_loading_enabled_categories",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.local_ads.placements.include_biz_sidebar": {
+            "param_name": "yelp.www.biz_details.local_ads.placements.include_biz_sidebar",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.mapbox.make_reservation_link.icon": {
+            "param_name": "yelp.www.biz_details.mapbox.make_reservation_link.icon",
+            "param_value": "18x18_reservation",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.mapbox.make_reservation_link.text": {
+            "param_name": "yelp.www.biz_details.mapbox.make_reservation_link.text",
+            "param_value": "Make a Reservation",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.marketing_test_overview_page": {
+            "param_name": "yelp.www.biz_details.marketing_test_overview_page",
+            "param_value": "Good day Guv'nor",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.menu.restaurant_more_text": {
+            "param_name": "yelp.www.biz_details.menu.restaurant_more_text",
+            "param_value": "View the full menu",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 11,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.mobile_site.module_ordering": {
+            "param_name": "yelp.www.biz_details.mobile_site.module_ordering",
+            "param_value": "photos_module,featured_action_list_module,review_feed_module,map_box_module,coupon_pitch_module,action_list_module,menu_highlights_module,questions_module,review_highlights_module,reviews_i18n_module,food_platform_module,tips_module,ads_below_module,biz_engagement_module,not_recommended_reviews_module",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.motivational_content.icon_name": {
+            "param_name": "yelp.www.biz_details.motivational_content.icon_name",
+            "param_value": "14x14_lightning_bolt",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.offer_campaign_enabled": {
+            "param_name": "yelp.www.biz_details.offer_campaign_enabled",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.offer_campaign_service_dark_launch": {
+            "param_name": "yelp.www.biz_details.offer_campaign_service_dark_launch",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.offers_from_service_enabled": {
+            "param_name": "yelp.www.biz_details.offers_from_service_enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.on_the_menu.enabled": {
+            "param_name": "yelp.www.biz_details.on_the_menu.enabled",
+            "param_value": "true",
+            "experiment_run_id": 4390,
+            "experiment_id": 1839,
+            "cohort_id": 10315,
+            "exclusion_reason": null,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.pablo.intermediate.ads_improvement": {
+            "param_name": "yelp.www.biz_details.pablo.intermediate.ads_improvement",
+            "param_value": "ads_with_black_name",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.pinterest.save_button.enabled": {
+            "param_name": "yelp.www.biz_details.pinterest.save_button.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.plahh.business_comparison.enabled": {
+            "param_name": "yelp.www.biz_details.plahh.business_comparison.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.platform_widget.food.start_order_text": {
+            "param_name": "yelp.www.biz_details.platform_widget.food.start_order_text",
+            "param_value": "Start Order",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.popular_dish_v2.cohort": {
+            "param_name": "yelp.www.biz_details.popular_dish_v2.cohort",
+            "param_value": "enabled",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.portfolio.flag_photo.is_enabled": {
+            "param_name": "yelp.www.biz_details.portfolio.flag_photo.is_enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.pulsar.pulsar_nspid": {
+            "param_name": "yelp.www.biz_details.pulsar.pulsar_nspid",
+            "param_value": "deprecated",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.pulsar.pulsar_tag_enabled": {
+            "param_name": "yelp.www.biz_details.pulsar.pulsar_tag_enabled",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.pulsar.pulsar_tag_integrity": {
+            "param_name": "yelp.www.biz_details.pulsar.pulsar_tag_integrity",
+            "param_value": "sha256-e3RarKddRlig6qXn+GKdD58g3PT2KmYg6HQ/5uB7JQU=",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.raq_widget.alternate_layout_enabled": {
+            "param_name": "yelp.www.biz_details.raq_widget.alternate_layout_enabled",
+            "param_value": "False",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.read_more_newline.enabled": {
+            "param_name": "yelp.www.biz_details.read_more_newline.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.redesign.PLAHH.top_ad_caoursel": {
+            "param_name": "yelp.www.biz_details.redesign.PLAHH.top_ad_caoursel",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.redesign.restaurant_category": {
+            "param_name": "yelp.www.biz_details.redesign.restaurant_category",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.request_a_phone_call.cta_widget.enabled": {
+            "param_name": "yelp.www.biz_details.request_a_phone_call.cta_widget.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 11,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.request_a_phone_call.cta_widget.invisibiz.default_opt_in": {
+            "param_name": "yelp.www.biz_details.request_a_phone_call.cta_widget.invisibiz.default_opt_in",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.request_a_phone_call.cta_widget.invisibiz.phone_number_masking_statement.enabled": {
+            "param_name": "yelp.www.biz_details.request_a_phone_call.cta_widget.invisibiz.phone_number_masking_statement.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.request_a_phone_call.rapc_button.is_secondary": {
+            "param_name": "yelp.www.biz_details.request_a_phone_call.rapc_button.is_secondary",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.request_a_phone_call.rapc_button.type": {
+            "param_name": "yelp.www.biz_details.request_a_phone_call.rapc_button.type",
+            "param_value": "SECONDARY",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.request_a_phone_call.raq_button.is_secondary": {
+            "param_name": "yelp.www.biz_details.request_a_phone_call.raq_button.is_secondary",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.request_a_phone_call.raq_button.type": {
+            "param_name": "yelp.www.biz_details.request_a_phone_call.raq_button.type",
+            "param_value": "PRIMARY",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.reservation_sticky_bar.motivational_content.timeslots_left_text_plural": {
+            "param_name": "yelp.www.biz_details.reservation_sticky_bar.motivational_content.timeslots_left_text_plural",
+            "param_value": "Only ${n} time slots left!",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.reservation_sticky_bar.motivational_content.timeslots_left_text_singular": {
+            "param_name": "yelp.www.biz_details.reservation_sticky_bar.motivational_content.timeslots_left_text_singular",
+            "param_value": "Only ${n} time slot left!",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.reservation_widget.motivational_content.timeslots_left_text_singular": {
+            "param_name": "yelp.www.biz_details.reservation_widget.motivational_content.timeslots_left_text_singular",
+            "param_value": "Hurry, only {} time slot left!",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.reservation_widget.time_slots_cohort": {
+            "param_name": "yelp.www.biz_details.reservation_widget.time_slots_cohort",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.respond_to_review.m1.enabled": {
+            "param_name": "yelp.www.biz_details.respond_to_review.m1.enabled",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.restaurant_category.logic.redesign_enabled": {
+            "param_name": "yelp.www.biz_details.restaurant_category.logic.redesign_enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.rpp_override": {
+            "param_name": "yelp.www.biz_details.rpp_override",
+            "param_value": "10",
+            "experiment_run_id": 5275,
+            "experiment_id": 2342,
+            "cohort_id": 12465,
+            "exclusion_reason": null,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.save_button.travel_tooltip.text": {
+            "param_name": "yelp.www.biz_details.save_button.travel_tooltip.text",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.send2phone_modal_btn.btn_color": {
+            "param_name": "yelp.www.biz_details.send2phone_modal_btn.btn_color",
+            "param_value": "PRIMARY",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.seo.raq_widget_billboard_and_stickybar": {
+            "param_name": "yelp.www.biz_details.seo.raq_widget_billboard_and_stickybar",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.seo.similiar_biz_raq_widget_billboard_and_stickybar": {
+            "param_name": "yelp.www.biz_details.seo.similiar_biz_raq_widget_billboard_and_stickybar",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.show_side_bar_ads_for_no_content_businesses": {
+            "param_name": "yelp.www.biz_details.show_side_bar_ads_for_no_content_businesses",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.sidebar.raq_button_type": {
+            "param_name": "yelp.www.biz_details.sidebar.raq_button_type",
+            "param_value": "green",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.sidebar.reservation_widget.motivational_content.timeslots_left_display_threshold": {
+            "param_name": "yelp.www.biz_details.sidebar.reservation_widget.motivational_content.timeslots_left_display_threshold",
+            "param_value": "5",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.sidebar.reservation_widget.motivational_content.timeslots_left_text_plural": {
+            "param_name": "yelp.www.biz_details.sidebar.reservation_widget.motivational_content.timeslots_left_text_plural",
+            "param_value": "Only ${n} time slots left!",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.sidebar.reservation_widget.motivational_content.timeslots_left_text_singular": {
+            "param_name": "yelp.www.biz_details.sidebar.reservation_widget.motivational_content.timeslots_left_text_singular",
+            "param_value": "Only ${n} time slot left!",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.sidebar.show_conversation_widget": {
+            "param_name": "yelp.www.biz_details.sidebar.show_conversation_widget",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.sidebar.sponsored_ads.enabled": {
+            "param_name": "yelp.www.biz_details.sidebar.sponsored_ads.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.siderail.banner.component_status": {
+            "param_name": "yelp.www.biz_details.siderail.banner.component_status",
+            "param_value": "enabled",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.siderail.banner.cta_link": {
+            "param_name": "yelp.www.biz_details.siderail.banner.cta_link",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.siderail.banner.dismiss_button_style": {
+            "param_name": "yelp.www.biz_details.siderail.banner.dismiss_button_style",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.siderail.banner.image_alt_text": {
+            "param_name": "yelp.www.biz_details.siderail.banner.image_alt_text",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.siderail.banner.image_name": {
+            "param_name": "yelp.www.biz_details.siderail.banner.image_name",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.siderail.banner.promotion_id": {
+            "param_name": "yelp.www.biz_details.siderail.banner.promotion_id",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.siderail.banner.promotion_variant_id": {
+            "param_name": "yelp.www.biz_details.siderail.banner.promotion_variant_id",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.signup_nudge.backend_enabled": {
+            "param_name": "yelp.www.biz_details.signup_nudge.backend_enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.signup_nudge.description": {
+            "param_name": "yelp.www.biz_details.signup_nudge.description",
+            "param_value": "Sign in for the full experience",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.signup_nudge.enabled": {
+            "param_name": "yelp.www.biz_details.signup_nudge.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.signup_nudge.fullstory.enabled": {
+            "param_name": "yelp.www.biz_details.signup_nudge.fullstory.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.signup_nudge.title": {
+            "param_name": "yelp.www.biz_details.signup_nudge.title",
+            "param_value": "Welcome to Yelp",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.sponsored_info.placement": {
+            "param_name": "yelp.www.biz_details.sponsored_info.placement",
+            "param_value": "bottom",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.ssr.enabled": {
+            "param_name": "yelp.www.biz_details.ssr.enabled",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.sticky_sidebar.enabled": {
+            "param_name": "yelp.www.biz_details.sticky_sidebar.enabled",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.survey_price_range.is_enabled": {
+            "param_name": "yelp.www.biz_details.survey_price_range.is_enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.survey_questions.plah_uplevel_enabled": {
+            "param_name": "yelp.www.biz_details.survey_questions.plah_uplevel_enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.survey_questions.show_inline_widget": {
+            "param_name": "yelp.www.biz_details.survey_questions.show_inline_widget",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.survey_questions.show_sidebar_widget": {
+            "param_name": "yelp.www.biz_details.survey_questions.show_sidebar_widget",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.template": {
+            "param_name": "yelp.www.biz_details.template",
+            "param_value": "react",
+            "experiment_run_id": 2044,
+            "experiment_id": 835,
+            "cohort_id": 4800,
+            "exclusion_reason": null,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.test.please.ignore": {
+            "param_name": "yelp.www.biz_details.test.please.ignore",
+            "param_value": "testing",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.theme.v2_biz_details_enabled": {
+            "param_name": "yelp.www.biz_details.theme.v2_biz_details_enabled",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.theme.v2_enabled": {
+            "param_name": "yelp.www.biz_details.theme.v2_enabled",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.top.ad_carousel.enabled": {
+            "param_name": "yelp.www.biz_details.top.ad_carousel.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.top.sponsored_ads.enabled": {
+            "param_name": "yelp.www.biz_details.top.sponsored_ads.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.tracking.comscore.enabled": {
+            "param_name": "yelp.www.biz_details.tracking.comscore.enabled",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.traffic_biz_delivery_meta_desc_experiment": {
+            "param_name": "yelp.www.biz_details.traffic_biz_delivery_meta_desc_experiment",
+            "param_value": "biz_delivery_meta_desc",
+            "experiment_run_id": 3352,
+            "experiment_id": 1393,
+            "cohort_id": 7853,
+            "exclusion_reason": null,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.traffic_biz_details_backend_performance_experiment": {
+            "param_name": "yelp.www.biz_details.traffic_biz_details_backend_performance_experiment",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.traffic_biz_details_rfn_redesign_holdout_experiment": {
+            "param_name": "yelp.www.biz_details.traffic_biz_details_rfn_redesign_holdout_experiment",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.traffic_biz_details_rfn_redesign_seo_experiment": {
+            "param_name": "yelp.www.biz_details.traffic_biz_details_rfn_redesign_seo_experiment",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.traffic_enable_aggressive_critical_css_on_www": {
+            "param_name": "yelp.www.biz_details.traffic_enable_aggressive_critical_css_on_www",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.traffic_msite_biz_page_review_count_OTHER": {
+            "param_name": "yelp.www.biz_details.traffic_msite_biz_page_review_count_OTHER",
+            "param_value": "rpp_15",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.traffic_msite_biz_page_review_count_PLAH": {
+            "param_name": "yelp.www.biz_details.traffic_msite_biz_page_review_count_PLAH",
+            "param_value": "rpp_15",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.traffic_msite_biz_page_review_count_RFN": {
+            "param_name": "yelp.www.biz_details.traffic_msite_biz_page_review_count_RFN",
+            "param_value": "rpp_20",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.traffic_plah_biz_details_react_migration_experiment": {
+            "param_name": "yelp.www.biz_details.traffic_plah_biz_details_react_migration_experiment",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.traffic_plah_biz_redesign_holdout_experiment": {
+            "param_name": "yelp.www.biz_details.traffic_plah_biz_redesign_holdout_experiment",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.traffic_rfn_biz_details_react_migration_experiment": {
+            "param_name": "yelp.www.biz_details.traffic_rfn_biz_details_react_migration_experiment",
+            "param_value": "default_value",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.traffic_rfn_redesign_us_seo_experiment": {
+            "param_name": "yelp.www.biz_details.traffic_rfn_redesign_us_seo_experiment",
+            "param_value": "no_cohort",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.yelp.www.biz_details.mapbox.make_reservation_link.text": {
+            "param_name": "yelp.www.biz_details.yelp.www.biz_details.mapbox.make_reservation_link.text",
+            "param_value": "Make a Reservation",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.yelp.www.biz_details.yelp.www.biz_details.mapbox.make_reservation_link.icon": {
+            "param_name": "yelp.www.biz_details.yelp.www.biz_details.yelp.www.biz_details.mapbox.make_reservation_link.icon",
+            "param_value": "18x18_reservation",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.yelp_guaranteed.enabled": {
+            "param_name": "yelp.www.biz_details.yelp_guaranteed.enabled",
+            "param_value": "true",
+            "experiment_run_id": 4416,
+            "experiment_id": 1974,
+            "cohort_id": 10382,
+            "exclusion_reason": null,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.biz_details.yelp_ttd_tracker_v4.enabled": {
+            "param_name": "yelp.www.biz_details.yelp_ttd_tracker_v4.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.ad.prior_search_biz_details": {
+            "param_name": "yelp.common.biz_details.ad.prior_search_biz_details",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.auto_linking.biz_to_search.link_count": {
+            "param_name": "yelp.common.biz_details.auto_linking.biz_to_search.link_count",
+            "param_value": "0",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.auto_linking.biz_to_search.strategy_name": {
+            "param_name": "yelp.common.biz_details.auto_linking.biz_to_search.strategy_name",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_details.traffic_bunsen_driven_title.cohort_name": {
+            "param_name": "yelp.common.biz_details.biz_details.traffic_bunsen_driven_title.cohort_name",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_discovery.action_link_button_text": {
+            "param_name": "yelp.common.biz_details.biz_discovery.action_link_button_text",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_discovery.action_link_type": {
+            "param_name": "yelp.common.biz_details.biz_discovery.action_link_type",
+            "param_value": "enabled",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_discovery.description": {
+            "param_name": "yelp.common.biz_details.biz_discovery.description",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_discovery.image_alt_text": {
+            "param_name": "yelp.common.biz_details.biz_discovery.image_alt_text",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_discovery.image_url": {
+            "param_name": "yelp.common.biz_details.biz_discovery.image_url",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_discovery.info_description": {
+            "param_name": "yelp.common.biz_details.biz_discovery.info_description",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_discovery.info_title": {
+            "param_name": "yelp.common.biz_details.biz_discovery.info_title",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_discovery.promotion_id": {
+            "param_name": "yelp.common.biz_details.biz_discovery.promotion_id",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_discovery.reservation_promo.enabled": {
+            "param_name": "yelp.common.biz_details.biz_discovery.reservation_promo.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_discovery.title": {
+            "param_name": "yelp.common.biz_details.biz_discovery.title",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_discovery.top_of_biz.service.cohort_override": {
+            "param_name": "yelp.common.biz_details.biz_discovery.top_of_biz.service.cohort_override",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_discovery.top_of_biz_details.show_promo": {
+            "param_name": "yelp.common.biz_details.biz_discovery.top_of_biz_details.show_promo",
+            "param_value": "False",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_discovery.user_education_service.enabled": {
+            "param_name": "yelp.common.biz_details.biz_discovery.user_education_service.enabled",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_discovery.waitlist_promo.enabled": {
+            "param_name": "yelp.common.biz_details.biz_discovery.waitlist_promo.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_discovery_ml_model_name": {
+            "param_name": "yelp.common.biz_details.biz_discovery_ml_model_name",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_gem_annotator_community_gems_toggle": {
+            "param_name": "yelp.common.biz_details.biz_gem_annotator_community_gems_toggle",
+            "param_value": "enabled",
+            "experiment_run_id": 4378,
+            "experiment_id": 1973,
+            "cohort_id": 10291,
+            "exclusion_reason": null,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.biz_title_covid19_banner_delivery_takeout": {
+            "param_name": "yelp.common.biz_details.biz_title_covid19_banner_delivery_takeout",
+            "param_value": "no_cohort",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.consumer_biz_id_linking.should_show": {
+            "param_name": "yelp.common.biz_details.consumer_biz_id_linking.should_show",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.covid_19_alert.enabled": {
+            "param_name": "yelp.common.biz_details.covid_19_alert.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.covid_19_banner.enable_business_signals": {
+            "param_name": "yelp.common.biz_details.covid_19_banner.enable_business_signals",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.covid_19_safety_features.enabled": {
+            "param_name": "yelp.common.biz_details.covid_19_safety_features.enabled",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.covid_19_safety_features_m7.enabled": {
+            "param_name": "yelp.common.biz_details.covid_19_safety_features_m7.enabled",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.covid_19_service_update_summary.enabled": {
+            "param_name": "yelp.common.biz_details.covid_19_service_update_summary.enabled",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.other_cohort_name": {
+            "param_name": "yelp.common.biz_details.other_cohort_name",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.other_title_template": {
+            "param_name": "yelp.common.biz_details.other_title_template",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.parity_mobile_first": {
+            "param_name": "yelp.common.biz_details.parity_mobile_first",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.plahh_cohort_name": {
+            "param_name": "yelp.common.biz_details.plahh_cohort_name",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.plahh_title_template": {
+            "param_name": "yelp.common.biz_details.plahh_title_template",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.pricing.should_show": {
+            "param_name": "yelp.common.biz_details.pricing.should_show",
+            "param_value": "true",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.reviews.review_sort.uprank_new_reviewers.enabled": {
+            "param_name": "yelp.common.biz_details.reviews.review_sort.uprank_new_reviewers.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 6,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.rfn_cohort_name": {
+            "param_name": "yelp.common.biz_details.rfn_cohort_name",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.rfn_title_template": {
+            "param_name": "yelp.common.biz_details.rfn_title_template",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.sip_messaging_bars_category.states": {
+            "param_name": "yelp.common.biz_details.sip_messaging_bars_category.states",
+            "param_value": "CA,NM",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.sip_messaging_beauty_category.states": {
+            "param_name": "yelp.common.biz_details.sip_messaging_beauty_category.states",
+            "param_value": "",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.sip_messaging_feature_toggle.enabled": {
+            "param_name": "yelp.common.biz_details.sip_messaging_feature_toggle.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.survey_price_range.is_enabled": {
+            "param_name": "yelp.common.biz_details.survey_price_range.is_enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.traffic_bunsen_driven_title.cohort_name": {
+            "param_name": "yelp.common.biz_details.traffic_bunsen_driven_title.cohort_name",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.traffic_bunsen_driven_title.title_template": {
+            "param_name": "yelp.common.biz_details.traffic_bunsen_driven_title.title_template",
+            "param_value": "status_quo",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.traffic_remove_closed_biz_titles_experiment": {
+            "param_name": "yelp.common.biz_details.traffic_remove_closed_biz_titles_experiment",
+            "param_value": "closed_end_of_biz_title",
+            "experiment_run_id": 4490,
+            "experiment_id": 1818,
+            "cohort_id": 10579,
+            "exclusion_reason": null,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.user_education_service.enabled": {
+            "param_name": "yelp.common.biz_details.user_education_service.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.common.biz_details.waitlist_promo.enabled": {
+            "param_name": "yelp.common.biz_details.waitlist_promo.enabled",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        },
+        "yelp.www.common.audit_frontend_logging": {
+            "param_name": "yelp.www.common.audit_frontend_logging",
+            "param_value": "false",
+            "experiment_run_id": null,
+            "experiment_id": null,
+            "cohort_id": null,
+            "exclusion_reason": 2,
+            "config_id": "c3ccbc40658c777bd0f6adec8ab41c85",
+            "allocator_version": "0.2.36"
+        }
+    },
+    "bunsenContext": {
+        "context": [
+            {
+                "schema_id": 279661,
+                "payload_data": {
+                    "guv": "0ECA8D146BB66929"
+                }
+            },
+            {
+                "schema_id": 171864,
+                "payload_data": {
+                    "unique_request_id": "9c1d153a8c4ad951"
+                }
+            },
+            {
+                "schema_id": 280941,
+                "payload_data": {
+                    "internal_ip": false
+                }
+            },
+            {
+                "schema_id": 338431,
+                "payload_data": {
+                    "internal_ip": false
+                }
+            },
+            {
+                "schema_id": 280599,
+                "payload_data": {
+                    "language": "cs",
+                    "country": "CZ"
+                }
+            },
+            {
+                "schema_id": 338430,
+                "payload_data": {
+                    "language": "cs",
+                    "country": "CZ"
+                }
+            },
+            {
+                "schema_id": 283288,
+                "payload_data": {
+                    "user_id": null
+                }
+            },
+            {
+                "schema_id": 311701,
+                "payload_data": {
+                    "platform": "www"
+                }
+            },
+            {
+                "schema_id": 338439,
+                "payload_data": {
+                    "platform": "www"
+                }
+            },
+            {
+                "schema_id": 284174,
+                "payload_data": {
+                    "normed_app_version": null
+                }
+            },
+            {
+                "schema_id": 284175,
+                "payload_data": {
+                    "normed_device_type": "MainSiteDesktop"
+                }
+            },
+            {
+                "schema_id": 312263,
+                "payload_data": {
+                    "product": "consumer",
+                    "product_version": "r6e3acbe957-deploy-branch-friyay"
+                }
+            },
+            {
+                "schema_id": 338440,
+                "payload_data": {
+                    "product": "consumer",
+                    "product_version": "r6e3acbe957-deploy-branch-friyay"
+                }
+            },
+            {
+                "schema_id": 309536,
+                "payload_data": {
+                    "previous_unique_view_id": null,
+                    "unique_view_id": "7370ecb91416fd8f"
+                }
+            },
+            {
+                "schema_id": 338432,
+                "payload_data": {
+                    "previous_unique_view_id": null,
+                    "unique_view_id": "7370ecb91416fd8f"
+                }
+            },
+            {
+                "schema_id": 311448,
+                "payload_data": {
+                    "biz_user_id_encid": null
+                }
+            },
+            {
+                "schema_id": 311702,
+                "payload_data": {
+                    "os_name": "mac_os_x",
+                    "os_version": "10.15.7"
+                }
+            },
+            {
+                "schema_id": 338437,
+                "payload_data": {
+                    "os_name": "mac_os_x",
+                    "os_version": "10.15.7"
+                }
+            },
+            {
+                "schema_id": 306745,
+                "payload_data": {
+                    "name": "www"
+                }
+            },
+            {
+                "schema_id": 311859,
+                "payload_data": {
+                    "page_id": "5dc2a843bd79a19930f3767d56a9367cfe85e2fc"
+                }
+            },
+            {
+                "schema_id": 311757,
+                "payload_data": {
+                    "is_interactive": true
+                }
+            },
+            {
+                "schema_id": 338434,
+                "payload_data": {
+                    "is_interactive": true
+                }
+            },
+            {
+                "schema_id": 311510,
+                "payload_data": {
+                    "user_id_encid": null
+                }
+            },
+            {
+                "schema_id": 338441,
+                "payload_data": {
+                    "user_id_encid": null
+                }
+            },
+            {
+                "schema_id": 311758,
+                "payload_data": {
+                    "interface_name": "chrome",
+                    "interface_version": "90.0.4430"
+                }
+            },
+            {
+                "schema_id": 338435,
+                "payload_data": {
+                    "interface_name": "chrome",
+                    "interface_version": "90.0.4430"
+                }
+            },
+            {
+                "schema_id": 312281,
+                "payload_data": {
+                    "offset": null
+                }
+            },
+            {
+                "schema_id": 338436,
+                "payload_data": {
+                    "offset": null
+                }
+            },
+            {
+                "schema_id": 311756,
+                "payload_data": {
+                    "hardware_model": null
+                }
+            },
+            {
+                "schema_id": 338433,
+                "payload_data": {
+                    "hardware_model": null
+                }
+            },
+            {
+                "schema_id": 321983,
+                "payload_data": {
+                    "user_advertising_id": null
+                }
+            },
+            {
+                "schema_id": 352511,
+                "payload_data": {
+                    "source": "yelp-main"
+                }
+            }
+        ]
+    },
+    "gaConfig": {
+        "clientID": "0ECA8D146BB66929",
+        "dimensions": {
+            "global": {
+                "account_level": [
+                    1,
+                    "anon"
+                ],
+                "biz_closed": [
+                    4,
+                    "False"
+                ],
+                "biz_review_count": [
+                    6,
+                    "100"
+                ],
+                "category_paths_to_root": [
+                    10,
+                    "[['burgers', 'restaurants'], ['czech', 'restaurants']]"
+                ],
+                "content_country": [
+                    11,
+                    "CZ"
+                ],
+                "distil": [
+                    12,
+                    null
+                ],
+                "distil_js_enabled": [
+                    13,
+                    null
+                ],
+                "full_url": [
+                    15,
+                    "/biz/meat-a-greet-praha"
+                ],
+                "has_canonical": [
+                    16,
+                    "False"
+                ],
+                "integration": [
+                    17,
+                    ""
+                ],
+                "internal_ip": [
+                    18,
+                    "False"
+                ],
+                "is_indexable": [
+                    19,
+                    "True"
+                ],
+                "known_bot": [
+                    36,
+                    "none"
+                ],
+                "rating": [
+                    27,
+                    4.5
+                ],
+                "referrer": [
+                    28,
+                    "none"
+                ],
+                "top_level_categories": [
+                    7,
+                    "restaurants"
+                ]
+            },
+            "www": {
+                "account_level": [
+                    1,
+                    "anon"
+                ],
+                "biz_city_state": [
+                    192,
+                    "Praha, PR"
+                ],
+                "biz_closed": [
+                    8,
+                    "False"
+                ],
+                "biz_review_count": [
+                    10,
+                    "100"
+                ],
+                "business_id": [
+                    141,
+                    "yK4Vz-HVL4BtZTauid0etw"
+                ],
+                "category_paths_to_root": [
+                    94,
+                    "[['burgers', 'restaurants'], ['czech', 'restaurants']]"
+                ],
+                "content_country": [
+                    15,
+                    "CZ"
+                ],
+                "decrypted_yuv_id": [
+                    3,
+                    "0ECA8D146BB66929"
+                ],
+                "distil": [
+                    53,
+                    null
+                ],
+                "distil_js_enabled": [
+                    138,
+                    null
+                ],
+                "full_url": [
+                    34,
+                    "/biz/meat-a-greet-praha"
+                ],
+                "has_canonical": [
+                    36,
+                    "False"
+                ],
+                "integration": [
+                    14,
+                    ""
+                ],
+                "internal_ip": [
+                    27,
+                    "False"
+                ],
+                "is_biz_user": [
+                    129,
+                    "False"
+                ],
+                "is_indexable": [
+                    42,
+                    "True"
+                ],
+                "known_bot": [
+                    186,
+                    "none"
+                ],
+                "rating": [
+                    114,
+                    4.5
+                ],
+                "referrer": [
+                    64,
+                    "none"
+                ],
+                "remote_ip": [
+                    4,
+                    "194.228.76.0"
+                ],
+                "second_level_categories": [
+                    110,
+                    "burgers, czech"
+                ],
+                "service": [
+                    107,
+                    "yelp-main"
+                ],
+                "top_level_categories": [
+                    11,
+                    "restaurants"
+                ],
+                "viewport_tracking": [
+                    29,
+                    null
+                ],
+                "ad.web_carousel_bottom_of_biz": [
+                    78,
+                    "status_quo"
+                ],
+                "www_education_banner": [
+                    190,
+                    "disabled"
+                ],
+                "contributions.www.remove_review_draft_modules": [
+                    183,
+                    "status_quo"
+                ],
+                "contributions.www.war_attach_photos": [
+                    99,
+                    "enabled"
+                ],
+                "contributions.www.war_compose_recent_photos": [
+                    102,
+                    "enabled"
+                ],
+                "contributions.www.war_compose_redesign": [
+                    6,
+                    "enabled"
+                ],
+                "contributions.www.war_compose_signup": [
+                    148,
+                    "disabled"
+                ],
+                "eat24_free_delivery_banner": [
+                    45,
+                    "non_en"
+                ],
+                "lower_promoted_delivery_threshold": [
+                    58,
+                    "reduced_to_fifteen"
+                ],
+                "lsat.www.dropdown_header": [
+                    54,
+                    "enabled"
+                ],
+                "messaging.www.composer_notifications_spam_and_hover_state": [
+                    177,
+                    "notifications_enabled"
+                ],
+                "nowait_restaurant.www.no_wait_message": [
+                    106,
+                    "show_wait_or_get_in_line_copy"
+                ],
+                "pagelet_mode_www_biz_details": [
+                    24,
+                    "allow_async"
+                ],
+                "payment.ux.www": [
+                    197,
+                    "enabled"
+                ],
+                "platform_pickup_filter": [
+                    20,
+                    "enabled"
+                ],
+                "readerx.web.biz_for_services": [
+                    116,
+                    "biz_status_quo"
+                ],
+                "readerx.web.popular_dishes": [
+                    198,
+                    "highlights_popular_dishes"
+                ],
+                "review_actions_dropdown": [
+                    2,
+                    "disabled"
+                ],
+                "styleguide_buttons": [
+                    13,
+                    "status_quo"
+                ],
+                "styleguide_typography": [
+                    159,
+                    "status_quo"
+                ],
+                "txn.www.checkout_page_changes": [
+                    135,
+                    "enabled"
+                ],
+                "www_biz_details_raq_sticky": [
+                    84,
+                    "enabled"
+                ],
+                "www_current_location_suggestion": [
+                    185,
+                    "enabled"
+                ],
+                "www_second_page_pitch": [
+                    111,
+                    "non_en"
+                ],
+                "www_signup_redesign": [
+                    92,
+                    "status_quo"
+                ],
+                "yelp.www.biz_details.lazy_loading.enabled": [
+                    25,
+                    "false"
+                ],
+                "ytp_delivery_landing": [
+                    125,
+                    "platform_pages"
+                ],
+                "ytp_eat24_yelp_style_to_iframe": [
+                    136,
+                    "enabled"
+                ],
+                "ytp_order_confirmation_page": [
+                    143,
+                    "enabled"
+                ],
+                "www_search_snippets_in_sync_with_ads": [
+                    112,
+                    "status_quo_8"
+                ],
+                "yr_diner.www.direct_checkout_for_exact_match": [
+                    163,
+                    "disabled"
+                ]
+            }
+        },
+        "domain": "yelp.cz",
+        "enable_high_volume_events": false,
+        "ga_enabled": false,
+        "js_dimensions": {
+            "global": {},
+            "www": {
+                "js_vertical_search_type": [
+                    39,
+                    null
+                ],
+                "platform_order_type": [
+                    127,
+                    null
+                ]
+            }
+        },
+        "metrics": {
+            "global": {},
+            "www": {}
+        },
+        "trackers": {
+            "www": "UA-30501-24",
+            "global": "UA-30501-1"
+        },
+        "user_id": null
+    },
+    "staticUrl": "https://www.yelp.cz/biz/meat-a-greet-praha",
+    "adSyndicationConfig": {
+        "adrollGeoquadV1": 976368,
+        "categoryAliases": [
+            "restaurants",
+            "czech",
+            "burgers"
+        ],
+        "city": "Praha",
+        "flow": "biz_details",
+        "newVersionEnabled": false,
+        "signalFxHealthTrackingCsrfToken": "bda55e90ea8d0d9c3ee327bbdabbfe9044440207039684aeeb026384faa6fbd3",
+        "state": "PR",
+        "partnerCookieSyncData": [],
+        "userType": "consumer"
+    },
+    "theme": "v2_biz_details",
+    "footerProps": {
+        "localeCode": "cs_CZ",
+        "baseUrl": "https://www.yelp.cz/",
+        "currentUrl": "https://www.yelp.cz/biz/meat-a-greet-praha",
+        "attributionSource": null,
+        "locationCookieCountryCode": "CZ"
+    },
+    "shouldFetchPropsFromClient": true
+}

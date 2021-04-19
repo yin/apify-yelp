@@ -64,34 +64,10 @@ const categorizeUrls = (urls) => {
     return categories;
 };
 
-/**
- * Extract a substring from HTML (usually script tags / JSON-LD).Throws when not found.
- * A better version of substr/substring
- *
- * @param {string} html Plain HTML
- * @param {string} start Start of variable/data. eg: 'var something = '. Excludes the provided "start" string
- * @param {string} end End of the data. eg: '};'. Includes the provided "end" string
- * @param {number} [endOffset=0] Apply an offset to the end
- * @param {number} [startOffset=0] Apply an offset to the start
- */
-const subString = (html, start, end, endOffset = 0, startOffset = 0) => {
-    const startIndex = html.indexOf(start);
-    if (startIndex === -1) {
-        throw new Error('"start" not found');
-    }
-    html = html.slice(startIndex);
-    const endIndex = html.indexOf(end);
-    if (endIndex === -1) {
-        throw new Error('"end" not found');
-    }
-    return html.slice(start.length + startOffset, endIndex + end.length + endOffset);
-};
-
 module.exports = {
     CATEGORIES,
     BASE_URL,
     categorizeUrl,
     categorizeUrls,
     completeYelpUrl,
-    subString,
 };

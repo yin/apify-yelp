@@ -1,6 +1,6 @@
 const { load } = require('cheerio');
 const { get, omit } = require('lodash');
-const { CATEGORIES, subString, categorizeUrl, completeYelpUrl, BASE_URL } = require('./urls');
+const { CATEGORIES, categorizeUrl, completeYelpUrl, BASE_URL } = require('./urls');
 
 /**
  * Generates an unique array with no empty items
@@ -41,16 +41,15 @@ const yelpBusinessPartial = ($) => {
         throw new Error('Page does not contain a single Business Id');
     }
 
-    const startData = '<!--{"gaConfig":';
-    const endData = '}}-->';
-    const payload = (() => {
-        try {
-            return JSON.parse(subString($.html(), startData, endData, -3, -startData.length + 4));
-        } catch (e) {
-            // we want it to crash if the page doesn't contain the JSON payload, but with an informative message
-            throw new Error('Invalid page information, retrying...');
-        }
-    })();
+    // This is not ideal, but I reworked how it was done before
+    let payload = {};
+    const html = $.html();
+    const jsonMatch = html.match(/<!--(\{".*bizDetailsPageProps.*?\})-->/);
+    if (jsonMatch) {
+        payload = JSON.parse(jsonMatch[1]);
+    } else {
+        throw new Error('Could not extract details about business');
+    }
 
     const domain = get(payload, ['bizDetailsPageProps', 'bizContactInfoProps', 'businessWebsite', 'linkText'], '');
     const website = domain ? `http://${domain}` : '';
