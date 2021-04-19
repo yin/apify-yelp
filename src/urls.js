@@ -2,14 +2,15 @@ const { utils: { log } } = require('apify');
 const { parseDomain, ParseResultType } = require('parse-domain');
 
 const BASE_URL = 'https://www.yelp.com';
+const BASE_URL_INT = 'https://www.yelp.';
 
 /**
  * @param {string} url
  */
 const completeYelpUrl = (url) => {
-    if (!url.includes(BASE_URL)) {
+    if (!url.includes(BASE_URL_INT)) {
         url = `${BASE_URL}${url.startsWith('/') ? url : `/${url}`}`;
-    }
+    } 
     return url;
 };
 
