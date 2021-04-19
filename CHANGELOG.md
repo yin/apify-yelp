@@ -1,4 +1,8 @@
 
+### 2021-04-19 
+*Fixes*
+- Fixed page layout change (whole scraper was broken)
+
 ### 2021-03-30
 - Added support to different languages domains such as yelp.fr to input url.
 
