@@ -54,12 +54,20 @@ const yelpBusinessPartial = ($) => {
     const domain = get(payload, ['bizDetailsPageProps', 'bizContactInfoProps', 'businessWebsite', 'linkText'], '');
     const website = domain ? `http://${domain}` : '';
     const directUrl = get(payload, 'staticUrl', '');
+    
+    //phone number could be in another json..
+    let otherPhone = null;
+    try
+    {
+        otherPhone = JSON.parse(`{${html.match(/"telephone":".+?"/)[0]}}`).telephone;
+    }
+    catch { };
 
     return {
         bizId: [...bizId.values()][0],
         name: get(payload, ['bizDetailsPageProps', 'businessName'], ''),
         since: get(payload, ['bizDetailsPageProps', 'ratingDetailsProps', 'yearJoined'], ''),
-        phone: get(payload, ['bizDetailsPageProps', 'bizContactInfoProps', 'phoneNumber'], null),
+        phone: get(payload, ['bizDetailsPageProps', 'bizContactInfoProps', 'phoneNumber'], otherPhone),
         website,
         images: [],
         directUrl,
