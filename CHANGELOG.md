@@ -1,5 +1,14 @@
+### 2021-11-19
 
-### 2021-04-19 
+*Features*
+- Update SDK
+
+*Fixes*
+- Random crash when scraping images
+- Fix log for number of scraped businesses
+- Fix website extraction
+
+### 2021-04-19
 *Fixes*
 - Fixed page layout change (whole scraper was broken)
 

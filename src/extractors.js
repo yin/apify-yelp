@@ -51,10 +51,10 @@ const yelpBusinessPartial = ($) => {
         throw new Error('Could not extract details about business');
     }
 
-    const domain = get(payload, ['bizDetailsPageProps', 'bizContactInfoProps', 'businessWebsite', 'linkText'], '');
-    const website = domain ? `http://${domain}` : '';
+    const href = $('a[href^="/biz_redir?"]').first().attr('href');
+    const website = href ? new URL(href, 'https://yelp.com').searchParams.get('url') : '';
     const directUrl = get(payload, 'staticUrl', '');
-    
+
     //phone number could be in another json..
     let otherPhone = null;
     try

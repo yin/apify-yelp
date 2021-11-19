@@ -1,4 +1,4 @@
-FROM apify/actor-node-basic
+FROM apify/actor-node:16
 
 # Second, copy just package.json and package-lock.json since they are the only files
 # that affect NPM install in the next step
@@ -9,15 +9,13 @@ COPY package*.json ./
 RUN npm --quiet set progress=false \
  && npm install --only=prod --no-optional \
  && echo "Installed NPM packages:" \
- && npm list \
+ && (npm list --all || true) \
  && echo "Node.js version:" \
  && node --version \
  && echo "NPM version:" \
  && npm --version
 
-# Next, copy the remaining files and directories with the source code.
-# Since we do this after NPM install, quick build will be really fast
-# for simple source file changes.
 COPY . ./
 
 ENV APIFY_DISABLE_OUTDATED_WARNING 1
+ENV npm_config_loglevel=silent

@@ -2,6 +2,7 @@ const Apify = require('apify');
 const { CATEGORIES } = require('./urls');
 const extract = require('./extractors');
 const requests = require('./request-factory');
+const { nonDestructiveMerge } = require('./utils');
 
 const { log } = Apify.utils;
 
@@ -30,9 +31,10 @@ const createYelpPageHandler = ({
         if (request.userData.label === CATEGORIES.SEARCH) {
             const searchResultUrls = extract.yelpSearchResultUrls(request.url, $);
 
-            const previoslyScrapedSearchResults = (request.userData && request.userData.payload && request.userData.payload.searchResultsScraped)
+            const previoslyScrapedSearchResults = +request?.userData?.payload?.searchResultsScraped
                 ? request.userData.payload.searchResultsScraped
                 : 0;
+
             const searchResultsFound = previoslyScrapedSearchResults + searchResultUrls.length;
             const resultCountToKeep = searchResultsFound <= searchLimit
                 ? searchResultUrls.length
@@ -54,7 +56,7 @@ const createYelpPageHandler = ({
                     searchResultsScraped: previoslyScrapedSearchResults + followupBusinessUrls.length,
                 }));
             } else {
-                log.info(`\tScraped ${previoslyScrapedSearchResults.length + resultCountToKeep} results in total. No more search results to scrape.`);
+                log.info(`\tScraped ${previoslyScrapedSearchResults + resultCountToKeep} results in total. No more search results to scrape.`);
                 const { userId, actorTaskId, actorRunId, startedAt } = Apify.getEnv();
                 failedDataset.pushData({
                     date: Date.now(),
@@ -76,7 +78,7 @@ const createYelpPageHandler = ({
 
             await requestQueue.addRequest(requests[maxImages > 0 ? 'yelpBizPhotos' : 'yelpGraphQl'](request.url, {
                 ...request.userData.payload,
-                business: { ...request.userData.payload.business, ...businessInfo },
+                business: nonDestructiveMerge([ request.userData.payload.business, businessInfo ]),
                 scrapeStartedAt: new Date().toISOString(),
             }));
         } else if (request.userData.label === CATEGORIES.PHOTOS) {
@@ -89,13 +91,15 @@ const createYelpPageHandler = ({
                     ? nextUrl
                     : request.userData.payload.business.directUrl, {
                     ...request.userData.payload,
-                    business: {
-                        ...request.userData.payload.business,
-                        images: [
-                            ...currentImages,
-                            ...images,
-                        ].slice(0, maxImages > 0 ? maxImages : undefined),
-                    },
+                    business: nonDestructiveMerge([
+                        request.userData.payload.business,
+                        {
+                            images: [
+                                ...currentImages,
+                                ...images,
+                            ].slice(0, maxImages > 0 ? maxImages : undefined),
+                        }
+                    ]),
                 },
             ));
         } else if (request.userData.label === CATEGORIES.GRAPHQL) {
@@ -104,7 +108,7 @@ const createYelpPageHandler = ({
 
             const followup = requests.yelpBusinessReview(payload.business.bizId, null, {
                 ...request.userData.payload,
-                business: { ...request.userData.payload.business, ...enrichedBusinessInfo },
+                business: nonDestructiveMerge([ request.userData.payload.business, enrichedBusinessInfo ]),
             });
             await requestQueue.addRequest(followup);
         } else if (request.userData.label === CATEGORIES.REVIEW) {
