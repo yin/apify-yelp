@@ -16,19 +16,19 @@
             "type": "array",
             "description": "Locations that will be searched for each search term.",
             "editor": "stringList",
-            "prefill": ["NYC"]
+            "prefill": ["New York"]
         },
         "searchLimit": {
             "title": "Search results limit",
             "type": "integer",
             "description": "How many search results (eq. Yelp bussinesses) should be processed per search query",
             "editor": "number",
-            "default": 10,
+            "prefill": 10,
             "minimum": 1,
             "maximum": 999999
         },
         "directUrls": {
-            "title": "Direct Yelp page URLs",
+            "title": "Direct Yelp page URLs instead of search",
             "type": "array",
             "description": "If you already have URL(s) of page(s) you wish to scrape, you can set them here. <br /><br /><strong>Either of 'Search' or 'Direct URLs' or both fields.</strong>",
             "editor": "stringList",
@@ -37,15 +37,46 @@
             "uniqueItems": true,
             "default": []
         },
+        "maxImages": {
+            "title": "Max images",
+            "description": "Maximum number of images per business",
+            "type": "integer",
+            "minimum": 0,
+            "unit": "per business",
+            "prefill": 1,
+            "editor": "number",
+            "sectionCaption": "Scraping images and reviews",
+            "sectionDescription": "Warning! Reviewer name and Reviewer URL contain personal data. Personal data is protected by GDPR in the European Union and by other regulations around the world. You should not scrape personal data unless you have a legitimate reason to do so. If you're unsure whether your reason is legitimate, consult your lawyers."
+        },
         "reviewLimit": {
             "title": "Maximum reviews",
             "type": "integer",
             "description": "How many reviews should be scraped per business",
             "editor": "number",
             "unit": "per business",
-            "default": 20,
+            "prefill": 5,
             "minimum": 0,
             "maximum": 999999
+        },
+        "scrapeReviewerName": {
+            "title": "Reviewer name",
+            "type": "boolean",
+            "description": "Extract Reviewer name",
+            "default": false
+        },
+        "scrapeReviewerUrl": {
+            "title": "Reviewer URL",
+            "type": "boolean",
+            "description": "Extract Reviewer URL",
+            "default": false
+        },
+        "proxy": {
+            "title": "Proxy configuration",
+            "type": "object",
+            "description": "<strong>Proxy is required to run this actor!</strong> Either use Apify proxy, or provide your own proxy servers.",
+            "prefill": { "useApifyProxy": true},
+            "editor": "proxy",
+            "sectionCaption": "Proxy and browser configuration"
         },
         "maxRequestRetries": {
             "title": "Max page retries",
@@ -54,38 +85,7 @@
             "default": 10,
             "minimum": 0,
             "maximum": 100
-        },
-        "maxImages": {
-            "title": "Max images",
-            "description": "Maximum number of images per business",
-            "type": "integer",
-            "minimum": 0,
-            "unit": "per business",
-            "prefill": 10,
-            "default": 10,
-            "editor": "number"
-        },
-        "proxy": {
-            "title": "Proxy configuration",
-            "type": "object",
-            "description": "<strong>Proxy is required to run this actor!</strong> Either use Apify proxy, or provide your own proxy servers.",
-            "prefill": { "useApifyProxy": true, "apifyProxyGroups": [] },
-            "editor": "proxy"
-        },
-        "scrapeReviewerName": {
-            "title": "Reviewer name",
-            "type": "boolean",
-            "description": "Extract Reviewer name",
-            "default": false,
-            "sectionCaption": "Personal data (reviews only)",
-            "sectionDescription": "All of these fields contain personal data. Personal data is protected by GDPR in the European Union and by other regulations around the world. You should not scrape personal data unless you have a legitimate reason to do so. If you're unsure whether your reason is legitimate, consult your lawyers."
-        },
-        "scrapeReviewerUrl": {
-            "title": "Reviewer URL",
-            "type": "boolean",
-            "description": "Extract Reviewer URL",
-            "default": false
         }
     },
     "required": ["proxy"]
-}
+  }
