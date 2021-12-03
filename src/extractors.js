@@ -46,7 +46,11 @@ const yelpBusinessPartial = ($) => {
     const html = $.html();
     const jsonMatch = html.match(/<!--(\{".*bizDetailsPageProps.*?\})-->/);
     if (jsonMatch) {
-        payload = JSON.parse(jsonMatch[1]);
+        payload = JSON.parse(jsonMatch[1])?.legacyProps?.bizDetailsProps;
+
+        if (!payload) {
+            throw new Error('Failed to parse payload');
+        }
     } else {
         throw new Error('Could not extract details about business');
     }
