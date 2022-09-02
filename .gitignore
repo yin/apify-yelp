@@ -2,5 +2,5 @@ apify_storage
 node_modules/
 .idea/
 package-lock.json
-
+storage
 apify_storage
