@@ -20,6 +20,7 @@ const CATEGORIES = {
     PHOTOS: 'photos',
     GRAPHQL: 'graphql',
     REVIEW: 'review',
+    REVIEW_LANGUAGES: 'review_languages',
     UNKNOWN: 'unknown',
 };
 

@@ -22,6 +22,7 @@ Apify.main(async () => {
         proxy,
         scrapeReviewerName = false,
         scrapeReviewerUrl = false,
+        includeNonEnglishReviews = false,
     } = input;
 
     const proxyConfiguration = await proxyConfigurationValidated({ proxyConfig: proxy });
@@ -59,6 +60,7 @@ Apify.main(async () => {
         failedDataset,
         scrapeReviewerName,
         scrapeReviewerUrl,
+        includeNonEnglishReviews,
     });
     const crawler = new Apify.CheerioCrawler({
         requestQueue,

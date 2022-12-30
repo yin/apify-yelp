@@ -22,6 +22,7 @@ When using the scraper on the Apify platform or locally, there are multiple conf
 | reviewLimit | number | No | 20 | Minimum number of reviews to scrape. |
 | proxy | proxy configuration | Yes | `{ useApifyProxy: true }` | Proxy groups and other proxy related configuration. |
 | maxRequestRetries | number | No | 10 | How many times a failed request is retried before thrown away. Requests usually failed when blocked by the target site.
+| includeNonEnglishReviews | boolean | No | `false` | By default the scraper will only get reviews in English. You can get reviews in all languages by using this field.
 
 One of `searchTerm` or `directUrls` is required. If none are specified, nothing will be scrapped.
 
