@@ -13,6 +13,7 @@ const { log } = Apify.utils;
  *   maxImages: number,
  *   requestQueue: Apify.RequestQueue,
  *   failedDataset: Apify.Dataset,
+ *   includeNonEnglishReviews: boolean,
  * }} params
  * @param {(data: any) => Promise<void>} pushResults
  * @param {(data: any) => Promise<void>} pushFailedSearch
@@ -26,6 +27,7 @@ const createYelpPageHandler = ({
     failedDataset,
     scrapeReviewerName,
     scrapeReviewerUrl,
+    includeNonEnglishReviews,
 }) => (
     async ({ request, body, $ = null, json = null }) => {
         if (request.userData.label === CATEGORIES.SEARCH) {
@@ -106,11 +108,33 @@ const createYelpPageHandler = ({
             const { payload } = request.userData;
             const enrichedBusinessInfo = extract.yelpBusinessInfo(json);
 
-            const followup = requests.yelpBusinessReview(payload.business.bizId, null, {
-                ...request.userData.payload,
-                business: nonDestructiveMerge([ request.userData.payload.business, enrichedBusinessInfo ]),
-            });
+            let followup;
+            if (includeNonEnglishReviews) {
+                followup = requests.yelpBusinessReviewLanguages(payload.business.bizId, {
+                    ...request.userData.payload,
+                    business: nonDestructiveMerge([ request.userData.payload.business, enrichedBusinessInfo ]),
+                });
+            } else {
+                followup = requests.yelpBusinessReview(payload.business.bizId, 'en', null, {
+                    ...payload,
+                    languages: ['en'],
+                });
+            }
+
             await requestQueue.addRequest(followup);
+        } else if (request.userData.label === CATEGORIES.REVIEW_LANGUAGES) {
+            const { payload } = request.userData;
+            const languages = extract.yelpReviewLanguages(json);
+            log.info(`[REVIEW_LANGUAGES]: Reviews found in the following languages: ${JSON.stringify(languages)}`);
+
+            await Promise.all(languages.map((lng) => {
+                const followup = requests.yelpBusinessReview(payload.business.bizId, lng, null, {
+                    ...payload,
+                    languages,
+                });
+
+                return requestQueue.addRequest(followup);
+            }));
         } else if (request.userData.label === CATEGORIES.REVIEW) {
             const payload = (request && request.userData && request.userData.payload) || {};
             const newReviews = extract.yelpBusinessReviews({
@@ -135,18 +159,32 @@ const createYelpPageHandler = ({
 
             if (allReviews.length < totalReviewCount && allReviews.length < reviewLimit && newReviews.length > 0) {
                 // log.info('\tContinuing with next page of reviews...');
-                await requestQueue.addRequest(requests.yelpBusinessReview(payload.business.bizId, reviewPageStart + newReviews.length,
-                    {
-                        ...payload,
-                        scrapedReviews: allReviews,
-                    }));
+                await requestQueue.addRequest(requests.yelpBusinessReview(payload.business.bizId, payload.lng, reviewPageStart + newReviews.length,{
+                    ...payload,
+                    scrapedReviews: allReviews,
+                }));
             } else {
                 // log.info('\tNo more reviews to scrape, saving what we got');
-                await Apify.pushData({
+                const data = await Apify.getValue('OUTPUT');
+                const output = {
+                    ...data,
                     ...request.userData.payload.business,
+                    reviewLanguages: [payload.lng].concat(data?.reviewLanguages || []),
                     scrapeFinishedAt: new Date().toISOString(),
-                    reviews: allReviews,
-                });
+                    reviews: allReviews.concat(data?.allReviews || []),
+                };
+
+                const allLanguagesCount = request.userData.payload.languages.length;
+                const currentLanguagesCount = output.reviewLanguages.length;
+                if (currentLanguagesCount < allLanguagesCount) {
+                    await Apify.setValue('OUTPUT', output);
+                } else {
+                    output.reviewLanguages = undefined;
+                    await Promise.all([
+                        Apify.pushData(output),
+                        Apify.setValue('OUTPUT', null),
+                    ]);
+                }
             }
         } else {
             request.noRetry = true;

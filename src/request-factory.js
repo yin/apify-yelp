@@ -114,9 +114,24 @@ const yelpGraphQl = (url, payload) => {
     };
 };
 
-const yelpBusinessReview = (bizId, reviewPageStart = undefined, payload = null) => {
+const yelpBusinessReviewLanguages = (bizId, payload = null) => {
     return {
-        url: `${BASE_URL}/biz/${bizId}/review_feed?rl=en&sort_by=relevance_desc${reviewPageStart ? `&start=${reviewPageStart}` : ''}`,
+        url: `${BASE_URL}/biz/${bizId}/review_feed`,
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
+            'X-Requested-With': 'XMLHttpRequest',
+            'X-Requested-By-React': true,
+        },
+        userData: {
+            label: CATEGORIES.REVIEW_LANGUAGES,
+            payload,
+        },
+    };
+};
+
+const yelpBusinessReview = (bizId, lng, reviewPageStart = undefined, payload = null) => {
+    return {
+        url: `${BASE_URL}/biz/${bizId}/review_feed?rl=${lng}&sort_by=relevance_desc${reviewPageStart ? `&start=${reviewPageStart}` : ''}`,
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
             'X-Requested-With': 'XMLHttpRequest',
@@ -126,6 +141,7 @@ const yelpBusinessReview = (bizId, reviewPageStart = undefined, payload = null) 
             label: CATEGORIES.REVIEW,
             payload: {
                 ...payload,
+                lng,
                 reviewPageStart,
             },
         },
@@ -136,6 +152,7 @@ module.exports = {
     yelpSearch,
     yelpSearchTermAndLocation,
     yelpBusinessInfo,
+    yelpBusinessReviewLanguages,
     yelpBusinessReview,
     yelpGraphQl,
     yelpBizPhotos,

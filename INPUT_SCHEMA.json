@@ -64,6 +64,12 @@
             "description": "Extract Reviewer name",
             "default": false
         },
+        "includeNonEnglishReviews": {
+            "title": "Include non-English reviews",
+            "type": "boolean",
+            "description": "Include non-English reviews",
+            "default": false
+        },
         "scrapeReviewerUrl": {
             "title": "Reviewer URL",
             "type": "boolean",

@@ -151,10 +151,15 @@ const yelpBusinessReviews = ({ url, json, scrapeReviewerName, scrapeReviewerUrl 
     return [...reviews.values()];
 };
 
+const yelpReviewLanguages = (json) => {
+    return get(json, 'reviewLanguages', [{ code: 'en' }]).map((lng) => lng.code);
+};
+
 module.exports = {
     yelpSearchResultUrls,
     yelpBusinessPartial,
     yelpBusinessInfo,
     yelpBusinessReviews,
+    yelpReviewLanguages,
     yelpBizPhotos,
 };
