@@ -171,7 +171,7 @@ const createYelpPageHandler = ({
                     ...request.userData.payload.business,
                     reviewLanguages: [payload.lng].concat(data?.reviewLanguages || []),
                     scrapeFinishedAt: new Date().toISOString(),
-                    reviews: allReviews.concat(data?.allReviews || []),
+                    reviews: allReviews.concat(data?.reviews || []),
                 };
 
                 const allLanguagesCount = request.userData.payload.languages.length;
